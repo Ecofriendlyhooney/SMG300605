@@ -1,4 +1,4 @@
-package badminton.skb.beans;
+package beans;
 
 public class Skb {
 	private int id;

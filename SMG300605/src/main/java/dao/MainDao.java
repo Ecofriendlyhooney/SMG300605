@@ -1,4 +1,4 @@
-package badminton.skb.dao;
+package dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -7,9 +7,9 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
-import badminton.skb.beans.Skb;
+import beans.Skb;
 
-public class SkbDao {
+public class MainDao {
 	JdbcTemplate template;
 
 	public void setTemplate(JdbcTemplate template) {

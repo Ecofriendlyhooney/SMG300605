@@ -1,4 +1,4 @@
-package badminton.skb.controllers;
+package controllers;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import badminton.skb.beans.Skb;
-import badminton.skb.dao.SkbDao;
+import beans.Skb;
+import dao.MainDao;
 
 @Controller
-public class SkbController {
+public class MainController {
 	@Autowired
-	SkbDao dao;
+	MainDao dao;
 
 	/* Public entrance */
 	@RequestMapping("/badminton/skb/entrance")
