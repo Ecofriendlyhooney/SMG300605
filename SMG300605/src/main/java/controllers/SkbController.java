@@ -13,59 +13,60 @@ import beans.Skb;
 import dao.MainDao;
 
 @Controller
-public class MainController {
+public class SkbController {
 	@Autowired
-	MainDao dao;
+	MainDao skbdao;
 
-	/* Public entrance */
+	/* SKB Public entrance */
 	@RequestMapping("/badminton/skb/entrance")
 	public String skbPublic(Model m) {
-		List<Skb> list = dao.getSkbSchedule();
+		List<Skb> list = skbdao.getSkbSchedule();
 		m.addAttribute("list", list);
 		return "skbPublicPage";
 	}
 
-	/* Admin View*/
+	/* SKB Admin View */
 	@RequestMapping("/badminton/skb/admin")
 	public String skbAdmin(Model m) {
-		List<Skb> list = dao.getSkbSchedule();
+		List<Skb> list = skbdao.getSkbSchedule();
 		m.addAttribute("list", list);
 		return "skbAdminPage";
 	}
-	
-	/* edit  */
+
+	/* SKB edit */
 	@RequestMapping(value = "/badminton/skb/admin/editskb/{id}")
 	public String edit(@PathVariable int id, Model m) {
-		Skb skb = dao.getSkbById(id);
+		Skb skb = skbdao.getSkbById(id);
 		m.addAttribute("command", skb);
 		return "skbeditform";
 	}
-	
-	/* create */
+
+	/* SKB create */
 	@RequestMapping(value = "/badminton/skb/admin/save", method = RequestMethod.POST)
 	public String save(@ModelAttribute("skb") Skb skb) {
-		dao.save(skb);
+		skbdao.save(skb);
 		return "redirect:/badminton/skb/admin";
 	}
-	
-	/* add */
+
+	/* SKB add */
 	@RequestMapping("/badminton/skb/admin/skbform")
 	public String showform(Model m) {
 		m.addAttribute("command", new Skb());
 		return "skbform";
 	}
 
-	/* update */
+	/* SKB update */
 	@RequestMapping(value = "/badminton/skb/admin/editsave", method = RequestMethod.POST)
 	public String editsave(@ModelAttribute("skb") Skb skb) {
-		dao.update(skb);
+		skbdao.update(skb);
 		return "redirect:/badminton/skb/admin";
 	}
 
-	/* delete */
+	/* SKB delete */
 	@RequestMapping(value = "/badminton/skb/admin/deleteskb/{id}", method = RequestMethod.GET)
 	public String delete(@PathVariable int id) {
-		dao.delete(id);
+		skbdao.deleteSkb(id);
 		return "redirect:/badminton/skb/admin";
 	}
+
 }

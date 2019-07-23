@@ -1,5 +1,5 @@
 package beans;
-
+// SKB 
 public class Skb {
 	private int id;
 	private String name;
