@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <h1>TSE ========== Admin Page</h1>
-<table border="5" width="100%" padding="2">
+<table border="20" width="70%" padding="2">
 	<tr>
 		<th>Id</th>
 		<th>Name</th>
