@@ -17,6 +17,7 @@ public class MainDao {
 		this.template = template;
 	}
 
+	/* ===== SKB =====*/ 
 	public int save(Skb p) {
 		String sql = "insert into skb2019(name) values('" + p.getName() + "')";
 		return template.update(sql);
@@ -47,7 +48,8 @@ public class MainDao {
 			}
 		});
 	}
-
+	
+    /* ===== TSE =====*/ 
 	public int save(Tse p) {
 		String sql = "insert into tse2019(name) values('" + p.getName() + "')";
 		return template.update(sql);
