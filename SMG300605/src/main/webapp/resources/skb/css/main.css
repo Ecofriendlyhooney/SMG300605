@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+.menu {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+}
+
+.bpHead {
+	border-style :solid;
+        border-width : 2px;
+        border-color :red;
+        width:95.3%;
+}
+.bpHeadFirstLine {
+	border-style :solid;
+        border-width : 2px;
+        border-color : green;
+}
+
+.bpHeadSecondLine {
+	border-style :solid;
+        border-width : 2px;
+        border-color : blue;
+}
+
+.space {
+	margin-top : 20%;
+}
+.oneUnit {
+		border-style :solid;
+        border-width : 2px;
+        border-color : green;
+}
+.bpBody {
+	border-style :solid;
+        border-width : 2px;
+        border-color :black;
+}
+
+.bpFooter {
+	border-style :solid;
+        border-width : 1px;
+        border-color :black;
+}
+
+.header {
+	background-color: yellow;
+	/* width: 100%; */
+	text-align: center;
+	font-size: 1rem;
+}
+
+.body {
+	background-color: white;
+	/* width: 100%; */
+	text-align: center;
+	font-size: 1.3rem;
+	overflow: auto;
+}
+
+.firstItem {
+	padding-top: 25%;
+	/* margin-top: 3%; */
+}
+
+
+
+.copyright {
+	background-color: aliceblue;
+	font-size: 1rem;
+}
+
+.r10 {
+	width: 10%;
+}
+
+.r20 {
+	width: 20%;
+}
+
+.r25 {
+	width: 25%;
+}
+
+.r33 {
+	width: 33%;
+}
+
+.r40 {
+	width: 40%;
+}
+.yellow {
+	border-style :solid;
+        border-width : 2px;
+        border-color : yellow;
+}
+.red {
+	border-style :solid;
+        border-width : 2px;
+        border-color : red;
+}
+.blue {
+	border-style :solid;
+        border-width : 2px;
+        border-color : blue;
+}
+.grey {
+	border-style :solid;
+        border-width : 2px;
+        border-color : grey;
+}
+.brown {
+	border-style :solid;
+        border-width : 2px;
+        border-color : brown;
+}
+
+.r80 {
+	width: 80%;
+}
+
+.bgYellow {
+	background-color : yellow;
+}
+
+.bgBlue {
+	background-color : lightblue;
+}
+.r100 {
+	font-size: 1rem;
+	width: 100%;
+}
+
+
+.left {
+	float: left;
+}
+
+.menubutton {
+	border-top: 10%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	ackground-color: aliceblue;
+}
+
+.fontSize_150 {
+	font-size: 2rem;
+}
