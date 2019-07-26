@@ -9,11 +9,11 @@
 <html class="bg-color" xmlns:og="http://ogp.me/ns#">
 
 <head>
+<%--    <link  href="<c:url value="/resources/css/main.css" />" rel="stylesheet"> --%>
    <link  href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
-   <link  href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
-   <script src="<c:url value="/resources/js/main.js" />"></script>
-   <script src="<c:url value="/resources/js/jquery.1.10.2.min.js" />"></script>
-   
+<%--    <script src="<c:url value="/resources/js/main.js" />"></script> --%>
+   <%-- <script src="<c:url value="/resources/js/jquery-3.4.1.js" />"></script> --%>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
 <title>SKB 2019年</title>
 <%-- <link rel="stylesheet" type="text/css"  href="${pageContext.request.contextPath}/WEB-INF/css/style.css">  --%>
@@ -51,7 +51,8 @@
 		</div>
 	</div>
 	
-	<div class="bpbody space">
+	<!-- 	One Unit START -->
+	<!-- <div class="bpbody space">
 		<div class="oneUnit">
 			<div class="r20 yellow left">
 				<div class="red ">07/27</div>
@@ -67,92 +68,71 @@
 					<div class="r40 left bgYellow">19:30</div>
 					<div class="r10 left bgBlue"> ~ </div>
 					<div class="r35 left bgYellow">21:30</div> 
-				<!-- 	<div class="r40 left">19:30</div>
+					<div class="r40 left">19:30</div>
 					<div class="r20 left">~</div>
-					<div class="r40 left">21:30</div> -->
+					<div class="r40 left">21:30</div>
 			    </div>
 			</div>
 		</div>
-	</div>
-
-
-
-
-
-	
-	<div class="copyright space">Powered by EcofriendlyHooney</div>
-	<div class="copyright">Designed by 300605 Design Group</div>
-	<div class="copyright">copyright 2019</div>
+	</div> -->
+<!-- 	One Unit END -->
+	<div class="bpbody space"> </div>
+		
 		
 	<c:forEach var="tse" items="${list}">
-		<div>${tse.id}</div>
-		<div>${tse.name}</div>
-	</c:forEach>
-	
-	<!-- <div class="header  bpHead">
-		<div class="bpTitle">
-			<div class="r20  body left">Icon
+	<%-- 	<div>${tse.id}</div>
+		<div>${tse.name}</div> --%>
+			
+	<!-- 	One Unit START -->
+	 <button class="accordion">
+	  	<div class="bpbody ">
+		<div class="oneUnit">
+			<div class="r20 yellow left">
+				<div class="red ">07/27</div>
+				<div class="grey ">sun</div>
 			</div>
-			<div class="r80  body left">
-				<div class="body">SKB</div>
-				<div class="body">2019</div>
+			<div class= "brown ">
+					<div class="red">d
+						<div class="r40 left bgYellow">19:30</div>
+						<div class="r10 left bgBlue"> ~ </div>
+						<div class="r35 left bgYellow">21:30</div> 
+					</div>
+					<div class="grey "> -blank
+						<div class="r40 left bgYellow">${tse.name}</div>
+						<div class="r10 left bgBlue"> ~ </div>
+						<div class="r35 left bgYellow">${tse.id}</div> 
+				    </div>
+				</div>
 			</div>
-		</div>
-		
-		<div>
-			<div class="r33 left menubutton">
-			<a href="entrance">Home</a></div>
-			<div class="r33 left menubutton">
-			<a href="entrance">We are</a></div>
-			<div class="r33 left menubutton">
-			<a href="entrance">Map</a></div>
-		</div>
-	</div>
-	<div class="body firstItem bpBody">
-		<div class="r20 left ">
-			<div class="left">07/28</div>
-			<div class="left">日曜</div>
-		</div>
-		<div class="r80 left ">
-			<div class="body">
-				<div class="r40 left">18:30</div>
-				<div class="r20 left">~</div>
-				<div class="r40 left">21:30</div>
-			</div>
-			<div class="body">
-				<div class="r40 left">Text 1</div>
-				<div class="r20 left">~</div>
-				<div class="r40 left">Text 2</div>
-		    </div>
-		</div>
-	</div>	
-	
-	<div class="body ">
-		<div class="r20 left ">
-			<div class="left">07/28</div>
-			<div class="left">日曜</div>
-		</div>
-		<div class="r80 left ">
-			<div class="body">
-				<div class="r40 left">18:30</div>
-				<div class="r20 left">~</div>
-				<div class="r40 left">21:30</div>
-			</div>
-			<div class="body">
-				<div class="r40 left">Text 1</div>
-				<div class="r20 left">~</div>
-				<div class="r40 left">Text 2</div>
-		    </div>
-		</div>
-	</div>	 -->
-	 
-<!-- 	<div class="bpFooter">
-		<div>Powered by EcofriendlyHooney</div>
-		<div>Designed by 300605 Design Group</div>
-		<div>copyright 2019</div>
-	</div> -->
+		</div> 
+	 </button>
+	<div class="panel">
+  		${tse.name}
+	</div> 
 	
 
+<!-- 	One Unit END -->
+	</c:forEach>
+
+	<div class="copyright space">Powered by EcofriendlyHooney</div>
+	<div class="copyright">© 2019 300605.com All rights reserved.</div>
+	
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 </body>
 
 </html>
