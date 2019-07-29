@@ -31,11 +31,13 @@ public class SkbController {
 		return "skbWeAre";
 	}
 	
-	/* SKB we are */
+	/* SKB Map */
 	@RequestMapping("/badminton/skb/skbmap")
 	public String skbMap() {
 		return "skbMap";
 	}
+	
+	/*============ Done till here */
 	
 	/* SKB Admin View */
 	@RequestMapping("/badminton/skb/admin")
@@ -53,14 +55,14 @@ public class SkbController {
 		return "skbeditform";
 	}
 
-	/* SKB create */
+	/* SKB save */
 	@RequestMapping(value = "/badminton/skb/admin/save", method = RequestMethod.POST)
 	public String save(@ModelAttribute("skb") Skb skb) {
 		skbdao.save(skb);
 		return "redirect:/badminton/skb/admin";
 	}
 
-	/* SKB add */
+	/* SKB create */
 	@RequestMapping("/badminton/skb/admin/skbform")
 	public String showform(Model m) {
 		m.addAttribute("command", new Skb());

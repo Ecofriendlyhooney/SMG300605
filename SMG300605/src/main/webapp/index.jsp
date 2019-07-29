@@ -4,7 +4,7 @@
 
 <style>
 .button {
-	background-color: #4CAF50; /* Green */
+	
 	border: none;
 	color: white;
 	padding: 20px;
@@ -14,6 +14,13 @@
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
+}
+.bgGreen {
+	background-color: #4CAF50; /* Green */
+}
+
+.bgRed {
+	background-color: ##FF0000; /* Red */ 
 }
 
 .button1 {
@@ -35,18 +42,21 @@
 .button5 {
 	border-radius: 50%;
 }
+
 </style>
 </head>
 
 <body>
 	<form action="/HooneyCRUD/badminton/skb/entrance" method="get"
 		target="_blank">
-		<button class="button button4">Public entrance</button>
+		<button class="button button4 bgGreen">Public entrance</button>
 	</form>
+	
 	<form action="/HooneyCRUD/badminton/skb/admin" method="get"
 		target="_blank">
-		<button class="button button4">Admin View</button>
+		<button class="button button4 bgRed">Admin View</button>
 	</form>
+	
 	<form action="/HooneyCRUD/badminton/skb/admin/skbform" method="get"
 		target="_blank">
 		<button class="button button4">Add SKB schedule</button>
@@ -58,10 +68,7 @@
 	<form action="/HooneyCRUD/dance/tse/admin" method="get" target="_blank">
 		<button class="button button4">TSE Admin View</button>
 	</form>
-	<form action="/HooneyCRUD/dance/tse/admin/tseform" method="get"
-		target="_blank">
-		<button class="button button4">TSE add</button>
-	</form>
+
 
 </body>
 </html>

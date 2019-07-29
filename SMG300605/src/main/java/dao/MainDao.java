@@ -22,15 +22,15 @@ public class MainDao {
 
 	/* ===== SKB =====*/ 
 	public int save(Skb p) {
-		String sql = "insert into skb_main(event_place_id) values('" + 
+		String sql = "insert into skb_main(skb_event_title) values('" + 
 				p.getSkb_event_title() + "')";
 		//TODO need add more element filed
 		return template.update(sql);
 	}
 
 	public int update(Skb p) {
-		String sql = "update skb_main set event_place_id='" + p.getSkb_event_title() 
-		+ "' where event_schedule_id=" + p.getSkb_event_title() + "";
+		String sql = "update skb_main set skb_event_title='" + p.getSkb_event_title() 
+		+ "' where skb_event_title=" + p.getSkb_event_title() + "";
 		//TODO need add more element filed
 		
 		return template.update(sql);
