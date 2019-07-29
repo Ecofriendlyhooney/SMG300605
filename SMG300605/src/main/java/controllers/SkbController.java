@@ -24,7 +24,19 @@ public class SkbController {
 		m.addAttribute("list", list);
 		return "skbPublicPage";
 	}
-
+	
+	/* SKB we are */
+	@RequestMapping("/badminton/skb/skbweare")
+	public String skbWeAre() {
+		return "skbWeAre";
+	}
+	
+	/* SKB we are */
+	@RequestMapping("/badminton/skb/skbmap")
+	public String skbMap() {
+		return "skbMap";
+	}
+	
 	/* SKB Admin View */
 	@RequestMapping("/badminton/skb/admin")
 	public String skbAdmin(Model m) {
@@ -69,4 +81,6 @@ public class SkbController {
 		return "redirect:/badminton/skb/admin";
 	}
 
+
+	
 }
