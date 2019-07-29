@@ -185,10 +185,10 @@ INSERT INTO skb_main(
   skb_event_text_03)
   
   VALUES(
-  "ikebukuro" ,
-  "skb_text_01" ,
-  "skb_text_02" ,
-  "skb_text_03" 
+  "sugamo2" ,
+  "sugamo2_text_01" ,
+  "sugamo2_text_02" ,
+  "sugamo2_text_03" 
   );
   
 -- GCP SKB main create Minimum END

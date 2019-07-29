@@ -23,14 +23,14 @@ public class MainDao {
 	/* ===== SKB =====*/ 
 	public int save(Skb p) {
 		String sql = "insert into skb_main(event_place_id) values('" + 
-				p.getEvent_place_id() + "')";
+				p.getSkb_event_title() + "')";
 		//TODO need add more element filed
 		return template.update(sql);
 	}
 
 	public int update(Skb p) {
-		String sql = "update skb_main set event_place_id='" + p.getEvent_place_id() 
-		+ "' where event_schedule_id=" + p.getEvent_schedule_id() + "";
+		String sql = "update skb_main set event_place_id='" + p.getSkb_event_title() 
+		+ "' where event_schedule_id=" + p.getSkb_event_title() + "";
 		//TODO need add more element filed
 		
 		return template.update(sql);
@@ -50,33 +50,39 @@ public class MainDao {
 		return template.query("select * from skb_main", new RowMapper<Skb>() {
 			public Skb mapRow(ResultSet rs, int row) throws SQLException {
 				Skb e = new Skb();
+				e.setSkb_event_id(rs.getInt(1));
+				e.setSkb_event_title(rs.getString(2));
+				e.setSkb_event_text_01(rs.getString(3));
+				e.setSkb_event_text_02(rs.getString(4));
+				e.setSkb_event_text_03(rs.getString(5));
+							
 //				e.setId(rs.getInt(1));
 //				e.setName(rs.getString(2));
 				
-				e.setEvent_schedule_id(rs.getInt(1));
-				e.setEvent_place_id(rs.getString(2));
-				e.setEvent_date(rs.getDate(3));
-				e.setEvent_time_start(rs.getTime(4));
-				e.setEvent_time_end(rs.getTime(5));
-				e.setEvent_schedule_delete_flag(rs.getString(6));
-				e.setEvent_schedule_text_01(rs.getString(7));
-				e.setEvent_schedule_text_02(rs.getString(8));
-				e.setEvent_schedule_text_03(rs.getString(9));
-				e.setEvent_schedule_text_04(rs.getString(10));
-				e.setEvent_schedule_text_05(rs.getString(11));
-				e.setEvent_schedule_text_06(rs.getString(12));
-				e.setEvent_schedule_text_07(rs.getString(13));
-				e.setEvent_schedule_text_08(rs.getString(14));
-				e.setEvent_schedule_text_09(rs.getString(15));
-				e.setEvent_schedule_text_10(rs.getString(16));
+//				e.setEvent_schedule_id(rs.getInt(1));
+//				e.setEvent_place_id(rs.getString(2));
+//				e.setEvent_date(rs.getDate(3));
+//				e.setEvent_time_start(rs.getTime(4));
+//				e.setEvent_time_end(rs.getTime(5));
+//				e.setEvent_schedule_delete_flag(rs.getString(6));
+//				e.setEvent_schedule_text_01(rs.getString(7));
+//				e.setEvent_schedule_text_02(rs.getString(8));
+//				e.setEvent_schedule_text_03(rs.getString(9));
+//				e.setEvent_schedule_text_04(rs.getString(10));
+//				e.setEvent_schedule_text_05(rs.getString(11));
+//				e.setEvent_schedule_text_06(rs.getString(12));
+//				e.setEvent_schedule_text_07(rs.getString(13));
+//				e.setEvent_schedule_text_08(rs.getString(14));
+//				e.setEvent_schedule_text_09(rs.getString(15));
+//				e.setEvent_schedule_text_10(rs.getString(16));
 //				e.setCreated_timestamp(rs.getTimestamp(17));
 //				e.setUpdated_timestamp(rs.getTimestamp(18));
-				e.setCreated_by(rs.getString(19));
-				e.setUpdated_by(rs.getString(20));
-				e.setEvent_view_count(rs.getInt(21));
-				e.setParticipants_yes(rs.getString(22));
-				e.setParticipants_no(rs.getString(23));
-				e.setParticipants_cancelled(rs.getString(24));
+//				e.setCreated_by(rs.getString(19));
+//				e.setUpdated_by(rs.getString(20));
+//				e.setEvent_view_count(rs.getInt(21));
+//				e.setParticipants_yes(rs.getString(22));
+//				e.setParticipants_no(rs.getString(23));
+//				e.setParticipants_cancelled(rs.getString(24));
 
 				return e;
 			}

@@ -27,97 +27,63 @@
 <meta property="og:url"
 	content=" https://skb-test-cloud.appspot.com/skb_201907.html" />
 <meta property=”og:description” content=”schedule” />
-<!-- <style></style> -->
 
 </head>
 
 <body>
-	<div class="menu bpHead clearfix">
+	<div class="menu bpHead">
 		<div class="bpHeadFirstLine"> 
 			<img class="left"
 			src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/01_icon/badminton.png" alt=""
-			style="width: 50px; height: 45px;">
-			<div class="fontSize_150">SKB badminton</div>
+			style="width: 35px; height: 35px;">
+			<div class="fontSize_150 text_align_center">SKB badminton</div>
 		</div>
 		<div class="bpHeadSecondLine"> 
-			<div>
-				<div class="r20 left menubutton">
-					<a href="entrance">Home</a></div>
-				<div class="r20 left menubutton">
-					<a href="entrance">We are</a></div>
-				<div class="r20 left menubutton">
-					<a href="entrance">Map</a></div>
-			</div>
+			<div class="r33 left menubutton bgGrey">
+				<a href="entrance">Home</a></div>
+			<div class="r33 left menubutton bgWhite">
+				<a href="entrance">We are</a></div>
+			<div class="r33 left menubutton bgWhite">
+				<a href="entrance">Map</a></div>
 		</div>
 	</div>
 	
-	<!-- 	One Unit START -->
-	<!-- <div class="bpbody space">
-		<div class="oneUnit">
-			<div class="r20 yellow left">
-				<div class="red ">07/27</div>
-				<div class="grey ">sun</div>
-			</div>
-			<div class= "brown ">
-				<div class="red">d
-					<div class="r40 left bgYellow">19:30</div>
-					<div class="r10 left bgBlue"> ~ </div>
-					<div class="r35 left bgYellow">21:30</div> 
-				</div>
-				<div class="grey "> -blank
-					<div class="r40 left bgYellow">19:30</div>
-					<div class="r10 left bgBlue"> ~ </div>
-					<div class="r35 left bgYellow">21:30</div> 
-					<div class="r40 left">19:30</div>
-					<div class="r20 left">~</div>
-					<div class="r40 left">21:30</div>
-			    </div>
-			</div>
-		</div>
-	</div> -->
-<!-- 	One Unit END -->
-	<div class="bpbody space"> </div>
-		
-		
-	<c:forEach var="skb" items="${list}">
-	<%-- 	<div>${tse.id}</div>
-		<div>${tse.name}</div> --%>
-			
-	<!-- 	One Unit START -->
-	 <button class="accordion">
-	  	
-			<div class="oneUnit r90 left">
-				<div class="r20 yellow left">
-					<div class="red ">{skb.event_date}</div>
-					<div class="grey ">TBD</div>
-				</div>
-				<div class= "brown r70">
-					<div class="red">
-						<div class="r40 left bgYellow">{skb.event_time_start}</div>
-						<div class="r10 left bgBlue"> ~ </div>
-						<div class="r35 left bgYellow">{skb.event_time_end}</div> 
-					</div>
-					<div class="grey "> -blank
-						<div class="r40 left bgYellow">${skb.event_place_id}</div>
-						<div class="r10 left bgBlue"> ~ </div>
-						<div class="r35 left bgYellow">TBD</div> 
-				    </div>
-				</div>
-			</div>
-<!-- 			<div class="oneUnit r5 center">
-				+
-			</div> -->
-			
-	 </button>
-	<div class="panel">
-  		${tse.name}
-	</div> 
+	<div class="space ">EcofriendlyHooney</div>
 	
-
-<!-- 	One Unit END -->
-	</c:forEach>
-
-	<div class="copyright space">Powered by EcofriendlyHooney</div>
+	<div class="bpbody"> 
+		<c:forEach var="skb" items="${list}">
+		<!-- 	One Unit START -->
+			 <button class="accordion">	
+				<div class="oneUnit r90 left">
+					<div class="r20  left">
+						<div class=" ">${skb.skb_event_id}</div>
+						<div class=" ">TBD</div>
+					</div>
+					<div class= " r70">
+						<div class=" ">
+							<div class="r40 left ">18:99</div>
+							<div class="r10 left "> ~ </div>
+							<div class="r35 left ">21:99</div> 
+						</div>
+						<div class=" "> -blank
+							<div class="r40 left ">${skb.skb_event_title}</div>
+							<div class="r10 left "> ~ </div>
+							<div class="r35 left ">TBD</div> 
+					    </div>
+					</div>
+				</div>
+			 </button>
+			<div class="panel">
+				<div>${skb.skb_event_text_01}</div>
+		  		<div>${skb.skb_event_text_02}</div>
+		  		<div>${skb.skb_event_text_03}</div>
+			</div> 
+		<!-- 	One Unit END -->	
+		</c:forEach>
+	</div>
+	
+	<div class="space">EcofriendlyHooney</div>
+	<div class="copyright">Powered by EcofriendlyHooney</div>
 	<div class="copyright">© 2019 300605.com All rights reserved.</div>
 	
 <script>
