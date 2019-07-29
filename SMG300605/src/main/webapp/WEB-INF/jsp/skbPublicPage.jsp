@@ -32,7 +32,7 @@
 </head>
 
 <body>
-	<div class="menu bpHead">
+	<div class="menu bpHead clearfix">
 		<div class="bpHeadFirstLine"> 
 			<img class="left"
 			src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/01_icon/badminton.png" alt=""
@@ -79,32 +79,35 @@
 	<div class="bpbody space"> </div>
 		
 		
-	<c:forEach var="tse" items="${list}">
+	<c:forEach var="skb" items="${list}">
 	<%-- 	<div>${tse.id}</div>
 		<div>${tse.name}</div> --%>
 			
 	<!-- 	One Unit START -->
 	 <button class="accordion">
-	  	<div class="bpbody ">
-		<div class="oneUnit">
-			<div class="r20 yellow left">
-				<div class="red ">07/27</div>
-				<div class="grey ">sun</div>
-			</div>
-			<div class= "brown ">
-					<div class="red">d
-						<div class="r40 left bgYellow">19:30</div>
+	  	
+			<div class="oneUnit r90 left">
+				<div class="r20 yellow left">
+					<div class="red ">{skb.event_date}</div>
+					<div class="grey ">TBD</div>
+				</div>
+				<div class= "brown r70">
+					<div class="red">
+						<div class="r40 left bgYellow">{skb.event_time_start}</div>
 						<div class="r10 left bgBlue"> ~ </div>
-						<div class="r35 left bgYellow">21:30</div> 
+						<div class="r35 left bgYellow">{skb.event_time_end}</div> 
 					</div>
 					<div class="grey "> -blank
-						<div class="r40 left bgYellow">${tse.name}</div>
+						<div class="r40 left bgYellow">${skb.event_place_id}</div>
 						<div class="r10 left bgBlue"> ~ </div>
-						<div class="r35 left bgYellow">${tse.id}</div> 
+						<div class="r35 left bgYellow">TBD</div> 
 				    </div>
 				</div>
 			</div>
-		</div> 
+<!-- 			<div class="oneUnit r5 center">
+				+
+			</div> -->
+			
 	 </button>
 	<div class="panel">
   		${tse.name}

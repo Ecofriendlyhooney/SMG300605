@@ -71,6 +71,10 @@
 	font-size: 1rem;
 }
 
+.r5 {
+	width: 50%;
+}
+
 .r10 {
 	width: 10%;
 }
@@ -120,6 +124,10 @@
 	width: 80%;
 }
 
+.r90 {
+	width:90%;
+}
+
 .bgYellow {
 	background-color : yellow;
 }
@@ -137,6 +145,10 @@
 	float: left;
 }
 
+.center {
+	float: center;
+}
+
 .menubutton {
 	border-top: 10%;
 	padding-top: 3%;
@@ -147,6 +159,12 @@
 .fontSize_150 {
 	font-size: 2rem;
 }
+
+
+.clearfix {
+  overflow: auto;
+}
+
 
 .accordion {
   background-color: #eee;
@@ -165,15 +183,16 @@
 }
 
 .accordion:after {
-  content: '\002B';
+  content: '\002B'; 
   color: #777;
   font-weight: bold;
-  float: right;
+/*   float: right; 
+  align-content: center; */
   margin-left: 5px;
 }
 
 .active:after {
-  content: "\2212";
+ content: "\2212"; 
 }
 
 .panel {
