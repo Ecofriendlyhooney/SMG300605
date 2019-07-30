@@ -57,29 +57,30 @@
 			</div>
 	
 			<div class="bgGreen">
-				 <input type="text" name="skb_event_title" />${skb.skb_event_title}<p>&nbsp;</p>
+				 <input type="text" name="skb_event_title" value="${skb.skb_event_title}"/><p>&nbsp;</p>
 			</div>
 			<div class="bgGrey">
-				 <input type="text" name="skb_event_text_01"/>${skb.skb_event_text_01}<p>&nbsp;</p>
+				 <input type="text" name="skb_event_text_01" value="${skb.skb_event_text_01}"/><p>&nbsp;</p>
 			</div>
 			<div class="bgRed">
-				 <input type="text" name="skb_event_text_02" />${skb.skb_event_text_02} <p>&nbsp;</p>
+				 <input type="text" name="skb_event_text_02" value="${skb.skb_event_text_02}"/> <p>&nbsp;</p>
 			</div>
 			<div class="bgGreen">
-				<input type="text" name="skb_event_text_03" />${skb.skb_event_text_03}<p>&nbsp;</p>
+				<input type="text" name="skb_event_text_03" value="${skb.skb_event_text_03}"/><p>&nbsp;</p>
 			</div>
 
 			<button class="button bgGreen">Edit Save</button>
 		</form:form>
-		
-			
-		
-		
+
 		<form action="/HooneyCRUD/badminton/skb/admin" method="get">
 			<button class="button bgGreen ">Cancel</button>
 		</form>
-		
-		
+	
+			<button class="button bgGreen ">
+			     <a href="/HooneyCRUD/badminton/skb/admin/deleteskb/${skb.skb_event_id}">Delete</a>	
+			</button>
+
+
 		
 <!-- 	<div class="bpbody left"> 
 		<button class="accordionSizeCreateNewEvent ">
