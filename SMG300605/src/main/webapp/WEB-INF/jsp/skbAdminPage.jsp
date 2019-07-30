@@ -25,7 +25,6 @@
 <meta property=”og:image:width” content="200" />
 <meta property=”og:image:height” content="100" />
 <meta property=”og:description” content=”schedule” />
-
 </head>
 
 <body>
@@ -45,9 +44,7 @@
 				<a>View</a></div>
 		</div>
 	</div>
-	
 	<div class="space ">EcofriendlyHooney</div>
-	
 	<div class="bpbody"> 
 		<c:forEach var="skb" items="${list}">
 		<!-- 	One Unit START -->
@@ -63,7 +60,7 @@
 							<div class="r10 left "> ~ </div>
 							<div class="r35 left ">21:99</div> 
 						</div>
-						<div class=" "> -blank
+						<div class=" "> 
 							<div class="r40 left ">${skb.skb_event_title}</div>
 							<div class="r10 left "> ~ </div>
 							<div class="r35 left ">TBD</div> 

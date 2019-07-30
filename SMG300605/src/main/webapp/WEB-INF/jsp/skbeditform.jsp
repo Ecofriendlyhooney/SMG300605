@@ -29,68 +29,94 @@
 </head>
 
 <body>
+ 
+<h1>Users List</h1>  
+  
+
 	<div class="menu bpHead">
 		<div class="bpHeadFirstLine"> 
 			<img class="left"
 			src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/01_icon/badminton.png" alt=""
 			style="width: 35px; height: 35px;">
-			<div class="fontSize_150 text_align_center">Syusei Admin Create</div>
+			<div class="fontSize_150 text_align_center">Syusei Admin Edit</div>
 		</div>
 		<div class="bpHeadSecondLine"> 
-			<div class="r33 left menubutton bgGrey">
-				<a href="">Create</a></div>
 			<div class="r33 left menubutton bgWhite">
+				<a href="">====</a></div>
+			<div class="r33 left menubutton bgGrey">
 				<a href="">====</a></div>
 			<div class="r33 left menubutton bgWhite">
 				<a href="">====</a></div>
 		</div>
 	</div>
-	<div class="space ">EcofriendlyHooney</div>
+	<div class="space" >EcofriendlyHooney</div>
+		<form:form method="POST" action="/HooneyCRUD/badminton/skb/admin/editsave">
+			
+			<div>
+				 <input type="hidden" name="skb_event_id" value="${skb.skb_event_id}" /> <p>&nbsp;</p>
+			</div>
 	
-	<form action="save" method="post">
-	    <input type="text" name="skb_event_title" />
-	    <input type="submit" />
-	</form>
-	
-	<div class="bpbody left"> 
+			<div class="bgGreen">
+				 <input type="text" name="skb_event_title" />${skb.skb_event_title}<p>&nbsp;</p>
+			</div>
+			<div class="bgGrey">
+				 <input type="text" name="skb_event_text_01"/>${skb.skb_event_text_01}<p>&nbsp;</p>
+			</div>
+			<div class="bgRed">
+				 <input type="text" name="skb_event_text_02" />${skb.skb_event_text_02} <p>&nbsp;</p>
+			</div>
+			<div class="bgGreen">
+				<input type="text" name="skb_event_text_03" />${skb.skb_event_text_03}<p>&nbsp;</p>
+			</div>
+
+			<button class="button bgGreen">Edit Save</button>
+		</form:form>
+		
+			
+		
+		
+		<form action="/HooneyCRUD/badminton/skb/admin" method="get">
+			<button class="button bgGreen ">Cancel</button>
+		</form>
+		
+		
+		
+<!-- 	<div class="bpbody left"> 
 		<button class="accordionSizeCreateNewEvent ">
 			<div class="r33 left menubutton bgWhite">
 				<a href="/HooneyCRUD/badminton/skb/admin"> Cancel </a></div>
 		</button>
 	</div>
-	<div class="bpbody left"> 
-		<button class="accordionSizeCreateNewEvent left">
-			<div class="r33 left menubutton bgWhite">
-				<a href="/HooneyCRUD/badminton/skb/admin"> Save </a></div>
-		</button>
-	</div>
+
 	<div class="bpbody left"> 
 		<button class="accordionSizeCreateNewEvent">
 			<div class="r33 left menubutton bgWhite">
 				<a href="/HooneyCRUD/badminton/skb/admin"> Delete </a></div>
 		</button>
-	</div>
+	</div> -->
+	
+	
 	
 	<div class="space">EcofriendlyHooney</div>
 	<div class="copyright">Powered by EcofriendlyHooney</div>
 	<div class="copyright">© 2019 300605.com All rights reserved.</div>
 	
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight){
+	      panel.style.maxHeight = null;
+	    } else {
+	      panel.style.maxHeight = panel.scrollHeight + "px";
+	    } 
+	  });
+	}
+	</script>
 </body>
 
 </html>

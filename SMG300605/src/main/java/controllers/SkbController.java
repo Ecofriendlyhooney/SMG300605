@@ -48,10 +48,11 @@ public class SkbController {
 	}
 
 	/* SKB edit */
-	@RequestMapping(value = "/badminton/skb/admin/editskb/{id}")
-	public String edit(@PathVariable int id, Model m) {
-		Skb skb = skbdao.getSkbById(id);
-		m.addAttribute("command", skb);
+	@RequestMapping(value = "/badminton/skb/admin/editskb/{skb_event_id}")
+	public String edit(@PathVariable int skb_event_id, Model m) {
+		Skb skb = skbdao.getSkbById(skb_event_id);
+//		m.addAttribute("command", skb);
+		m.addAttribute("skb", skb);
 		return "skbeditform";
 	}
 

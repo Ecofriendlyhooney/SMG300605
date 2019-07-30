@@ -38,10 +38,21 @@ public class MainDao {
 	}
 
 	public int update(Skb p) {
-		String sql = "update skb_main set skb_event_title='" + p.getSkb_event_title() 
-		+ "' where skb_event_title=" + p.getSkb_event_title() + "";
-		//TODO need add more element filed
-		
+		String sql = "update skb_main set "
+				
+				+ "skb_event_title='" 
+				+ p.getSkb_event_title() + "',"
+				+ "skb_event_text_01='" 
+				+ p.getSkb_event_text_01() + "',"
+				+ "skb_event_text_02='" 
+				+ p.getSkb_event_text_02() + "',"
+				+ "skb_event_text_03='" 
+				+ p.getSkb_event_text_03() 
+				//TODO need add more element filed
+				
+		+ "' where skb_event_id=" + p.getSkb_event_id();
+		                                  
+
 		return template.update(sql);
 	}
 

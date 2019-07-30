@@ -61,7 +61,8 @@
 				<input type="text" name="skb_event_text_03" /><p>&nbsp;</p>
 			</div>
 			
-			<button class="button bgGreen left" name="cancel" onnclick="document.hisstory.back();">Cancel</button>
+<!-- 			<button class="button bgGreen left" name="cancel" onclick="document.hisstory.back();">Cancel</button> -->
+			<button class="button bgGreen left" name="cancel" onclick="/HooneyCRUD/badminton/skb/admin">Cancel</button>
 			<button class="button bgGreen">Save</button>
 		</form>
 		
