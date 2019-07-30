@@ -154,6 +154,9 @@
 	background-color: white;
 }
 
+.bgGreen {
+	background-color: #4CAF50; /* Green */
+}
 
 .r100 {
 	font-size: 1rem;
@@ -246,4 +249,17 @@
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
+}
+
+.button {
+	
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
 }

@@ -26,13 +26,12 @@
 		<property name="prefix" value="/WEB-INF/jsp/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
-
 	<bean id="ds"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver"></property>
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/spring"></property>
+			value="jdbc:mysql://localhost:3306/smg300605"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="admin"></property>
 	</bean>
@@ -44,5 +43,5 @@
 	<mvc:resources mapping="/resources/**"
 		location="/resources/skb/" cache-period="31556926" />
 	<mvc:annotation-driven />
-	
+
 </beans>

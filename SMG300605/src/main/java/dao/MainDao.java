@@ -22,8 +22,17 @@ public class MainDao {
 
 	/* ===== SKB =====*/ 
 	public int save(Skb p) {
-		String sql = "insert into skb_main(skb_event_title) values('" + 
-				p.getSkb_event_title() + "')";
+		String sql = "insert into skb_main"
+				+ "(skb_event_title,"
+				+ "skb_event_text_01,"
+				+ "skb_event_text_02,"
+				+ "skb_event_text_03"
+				+ ") values('" 
+				+ p.getSkb_event_title() + "','"
+				+ p.getSkb_event_text_01() + "','"
+				+ p.getSkb_event_text_02() + "','"
+				+ p.getSkb_event_text_03()
+				+ "')";
 		//TODO need add more element filed
 		return template.update(sql);
 	}
@@ -37,12 +46,12 @@ public class MainDao {
 	}
 
 	public int deleteSkb(int id) {
-		String sql = "delete from skb_main where id=" + id + "";
+		String sql = "delete from skb_main where skb_event_id=" + id + "";
 		return template.update(sql);
 	}
 
 	public Skb getSkbById(int id) {
-		String sql = "select * from skb_main where id=?";
+		String sql = "select * from skb_main where skb_event_id=?";
 		return template.queryForObject(sql, new Object[] { id }, new BeanPropertyRowMapper<Skb>(Skb.class));
 	}
 

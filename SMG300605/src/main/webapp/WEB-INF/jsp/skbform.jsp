@@ -46,52 +46,62 @@
 		</div>
 	</div>
 	<div class="space ">EcofriendlyHooney</div>
-	
-	<form action="save" method="post">
-	    <input type="text" name="skb_event_title" />
-	   <input type="submit" /> 
-	</form>
-	
-	<div class="bpbody left"> 
+
+		<form action="save" method="post">
+			<div class="">
+				 <input type="text" name="skb_event_title" /><p>&nbsp;</p>
+			</div>
+			<div class="">
+				 <input type="text" name="skb_event_text_01" /><p>&nbsp;</p>
+			</div>
+			<div class="">
+				 <input type="text" name="skb_event_text_02" /> <p>&nbsp;</p>
+			</div>
+			<div class="">
+				<input type="text" name="skb_event_text_03" /><p>&nbsp;</p>
+			</div>
+			
+			<button class="button bgGreen left" name="cancel" onnclick="document.hisstory.back();">Cancel</button>
+			<button class="button bgGreen">Save</button>
+		</form>
+		
+		
+<!-- 	<div class="bpbody left"> 
 		<button class="accordionSizeCreateNewEvent ">
 			<div class="r33 left menubutton bgWhite">
 				<a href="/HooneyCRUD/badminton/skb/admin"> Cancel </a></div>
 		</button>
 	</div>
-	<div class="bpbody left"> 
-		<button class="accordionSizeCreateNewEvent left">
-			<div class="r33 left menubutton bgWhite">
-			 
-				<a href="/HooneyCRUD/badminton/skb/admin"> Save </a></div>
-		</button>
-	</div>
+
 	<div class="bpbody left"> 
 		<button class="accordionSizeCreateNewEvent">
 			<div class="r33 left menubutton bgWhite">
 				<a href="/HooneyCRUD/badminton/skb/admin"> Delete </a></div>
 		</button>
-	</div>
+	</div> -->
+	
+	
 	
 	<div class="space">EcofriendlyHooney</div>
 	<div class="copyright">Powered by EcofriendlyHooney</div>
 	<div class="copyright">© 2019 300605.com All rights reserved.</div>
 	
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight){
+	      panel.style.maxHeight = null;
+	    } else {
+	      panel.style.maxHeight = panel.scrollHeight + "px";
+	    } 
+	  });
+	}
+	</script>
 </body>
 
 </html>
