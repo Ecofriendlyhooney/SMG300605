@@ -185,9 +185,9 @@ INSERT INTO skb_main(
   skb_event_text_03)
   
   VALUES(
-  "sugamo3" ,
-  "sugamo3_text_01" ,
-  "sugamo3_text_02" ,
+  "title お疲れ様" ,
+  "sugamo3_text_01様" ,
+  "sugamo3_text_02水" ,
   "sugamo3_text_03" 
   );
   

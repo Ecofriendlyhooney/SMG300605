@@ -46,19 +46,113 @@
 		</div>
 	</div>
 	<div class="space ">EcofriendlyHooney</div>
-
+			<button class="accordionSizeCreateNewEvent">	
+				<div class="oneUnit r90 left">
+					<div class="r20  left">
+						<div class=" ">
+							<nav> 
+							  <select> 
+							    <option value="" selected="selected">08/01</option> 
+							    <option value="">08/01</option> 
+							    <option value="">08/02</option> 
+							    <option value="">08/03</option> 
+							    <option value="">08/04</option> 
+							    <option value="">08/05</option> 
+							    <option value="">08/06</option> 
+							    <option value="">08/07</option> 
+							    <option value="">08/08</option> 
+							    <option value="">08/09</option> 
+							    <option value="">08/10</option> 
+							    <option value="">08/11</option> 
+							    <option value="">08/12</option> 
+							    <option value="">08/13</option> 
+							    <option value="">08/14</option> 
+							    <option value="">08/15</option> 
+							    <option value="">08/16</option> 
+							    <option value="">08/17</option> 
+							    <option value="">08/18</option> 
+							    <option value="">08/19</option> 
+							    <option value="">08/20</option> 
+							    <option value="">08/21</option> 
+							    <option value="">08/22</option> 
+							    
+							  </select> 
+							</nav>
+							
+						</div>
+						<div class=" ">Sun</div>
+					</div>
+					<div class= " r70">
+						<div class=" ">
+							<div class="r40 left ">
+								<nav> 
+								  <select> 
+								    <option value="" selected="selected">18:30</option> 
+								    <option value="">18:00</option> 
+								    <option value="">18:30</option> 
+								    <option value="">19:00</option> 
+								    <option value="">19:30</option> 
+								    <option value="">20:00</option> 
+								    <option value="">18:00</option> 
+								    <option value="">18:30</option> 
+								    <option value="">19:00</option> 
+								    <option value="">19:30</option> 
+								    <option value="">20:00</option> 
+								    <option value="">18:00</option> 
+								    <option value="">18:30</option> 
+								    <option value="">19:00</option> 
+								    <option value="">19:30</option> 
+								    <option value="">20:00</option> 
+								    <option value="">18:00</option> 
+								    <option value="">18:30</option> 
+								    <option value="">19:00</option> 
+								    <option value="">19:30</option> 
+								    <option value="">20:00</option> 
+								    <option value="">18:00</option> 
+								    <option value="">18:30</option> 
+								    <option value="">19:00</option> 
+								    <option value="">19:30</option> 
+								    <option value="">20:00</option> 
+								  </select> 
+								</nav>
+							</div>
+							<div class="r10 left "> ~ </div>
+							<div class="r35 left ">
+								<nav> 
+								  <select> 
+								    <option value="" selected="selected">21:30</option> 
+								    <option value="">21:00</option> 
+								    <option value="">21:30</option> 
+								    <option value="">22:00</option> 
+								    <option value="">22:30</option> 
+								    <option value="">23:00</option> 
+								  </select> 
+								</nav>
+							</div> 
+						</div>
+						<div class=" "> 
+							<div class="r40 left " >
+									SKB-title-default
+							</div>
+							<div class="r10 left "> ~ </div>
+							<div class="r35 left ">empty block</div> 
+					    </div>
+					</div>
+				</div>
+			 </button>
 		<form action="save" method="post">
-			<div class="">
-				 <input type="text" name="skb_event_title" /><p>&nbsp;</p>
+			
+			<div class="inputBorder ">
+				 skb_event_title<input type="text" name="skb_event_title" value="skb_event_title default"/>
 			</div>
-			<div class="">
-				 <input type="text" name="skb_event_text_01" /><p>&nbsp;</p>
+			<div class="inputBorder">
+				 skb_event_text_01<input type="text" name="skb_event_text_01" />
 			</div>
-			<div class="">
-				 <input type="text" name="skb_event_text_02" /> <p>&nbsp;</p>
+			<div class="inputBorder">
+				 skb_event_text_02<input type="text" name="skb_event_text_02" /> 
 			</div>
-			<div class="">
-				<input type="text" name="skb_event_text_03" /><p>&nbsp;</p>
+			<div class=inputBorder"">
+				skb_event_text_03<input type="text" name="skb_event_text_03" />
 			</div>
 			
 <!-- 			<button class="button bgGreen left" name="cancel" onclick="document.hisstory.back();">Cancel</button> -->

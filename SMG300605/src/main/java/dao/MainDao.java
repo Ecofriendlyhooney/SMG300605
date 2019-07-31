@@ -72,10 +72,23 @@ public class MainDao {
 				Skb e = new Skb();
 				e.setSkb_event_id(rs.getInt(1));
 				e.setSkb_event_title(rs.getString(2));
-				e.setSkb_event_text_01(rs.getString(3));
-				e.setSkb_event_text_02(rs.getString(4));
-				e.setSkb_event_text_03(rs.getString(5));
-							
+				e.setSkb_event_date(rs.getString(3));
+				e.setSkb_event_day(rs.getString(4));
+				e.setSkb_event_start_time(rs.getString(5));
+				e.setSkb_event_end_time(rs.getString(6));
+				e.setSkb_event_text_01(rs.getString(7));
+				e.setSkb_event_text_02(rs.getString(8));
+				e.setSkb_event_text_03(rs.getString(9));
+				e.setSkb_event_text_04(rs.getString(10));
+				e.setSkb_event_text_05(rs.getString(11));
+				e.setSkb_event_text_06(rs.getString(12));
+				e.setSkb_event_text_07(rs.getString(13));
+				e.setSkb_event_text_08(rs.getString(14));
+				e.setSkb_event_text_09(rs.getString(15));
+				e.setSkb_event_text_10(rs.getString(16));
+				
+				
+				  
 //				e.setId(rs.getInt(1));
 //				e.setName(rs.getString(2));
 				

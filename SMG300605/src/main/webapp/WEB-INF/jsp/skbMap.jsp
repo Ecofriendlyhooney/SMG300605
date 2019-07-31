@@ -26,8 +26,6 @@
 <meta property=”og:description” content=”schedule” />
 
 </head>
-
-
 <body>
 	<div class="menu bpHead">
 		<div class="bpHeadFirstLine"> 
@@ -40,15 +38,68 @@
 			<div class="r33 left menubutton bgWhite">
 				<a href="entrance">Home</a></div>
 			<div class="r33 left menubutton bgWhite">
-				<a href="skbweare">We are</a></div>
+				<a href="skbweare">About us</a></div>
 			<div class="r33 left menubutton bgGrey">
 				<a href="skbmap">Map</a></div>
 		</div>
 	</div>
 	
 	<div class="space ">EcofriendlyHooney</div>
-	SKB Map
+	SKB 活動場所案内
+
+	<div class="bpbody"> 
+		<!-- 	One Unit START -->
+			 <button class="accordion">	
+				<div class="oneUnit r90 left">
+					ikebukuro Map
+				</div>
+			 </button>
+			 <div class="panel">
+							<div>〒171-0021 東京都豊島区西池袋３丁目３−１４−３</div>
+							<div>
+								<a href="https://goo.gl/maps/B14LcdjAAvL2"
+									class="button button4">豊島区立池袋第三小学校 Google Map</a>
+							</div>
+							<img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_01.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_02.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_03.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_04.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_05.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_06.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_07.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_08.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_09.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_10.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_11.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_12.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_13.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_14.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_15.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_16.jpg"
+								width=100% height=auto loading="lazy" /> <img
+								src="https://storage.googleapis.com/skb-bucket/02_map/01_ikebukuro_3th_elementary_school/map_01_17.jpg"
+								width=100% height=auto loading="lazy" />
+						</div>
+		<!-- 	One Unit END -->			
+	</div>
 	
+
 </body>
 
 </html>

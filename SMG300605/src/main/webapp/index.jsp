@@ -57,6 +57,12 @@
 		<button class="button button4 bgGreen">Admin View</button>
 	</form>
 
+	<form action="/HooneyCRUD/badminton/skb/admin/skbform" method="get"
+		target="_blank">
+		<button class="button button4 bgGreen">Admin Create</button>
+	</form>
+
+
 </body>
 </html>
 

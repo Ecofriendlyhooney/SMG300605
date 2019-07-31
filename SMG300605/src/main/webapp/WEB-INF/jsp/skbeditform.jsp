@@ -53,20 +53,20 @@
 		<form:form method="POST" action="/HooneyCRUD/badminton/skb/admin/editsave">
 			
 			<div>
-				 <input type="hidden" name="skb_event_id" value="${skb.skb_event_id}" /> <p>&nbsp;</p>
+				 <input type="hidden" name="skb_event_id" value="${skb.skb_event_id}" /> 
 			</div>
 	
-			<div class="bgGreen">
-				 <input type="text" name="skb_event_title" value="${skb.skb_event_title}"/><p>&nbsp;</p>
+			<div class="inputBorder">
+				 <input type="text" name="skb_event_title" value="${skb.skb_event_title}"/>
 			</div>
-			<div class="bgGrey">
-				 <input type="text" name="skb_event_text_01" value="${skb.skb_event_text_01}"/><p>&nbsp;</p>
+			<div class="inputBorder">
+				 <input type="text" name="skb_event_text_01" value="${skb.skb_event_text_01}"/>
 			</div>
-			<div class="bgRed">
-				 <input type="text" name="skb_event_text_02" value="${skb.skb_event_text_02}"/> <p>&nbsp;</p>
+			<div class="inputBorder">
+				 <input type="text" name="skb_event_text_02" value="${skb.skb_event_text_02}"/> 
 			</div>
-			<div class="bgGreen">
-				<input type="text" name="skb_event_text_03" value="${skb.skb_event_text_03}"/><p>&nbsp;</p>
+			<div class="inputBorder">
+				<input type="text" name="skb_event_text_03" value="${skb.skb_event_text_03}"/>
 			</div>
 
 			<button class="button bgGreen">Edit Save</button>

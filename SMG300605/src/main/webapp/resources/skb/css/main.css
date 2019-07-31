@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.textAlignLeft {
+	text-align: left;
+}
+
 .menu {
 	overflow: hidden;
 	position: fixed;
@@ -13,6 +17,10 @@
 	width: 95.3%;
 /* 	padding-bottom: 25px;
 	border-bottom: 25px; */
+}
+.inputBorder {
+	border-width: 2px;
+	border-color: black;
 }
 
 .bpHeadFirstLine {
@@ -148,7 +156,7 @@
 	background-color: lightblue;
 }
 .bgGrey {
-	background-color: lightgrey;
+	background-color: lightGrey;
 }
 .bgWhite{
 	background-color: white;
@@ -214,16 +222,16 @@
 .accordionSizeCreateNewEvent {
 	background-color: #eee;
 	color: #444;
-	cursor: pointer;
+/* 	cursor: pointer; */
 	width: 100%;
 	border: none;
 	/* text-align: left; */
 	outline: none;
 	font-size: 15px;
-	transition: 0.4s;
+/* 	transition: 0.4s; */
 	margin-bottom: 0.5em;
     padding: 0.5em;
-    color:#32CD32
+    color:#444
 }
 
 .active, .accordion:hover {
@@ -262,4 +270,13 @@
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
+}
+
+nav select {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
 }

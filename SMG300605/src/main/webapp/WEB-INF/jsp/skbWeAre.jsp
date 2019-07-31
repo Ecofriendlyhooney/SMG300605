@@ -40,14 +40,32 @@
 			<div class="r33 left menubutton bgWhite">
 				<a href="entrance">Home</a></div>
 			<div class="r33 left menubutton bgGrey">
-				<a href="skbweare">We are</a></div>
+				<a href="skbweare">About us</a></div>
 			<div class="r33 left menubutton bgWhite">
 				<a href="skbmap">Map</a></div>
 		</div>
 	</div>
 	
 	<div class="space ">EcofriendlyHooney</div>
-	SKB We are
+	SKB 活動
+	<div class="content__wrapper">
+					<video width=100% height=auto loading="lazy" controls>
+						<source
+							src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/03_about_us/about_us_practice_movie_01.mp4"
+							type="video/mp4">
+					</video>
+					<image
+						src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/03_about_us/about_us_01.jpg"
+						width=100% height=auto loading="lazy" /> <image
+						src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/03_about_us/about_us_02.jpg"
+						width=100% height=auto loading="lazy" /> <image
+						src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/03_about_us/about_us_03.jpg"
+						width=100% height=auto loading="lazy" /> <image
+						src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/03_about_us/about_us_04.jpg"
+						width=100% height=auto loading="lazy" /> <image
+						src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/03_about_us/about_us_05.jpg"
+						width=100% height=auto loading="lazy" /> 
+	</div>
 
 	
 </body>

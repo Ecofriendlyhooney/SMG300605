@@ -40,41 +40,52 @@
 			<div class="r33 left menubutton bgGrey">
 				<a href="entrance">Home</a></div>
 			<div class="r33 left menubutton bgWhite">
-				<a href="skbweare">We are</a></div>
+				<a href="skbweare">About us</a></div>
 			<div class="r33 left menubutton bgWhite">
 				<a href="skbmap">Map</a></div>
 		</div>
 	</div>
 	
 	<div class="space ">EcofriendlyHooney</div>
-	
+
 	<div class="bpbody"> 
 		<c:forEach var="skb" items="${list}">
 		<!-- 	One Unit START -->
 			 <button class="accordion">	
 				<div class="oneUnit r90 left">
 					<div class="r20  left">
-						<div class=" ">${skb.skb_event_id}</div>
-						<div class=" ">TBD</div>
+						<div class=" ">${skb.skb_event_date}</div>
+						<div class=" ">${skb.skb_event_day}</div>
 					</div>
 					<div class= " r70">
 						<div class=" ">
-							<div class="r40 left ">18:99</div>
+							<div class="r40 left ">${skb.skb_event_start_time}</div>
 							<div class="r10 left "> ~ </div>
-							<div class="r35 left ">21:99</div> 
+							<div class="r35 left ">${skb.skb_event_end_time}</div> 
 						</div>
-						<div class=" "> -blank
-							<div class="r40 left ">${skb.skb_event_title}</div>
-							<div class="r10 left "> ~ </div>
-							<div class="r35 left ">TBD</div> 
+						<div class=" "> 
+							<div class="r40 left " style="text-align:center;" >${skb.skb_event_title}</div>
+							<!-- <div class="r10 left "></div>
+							<div class="r35 left "></div>  -->
 					    </div>
 					</div>
 				</div>
 			 </button>
+			 
 			<div class="panel">
 				<div>${skb.skb_event_text_01}</div>
 		  		<div>${skb.skb_event_text_02}</div>
 		  		<div>${skb.skb_event_text_03}</div>
+		  		<div>${skb.skb_event_text_04}</div>
+		  		<div>${skb.skb_event_text_05}</div>
+		  		<div>${skb.skb_event_text_06}</div>
+		  		<div>${skb.skb_event_text_07}</div>
+		  		<div>${skb.skb_event_text_08}</div>
+		  		<div>${skb.skb_event_text_09}</div>
+		  		<div>${skb.skb_event_text_10}</div>
+		  		<div>
+					<a href="https://line.me/ti/p/m8cLZndgKg">https://line.me/ti/p/m8cLZndgKg</a>
+				</div>
 			</div> 
 		<!-- 	One Unit END -->	
 		</c:forEach>
