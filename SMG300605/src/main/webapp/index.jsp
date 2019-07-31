@@ -54,21 +54,8 @@
 	
 	<form action="/HooneyCRUD/badminton/skb/admin" method="get"
 		target="_blank">
-		<button class="button button4 bgRed">Admin View</button>
+		<button class="button button4 bgGreen">Admin View</button>
 	</form>
-	
-	<form action="/HooneyCRUD/badminton/skb/admin/skbform" method="get"
-		target="_blank">
-		<button class="button button4">Add SKB schedule</button>
-	</form>
-	<form action="/HooneyCRUD/dance/tse/entrance" method="get"
-		target="_blank">
-		<button class="button button4">TSE Public entrance</button>
-	</form>
-	<form action="/HooneyCRUD/dance/tse/admin" method="get" target="_blank">
-		<button class="button button4">TSE Admin View</button>
-	</form>
-
 
 </body>
 </html>
