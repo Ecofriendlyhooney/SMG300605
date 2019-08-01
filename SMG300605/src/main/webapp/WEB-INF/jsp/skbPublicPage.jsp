@@ -9,13 +9,19 @@
 <html class="bg-color" xmlns:og="http://ogp.me/ns#">
 
 <head>
-<%--    <link  href="<c:url value="/resources/css/main.css" />" rel="stylesheet"> --%>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-145004692-1');
+	</script>
+
    <link  href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
-<%--    <script src="<c:url value="/resources/js/main.js" />"></script> --%>
-   <%-- <script src="<c:url value="/resources/js/jquery-3.4.1.js" />"></script> --%>
+   <script src="/resources/js/main.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
-<title>SKB 2019年</title>
+<title>SKB</title>
 <%-- <link rel="stylesheet" type="text/css"  href="${pageContext.request.contextPath}/WEB-INF/css/style.css">  --%>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,13 +40,13 @@
 			<img class="left"
 			src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/01_icon/badminton.png" alt=""
 			style="width: 35px; height: 35px;">
-			<div class="fontSize_150 text_align_center">SKB badminton</div>
+			<div class="fontSize_200 text_align_center">SKB badminton</div>
 		</div>
 		<div class="bpHeadSecondLine"> 
 			<div class="r33 left menubutton bgGrey">
 				<a href="entrance">Home</a></div>
 			<div class="r33 left menubutton bgWhite">
-				<a href="skbweare">About us</a></div>
+				<a href="skbaboutus">About us</a></div>
 			<div class="r33 left menubutton bgWhite">
 				<a href="skbmap">Map</a></div>
 		</div>
@@ -48,11 +54,11 @@
 	
 	<div class="space ">EcofriendlyHooney</div>
 
-	<div class="bpbody"> 
+	<div> 
 		<c:forEach var="skb" items="${list}">
 		<!-- 	One Unit START -->
 			 <button class="accordion">	
-				<div class="oneUnit r90 left">
+				<div class="r90 left">
 					<div class="r20  left">
 						<div class=" ">${skb.skb_event_date}</div>
 						<div class=" ">${skb.skb_event_day}</div>
@@ -85,32 +91,37 @@
 		  		<div>${skb.skb_event_text_10}</div>
 		  		<div>
 					<a href="https://line.me/ti/p/m8cLZndgKg">https://line.me/ti/p/m8cLZndgKg</a>
-				</div>
+				</div><br/>
+				
 			</div> 
 		<!-- 	One Unit END -->	
 		</c:forEach>
 	</div>
 	
 	<div class="space">EcofriendlyHooney</div>
-	<div class="copyright">Powered by EcofriendlyHooney</div>
+	<div class="copyright">Powered by Ecofriendly Hooney</div>
 	<div class="copyright">© 2019 300605.com All rights reserved.</div>
 	
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight){
+	      panel.style.maxHeight = null;
+	    } else {
+	      panel.style.maxHeight = panel.scrollHeight + "px";
+	    } 
+	  });
+	}
+	</script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145004692-1"></script>
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
 </body>
 
 </html>

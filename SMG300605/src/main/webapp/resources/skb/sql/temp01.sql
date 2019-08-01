@@ -18,6 +18,7 @@ CREATE TABLE skb_main (
   skb_event_text_08 varchar(20),
   skb_event_text_09 varchar(20),
   skb_event_text_10 varchar(20),
+  skb_event_flag varchar(5) NOT NULL,
   PRIMARY KEY (`skb_event_id`)
   );
   
@@ -37,7 +38,8 @@ INSERT INTO skb_main(
   skb_event_text_07 ,
   skb_event_text_08 ,
   skb_event_text_09 ,
-  skb_event_text_10
+  skb_event_text_10 ,
+  skb_event_flag
   )
   
   VALUES(
@@ -55,5 +57,6 @@ INSERT INTO skb_main(
   "SKB代表 秀星(しゅうせい) " ,
   "09081174283" ,
   "LINEID: ma_ko_to_o" ,
-  ""
+  "",
+  "ready"
   );

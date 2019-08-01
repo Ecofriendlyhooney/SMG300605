@@ -25,10 +25,10 @@ public class SkbController {
 		return "skbPublicPage";
 	}
 	
-	/* SKB we are */
-	@RequestMapping("/badminton/skb/skbweare")
-	public String skbWeAre() {
-		return "skbWeAre";
+	/* SKB about us */
+	@RequestMapping("/badminton/skb/skbaboutus")
+	public String skbAboutUs() {
+		return "skbAboutUs";
 	}
 	
 	/* SKB Map */
