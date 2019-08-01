@@ -22,16 +22,40 @@ public class MainDao {
 
 	/* ===== SKB =====*/ 
 	public int save(Skb p) {
-		String sql = "insert into skb_main"
+		String sql = "INSERT INTO skb_main"
 				+ "(skb_event_title,"
+				+ "skb_event_date,"
+				+ "skb_event_day,"
+				+ "skb_event_start_time,"
+				+ "skb_event_end_time,"
 				+ "skb_event_text_01,"
 				+ "skb_event_text_02,"
-				+ "skb_event_text_03"
-				+ ") values('" 
-				+ p.getSkb_event_title() + "','"
-				+ p.getSkb_event_text_01() + "','"
-				+ p.getSkb_event_text_02() + "','"
-				+ p.getSkb_event_text_03()
+				+ "skb_event_text_03,"
+				+ "skb_event_text_04,"
+				+ "skb_event_text_05,"
+				+ "skb_event_text_06,"
+				+ "skb_event_text_07,"
+				+ "skb_event_text_08,"
+				+ "skb_event_text_09,"
+				+ "skb_event_text_10,"
+				+ "skb_event_flag"
+				+ ") VALUES ('" 
+				+ p.getSkb_event_title()      + "','"
+				+ p.getSkb_event_date()       + "','"
+				+ p.getSkb_event_day()        + "','"
+				+ p.getSkb_event_start_time() + "','"
+				+ p.getSkb_event_end_time()   + "','"
+				+ p.getSkb_event_text_01()    + "','"
+				+ p.getSkb_event_text_02()    + "','"
+				+ p.getSkb_event_text_03()    + "','"
+				+ p.getSkb_event_text_04()    + "','"
+				+ p.getSkb_event_text_05()    + "','"
+				+ p.getSkb_event_text_06()    + "','"
+				+ p.getSkb_event_text_07()    + "','"
+				+ p.getSkb_event_text_08()    + "','"
+				+ p.getSkb_event_text_09()    + "','"
+				+ p.getSkb_event_text_10()    + "','"
+				+ "ready"
 				+ "')";
 		//TODO need add more element filed
 		return template.update(sql);
@@ -42,17 +66,37 @@ public class MainDao {
 				
 				+ "skb_event_title='" 
 				+ p.getSkb_event_title() + "',"
+				+ "skb_event_date='"
+				+ p.getSkb_event_date() + "',"
+				+ "skb_event_day='"
+				+ p.getSkb_event_day() + "',"
+				+ "skb_event_start_time='"
+				+ p.getSkb_event_start_time() + "',"
+				+ "skb_event_end_time='"
+				+ p.getSkb_event_end_time() + "',"
 				+ "skb_event_text_01='" 
 				+ p.getSkb_event_text_01() + "',"
 				+ "skb_event_text_02='" 
 				+ p.getSkb_event_text_02() + "',"
 				+ "skb_event_text_03='" 
-				+ p.getSkb_event_text_03() 
-				//TODO need add more element filed
+				+ p.getSkb_event_text_03() + "',"
+				+ "skb_event_text_04='" 
+				+ p.getSkb_event_text_04() + "',"
+				+ "skb_event_text_05='" 
+				+ p.getSkb_event_text_05() + "',"
+				+ "skb_event_text_06='" 
+				+ p.getSkb_event_text_06() + "',"
+				+ "skb_event_text_07='" 
+				+ p.getSkb_event_text_07() + "',"
+				+ "skb_event_text_08='" 
+				+ p.getSkb_event_text_08() + "',"
+				+ "skb_event_text_09='" 
+				+ p.getSkb_event_text_09() + "',"
+				+ "skb_event_text_10='" 
+				+ p.getSkb_event_text_10() 
 				
 		+ "' where skb_event_id=" + p.getSkb_event_id();
-		                                  
-
+		                           
 		return template.update(sql);
 	}
 
@@ -87,40 +131,21 @@ public class MainDao {
 				e.setSkb_event_text_09(rs.getString(15));
 				e.setSkb_event_text_10(rs.getString(16));
 				
-				
-				  
-//				e.setId(rs.getInt(1));
-//				e.setName(rs.getString(2));
-				
-//				e.setEvent_schedule_id(rs.getInt(1));
-//				e.setEvent_place_id(rs.getString(2));
-//				e.setEvent_date(rs.getDate(3));
-//				e.setEvent_time_start(rs.getTime(4));
-//				e.setEvent_time_end(rs.getTime(5));
-//				e.setEvent_schedule_delete_flag(rs.getString(6));
-//				e.setEvent_schedule_text_01(rs.getString(7));
-//				e.setEvent_schedule_text_02(rs.getString(8));
-//				e.setEvent_schedule_text_03(rs.getString(9));
-//				e.setEvent_schedule_text_04(rs.getString(10));
-//				e.setEvent_schedule_text_05(rs.getString(11));
-//				e.setEvent_schedule_text_06(rs.getString(12));
-//				e.setEvent_schedule_text_07(rs.getString(13));
-//				e.setEvent_schedule_text_08(rs.getString(14));
-//				e.setEvent_schedule_text_09(rs.getString(15));
-//				e.setEvent_schedule_text_10(rs.getString(16));
-//				e.setCreated_timestamp(rs.getTimestamp(17));
-//				e.setUpdated_timestamp(rs.getTimestamp(18));
-//				e.setCreated_by(rs.getString(19));
-//				e.setUpdated_by(rs.getString(20));
-//				e.setEvent_view_count(rs.getInt(21));
-//				e.setParticipants_yes(rs.getString(22));
-//				e.setParticipants_no(rs.getString(23));
-//				e.setParticipants_cancelled(rs.getString(24));
-
 				return e;
 			}
 		});
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
     /* ===== TSE =====*/ 
 	public int save(Tse p) {

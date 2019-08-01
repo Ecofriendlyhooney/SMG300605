@@ -23,6 +23,8 @@ public class Skb {
 	private String skb_event_text_08;
 	private String skb_event_text_09;
 	private String skb_event_text_10;
+	private String skb_event_flag;
+
 
 	public int getSkb_event_id() {
 		return skb_event_id;
@@ -120,34 +122,12 @@ public class Skb {
 	public void setSkb_event_text_10(String skb_event_text_10) {
 		this.skb_event_text_10 = skb_event_text_10;
 	}
-	
-	  
-	  
-//	private int event_schedule_id;
-//	private String event_place_id;
-//	private Date event_date;
-//	private Time event_time_start;
-//	private Time event_time_end;
-//	private String event_schedule_delete_flag;
-//	private String event_schedule_text_01;
-//	private String event_schedule_text_02;
-//	private String event_schedule_text_03;
-//	private String event_schedule_text_04;
-//	private String event_schedule_text_05;
-//	private String event_schedule_text_06;
-//	private String event_schedule_text_07;
-//	private String event_schedule_text_08;
-//	private String event_schedule_text_09;
-//	private String event_schedule_text_10;
-//	private Timestamp created_timestamp;
-//	private Timestamp updated_timestamp;
-//	private String created_by;
-//	private String updated_by;
-//	private int event_view_count;
-//	private String participants_yes;
-//	private String participants_no;
-//	private String participants_cancelled;
-	
+	public String getSkb_event_flag() {
+		return skb_event_flag;
+	}
+	public void setSkb_event_flag(String skb_event_flag) {
+		this.skb_event_flag = skb_event_flag;
+	}
 
 
 }

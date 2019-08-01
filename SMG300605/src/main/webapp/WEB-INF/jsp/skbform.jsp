@@ -9,14 +9,12 @@
 <html class="bg-color" xmlns:og="http://ogp.me/ns#">
 
 <head>
-<%--    <link  href="<c:url value="/resources/css/main.css" />" rel="stylesheet"> --%>
+
    <link  href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
-<%--    <script src="<c:url value="/resources/js/main.js" />"></script> --%>
-   <%-- <script src="<c:url value="/resources/js/jquery-3.4.1.js" />"></script> --%>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
 <title>SKB 2019年</title>
-<%-- <link rel="stylesheet" type="text/css"  href="${pageContext.request.contextPath}/WEB-INF/css/style.css">  --%>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property=”og:title” content=”SKB Badminton” />
@@ -36,17 +34,21 @@
 			style="width: 35px; height: 35px;">
 			<div class="fontSize_150 text_align_center">Syusei Admin Create</div>
 		</div>
-		<div class="bpHeadSecondLine"> 
+<!-- 		<div class="bpHeadSecondLine"> 
 			<div class="r33 left menubutton bgGrey">
 				<a href="">Create</a></div>
 			<div class="r33 left menubutton bgWhite">
 				<a href="">====</a></div>
 			<div class="r33 left menubutton bgWhite">
 				<a href="">====</a></div>
-		</div>
+		</div> -->
 	</div>
+	
 	<div class="space ">EcofriendlyHooney</div>
-			<button class="accordionSizeCreateNewEvent">	
+	
+			<!-- TODO Roll Select Button -->
+	
+			<!-- <button class="accordionSizeCreateNewEvent">	
 				<div class="oneUnit r90 left">
 					<div class="r20  left">
 						<div class=" ">
@@ -139,43 +141,88 @@
 					    </div>
 					</div>
 				</div>
-			 </button>
-		<form action="save" method="post">
-			
-			<div class="inputBorder ">
-				 skb_event_title<input type="text" name="skb_event_title" value="skb_event_title default"/>
-			</div>
-			<div class="inputBorder">
-				 skb_event_text_01<input type="text" name="skb_event_text_01" />
-			</div>
-			<div class="inputBorder">
-				 skb_event_text_02<input type="text" name="skb_event_text_02" /> 
-			</div>
-			<div class=inputBorder"">
-				skb_event_text_03<input type="text" name="skb_event_text_03" />
-			</div>
-			
-<!-- 			<button class="button bgGreen left" name="cancel" onclick="document.hisstory.back();">Cancel</button> -->
-			<button class="button bgGreen left" name="cancel" onclick="/HooneyCRUD/badminton/skb/admin">Cancel</button>
-			<button class="button bgGreen">Save</button>
-		</form>
+			 </button> -->
 		
+	<div class=" left r90" style="padding-left:2rem; padding-right:3rem">
 		
-<!-- 	<div class="bpbody left"> 
-		<button class="accordionSizeCreateNewEvent ">
-			<div class="r33 left menubutton bgWhite">
-				<a href="/HooneyCRUD/badminton/skb/admin"> Cancel </a></div>
-		</button>
+		<div class="r50  left">
+			<form:form method="POST" action="/HooneyCRUD/badminton/skb/admin/save">
+				<div class="fontSize_100">
+					 <input type="text" name="skb_event_title" value="title"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_date" value="date"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_day" value="mon"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_start_time" value="19:00"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_end_time" value="21:30"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_01" value="text01"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_02" value="text02"/>
+				</div>
+				<div class="inputBorder">
+					<input type="text" name="skb_event_text_03" value="text03"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_04" value="text04"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_05" value="text05"/>
+				</div>
+				<div class="inputBorder">
+					<input type="text" name="skb_event_text_06" value="text06"/>
+				</div>
+				<div class="inputBorder">
+					<input type="text" name="skb_event_text_07" value="text07"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_08" value="text08"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_09" value="text09"/>
+				</div>
+				<div class="inputBorder">
+					<input type="text" name="skb_event_text_10" value="text10"/>
+				</div>
+				<button class="button bgGreen">Save</button>
+			</form:form>
+		</div>
+		<div class="r40  left fontSize_100">
+		  <div >title</div>
+		  <div>日付</div>
+		  <div>何曜日</div>
+		  <div>start_time</div>
+		  <div>end_time</div>
+		  <div>text_01</div>
+		  <div>text_02</div>
+		  <div>text_03</div>
+		  <div>text_04</div>
+		  <div>text_05</div>
+		  <div>text_06</div>
+		  <div>text_07</div>
+		  <div>text_08</div>
+		  <div>text_09</div>
+		  <div>text_10</div>
+		</div>
+		<!-- <div class="r20"></div> -->
 	</div>
-
-	<div class="bpbody left"> 
-		<button class="accordionSizeCreateNewEvent">
-			<div class="r33 left menubutton bgWhite">
-				<a href="/HooneyCRUD/badminton/skb/admin"> Delete </a></div>
-		</button>
-	</div> -->
 	
-	
+	<div class=" left r90" style="padding-left:2rem; padding-right:3rem; padding-bottom:10rem">
+		<div>
+			<form action="/HooneyCRUD/badminton/skb/admin" method="get">
+				<button class="button bgGreen left ">Cancel</button>
+			</form>
+		</div>
+	</div>
+			
 	
 	<div class="space">EcofriendlyHooney</div>
 	<div class="copyright">Powered by EcofriendlyHooney</div>

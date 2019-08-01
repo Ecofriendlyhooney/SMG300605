@@ -21,11 +21,11 @@
    <script src="/resources/js/main.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
-<title>SKB</title>
+<title>SKB </title>
 <%-- <link rel="stylesheet" type="text/css"  href="${pageContext.request.contextPath}/WEB-INF/css/style.css">  --%>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property=”og:title” content=”SKB Badminton” />
+<meta property=”og:title” content=”SKB 2019年 8月" />
 <meta property=”og:image”
 	content=”https://storage.googleapis.com/skb_files/badminton.png“ />
 <meta property=”og:image:width” content="200" />

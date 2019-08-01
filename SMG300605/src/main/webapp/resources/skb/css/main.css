@@ -108,6 +108,12 @@
 .r40 {
 	width: 40%;
 }
+.r50 {
+	width: 50%;
+}
+.r90 {
+	width: 90%;
+}
 
 .yellow {
 	border-style: solid;
@@ -185,6 +191,9 @@
 	/* 	background-color: white; */
 	text-align: center;
 	font-size: 1.5rem
+}
+.fontSize_100 {
+	font-size: 1rem;
 }
 
 .fontSize_150 {
@@ -269,6 +278,13 @@
 	margin: 4px 2px;
 	cursor: pointer;
 }
+
+.inputBox {
+	border-style: solid;
+	border-width: 1px;
+	border-color: green; 
+}
+
 
 .button1 {border-radius: 2px;}
 .button2 {border-radius: 4px;}

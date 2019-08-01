@@ -109,7 +109,7 @@
 
 				<!-- ikebukuro_toshima_elementary_school -->
 				<button class="accordion ">
-					<div class="r90 left">池袋 (豊島区立池袋小学校) 案内<</div>
+					<div class="r90 left">池袋 (豊島区立池袋小学校) 案内</div>
 				</button>
 				
 				<div class="panel">
@@ -153,7 +153,7 @@
 
 				<!--  ootsuka_west_sugamo_middle_schoole -->
 				<button class="accordion ">
-					<div class="r90 left">大塚 (西巣鴨中学校) 案内<</div>
+					<div class="r90 left">大塚 (西巣鴨中学校) 案内</div>
 				</button>
 				
 				<div class="panel">

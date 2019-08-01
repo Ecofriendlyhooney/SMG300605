@@ -29,76 +29,115 @@
 </head>
 
 <body>
- 
-<h1>Users List</h1>  
-  
-
 	<div class="menu bpHead">
 		<div class="bpHeadFirstLine"> 
 			<img class="left"
 			src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/01_icon/badminton.png" alt=""
 			style="width: 35px; height: 35px;">
-			<div class="fontSize_150 text_align_center">Syusei Admin Edit</div>
+			<div class="fontSize_200 text_align_center">Syusei Admin Edit</div>
 		</div>
-		<div class="bpHeadSecondLine"> 
+<!-- 		<div class="bpHeadSecondLine"> 
 			<div class="r33 left menubutton bgWhite">
-				<a href="">====</a></div>
+				<a>Create</a></div>
 			<div class="r33 left menubutton bgGrey">
-				<a href="">====</a></div>
+				<a>Edit</a></div>
 			<div class="r33 left menubutton bgWhite">
-				<a href="">====</a></div>
-		</div>
+				<a>View</a></div>
+		</div> -->
 	</div>
 	<div class="space" >EcofriendlyHooney</div>
-		<form:form method="POST" action="/HooneyCRUD/badminton/skb/admin/editsave">
-			
-			<div>
-				 <input type="hidden" name="skb_event_id" value="${skb.skb_event_id}" /> 
-			</div>
 	
-			<div class="inputBorder">
-				 <input type="text" name="skb_event_title" value="${skb.skb_event_title}"/>
-			</div>
-			<div class="inputBorder">
-				 <input type="text" name="skb_event_text_01" value="${skb.skb_event_text_01}"/>
-			</div>
-			<div class="inputBorder">
-				 <input type="text" name="skb_event_text_02" value="${skb.skb_event_text_02}"/> 
-			</div>
-			<div class="inputBorder">
-				<input type="text" name="skb_event_text_03" value="${skb.skb_event_text_03}"/>
-			</div>
-
-			<button class="button bgGreen">Edit Save</button>
-		</form:form>
-
-		<form action="/HooneyCRUD/badminton/skb/admin" method="get">
-			<button class="button bgGreen ">Cancel</button>
-		</form>
-	
-			<button class="button bgGreen ">
-			     <a href="/HooneyCRUD/badminton/skb/admin/deleteskb/${skb.skb_event_id}">Delete</a>	
-			</button>
-
-
+	<div class=" left r90" style="padding-left:2rem; padding-right:3rem">
 		
-<!-- 	<div class="bpbody left"> 
-		<button class="accordionSizeCreateNewEvent ">
-			<div class="r33 left menubutton bgWhite">
-				<a href="/HooneyCRUD/badminton/skb/admin"> Cancel </a></div>
-		</button>
+		<div class="r50  left">
+			<form:form method="POST" action="/HooneyCRUD/badminton/skb/admin/editsave">
+				<div class="fontSize_100">
+					 <input type="hidden" name="skb_event_id" value="${skb.skb_event_id}" /> 
+				</div>
+				<div class="fontSize_100">
+					 <input type="text" name="skb_event_title" value="${skb.skb_event_title}"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_date" value="${skb.skb_event_date}"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_day" value="${skb.skb_event_day}"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_start_time" value="${skb.skb_event_start_time}"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_end_time" value="${skb.skb_event_end_time}"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_01" value="${skb.skb_event_text_01}"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_02" value="${skb.skb_event_text_02}"/> 
+				</div>
+				<div class="inputBorder">
+					<input type="text" name="skb_event_text_03" value="${skb.skb_event_text_03}"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_04" value="${skb.skb_event_text_04}"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_05" value="${skb.skb_event_text_05}"/> 
+				</div>
+				<div class="inputBorder">
+					<input type="text" name="skb_event_text_06" value="${skb.skb_event_text_06}"/>
+				</div>
+				<div class="inputBorder">
+					<input type="text" name="skb_event_text_07" value="${skb.skb_event_text_07}"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_08" value="${skb.skb_event_text_08}"/>
+				</div>
+				<div class="inputBorder">
+					 <input type="text" name="skb_event_text_09" value="${skb.skb_event_text_09}"/> 
+				</div>
+				<div class="inputBorder">
+					<input type="text" name="skb_event_text_10" value="${skb.skb_event_text_10}"/>
+				</div>
+				<button class="button bgGreen">Edit Save</button>
+			</form:form>
+		</div>
+		<div class="r40  left fontSize_100">
+		  <div >title</div>
+		  <div>日付</div>
+		  <div>何曜日</div>
+		  <div>start_time</div>
+		  <div>end_time</div>
+		  <div>text_01</div>
+		  <div>text_02</div>
+		  <div>text_03</div>
+		  <div>text_04</div>
+		  <div>text_05</div>
+		  <div>text_06</div>
+		  <div>text_07</div>
+		  <div>text_08</div>
+		  <div>text_09</div>
+		  <div>text_10</div>
+		</div>
+		<!-- <div class="r20"></div> -->
 	</div>
-
-	<div class="bpbody left"> 
-		<button class="accordionSizeCreateNewEvent">
-			<div class="r33 left menubutton bgWhite">
-				<a href="/HooneyCRUD/badminton/skb/admin"> Delete </a></div>
-		</button>
-	</div> -->
+	
+	<div class=" left r90" style="padding-left:2rem; padding-right:3rem; padding-bottom:10rem">
+		<div>
+			<form action="/HooneyCRUD/badminton/skb/admin" method="get">
+				<button class="button bgGreen left ">Cancel</button>
+			</form>
+		</div>
+		<div>
+			<button class="button bgGreen left">
+				<a href="/HooneyCRUD/badminton/skb/admin/deleteskb/${skb.skb_event_id}">Delete</a>	
+			</button>
+		</div>
+	</div>
 	
 	
 	
-	<div class="space">EcofriendlyHooney</div>
+<!-- 	<div class="space">EcofriendlyHooney</div>  -->
 	<div class="copyright">Powered by EcofriendlyHooney</div>
 	<div class="copyright">© 2019 300605.com All rights reserved.</div>
 	
