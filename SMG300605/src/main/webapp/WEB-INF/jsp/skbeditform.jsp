@@ -1,7 +1,11 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%-- <%@ include file="/WEB-INF/css/style.css"%> --%>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*"%>
+<% request.setCharacterEncoding("UTF-8"); %>
+
+
+
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
 <!DOCTYPE html>
@@ -16,8 +20,8 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
 <title>SKB 2019年</title>
-<%-- <link rel="stylesheet" type="text/css"  href="${pageContext.request.contextPath}/WEB-INF/css/style.css">  --%>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property=”og:title” content=”SKB Badminton” />
 <meta property=”og:image”
@@ -50,7 +54,7 @@
 	<div class=" left r90" style="padding-left:2rem; padding-right:3rem">
 		
 		<div class="r50  left">
-			<form:form method="POST" action="/HooneyCRUD/badminton/skb/admin/editsave">
+			<form:form method="POST" action="/300605.com/badminton/skb/admin/editsave">
 				<div class="fontSize_100">
 					 <input type="hidden" name="skb_event_id" value="${skb.skb_event_id}" /> 
 				</div>
@@ -124,13 +128,13 @@
 	
 	<div class=" left r90" style="padding-left:2rem; padding-right:3rem; padding-bottom:10rem">
 		<div>
-			<form action="/HooneyCRUD/badminton/skb/admin" method="get">
+			<form action="/300605.com/badminton/skb/admin" method="get">
 				<button class="button bgGreen left ">Cancel</button>
 			</form>
 		</div>
 		<div>
 			<button class="button bgGreen left">
-				<a href="/HooneyCRUD/badminton/skb/admin/deleteskb/${skb.skb_event_id}">Delete</a>	
+				<a href="/300605.com/badminton/skb/admin/deleteskb/${skb.skb_event_id}">Delete</a>	
 			</button>
 		</div>
 	</div>
