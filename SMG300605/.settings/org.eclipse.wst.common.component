@@ -11,7 +11,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
                 
         <property name="java-output-path" value="/SpringMVCCRUDSimple/target/classes"/>
-        <property name="context-root" value="SMG300605"/>
+        <property name="context-root" value="300605.com"/>
             
     </wb-module>
     

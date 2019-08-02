@@ -69,7 +69,7 @@ public class SkbController {
 		m.addAttribute("command", new Skb());
 		return "skbform";
 	}
-
+	
 	/* SKB update */
 	@RequestMapping(value = "/badminton/skb/admin/editsave", method = RequestMethod.POST)
 	public String editsave(@ModelAttribute("skb") Skb skb) {
