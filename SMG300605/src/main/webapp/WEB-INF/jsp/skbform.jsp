@@ -146,7 +146,7 @@
 	<div class=" left r90" style="padding-left:2rem; padding-right:3rem">
 		
 		<div class="r50  left">
-			<form:form method="POST" action="/HooneyCRUD/badminton/skb/admin/save">
+			<form:form method="POST" action="/300605.com/badminton/skb/admin/save">
 				<div class="fontSize_100">
 					 <input type="text" name="skb_event_title" value="title"/>
 				</div>
@@ -217,7 +217,7 @@
 	
 	<div class=" left r90" style="padding-left:2rem; padding-right:3rem; padding-bottom:10rem">
 		<div>
-			<form action="/HooneyCRUD/badminton/skb/admin" method="get">
+			<form action="/300605.com/badminton/skb/admin" method="get">
 				<button class="button bgGreen left ">Cancel</button>
 			</form>
 		</div>
