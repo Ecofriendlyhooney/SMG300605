@@ -24,7 +24,7 @@
 [x] SKB map page : accordion Activate
 [x] SKB map page : accordiong + button Align
 
-[ ] add August Link to appspot July 2019
+[x] add August Link to appspot July 2019 (mvn appengine_deploy)
 
 [x] nifty html backup
 [ ] GCP Stack Driver setting
