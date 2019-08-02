@@ -47,17 +47,17 @@
 </head>
 
 <body>
-	<form action="/HooneyCRUD/badminton/skb/entrance" method="get"
+	<form action="/300605.com/badminton/skb/entrance" method="get"
 		target="_blank">
 		<button class="button button4 bgGreen">Public entrance</button>
 	</form>
 	
-	<form action="/HooneyCRUD/badminton/skb/admin" method="get"
+	<form action="/300605.com/badminton/skb/admin" method="get"
 		target="_blank">
 		<button class="button button4 bgGreen">Admin View</button>
 	</form>
 
-	<form action="/HooneyCRUD/badminton/skb/admin/skbform" method="get"
+	<form action="/300605.com/badminton/skb/admin/skbform" method="get"
 		target="_blank">
 		<button class="button button4 bgGreen">Admin Create</button>
 	</form>
