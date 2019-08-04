@@ -71,7 +71,7 @@
 	background-color: white;
 	/* width: 100%; */
 	text-align: center;
-	font-size: 1.3rem;
+	/* font-size: 1.3rem; */
 	overflow: auto;
 }
 
@@ -108,11 +108,26 @@
 .r40 {
 	width: 40%;
 }
+
 .r50 {
 	width: 50%;
 }
+
+.r80 {
+	width: 80%;
+}
+
+.r85 {
+	width: 85%;
+}
+
 .r90 {
 	width: 90%;
+}
+
+.r100 {
+	font-size: 1rem;
+	width: 100%;
 }
 
 .yellow {
@@ -144,15 +159,6 @@
 	border-width: 2px;
 	border-color: brown;
 }
-
-.r80 {
-	width: 80%;
-}
-
-.r90 {
-	width: 90%;
-}
-
 .bgYellow {
 	background-color: yellow;
 }
@@ -166,20 +172,13 @@
 .bgWhite{
 	background-color: white;
 }
-
 .bgGreen {
 	background-color: #4CAF50; /* Green */
-}
-
-.r100 {
-	font-size: 1rem;
-	width: 100%;
 }
 
 .left {
 	float: left;
 }
-
 .center {
 	float: center;
 }
@@ -190,8 +189,17 @@
 	padding-bottom: 3%; 
 	/* 	background-color: white; */
 	text-align: center;
-	font-size: 1.5rem
+	/* font-size: 1.5rem */
 }
+
+.centerBlock {
+	margin-left: auto;
+    margin-right: auto;
+    width: 3em
+}
+
+    
+    
 .fontSize_100 {
 	font-size: 1rem;
 }
@@ -202,6 +210,18 @@
 .fontSize_200 {
 	font-size: 2rem;
 }
+.fontSize_250 {
+	font-size: 2.5rem;
+}
+
+.fontSize_300 {
+	font-size: 3rem;
+}
+
+.textImportant {
+	important;
+}
+
 .text_align_center{
 	text-align: center;
 }
@@ -292,6 +312,7 @@
 .button4 {border-radius: 12px;}
 .button5 {border-radius: 50%;}
 
+
 nav select {
   display: none;
 }
@@ -299,4 +320,8 @@ nav select {
 @media (max-width: 960px) {
   nav ul     { display: none; }
   nav select { display: inline-block; }
+}
+
+::placeholder {
+  color: red;
 }
