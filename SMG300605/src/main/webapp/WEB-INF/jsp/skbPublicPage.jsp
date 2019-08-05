@@ -2,6 +2,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page import = "java.io.*,java.util.*" %>
+<%@ page import = "javax.servlet.*,java.text.*" %>
 
 <!DOCTYPE html>
 
@@ -17,6 +19,7 @@
 
 	gtag('config', 'UA-145004692-1');
 </script>
+
 <!--  -->
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 
@@ -65,8 +68,9 @@
 			<button class="accordion">
 				<div class="r90 left">
 					<div class="r20  left" >
-						<div class=" ">${skb.skb_event_date}</div>
-						<div class=" ">${skb.skb_event_day}</div>
+						<div class=" " >
+						${skb.skb_event_date}</div>
+						<div class=" " >${skb.skb_event_day}</div>
 					</div>
 					<div class=" r70">
 						<div class=" ">
@@ -82,6 +86,9 @@
 			</button>
 
 			<div class="panel">
+				<div>
+					
+				</div>
 				<div>${skb.skb_event_text_01}</div>
 				<div>${skb.skb_event_text_02}</div>
 				<div>${skb.skb_event_text_03}</div>

@@ -47,6 +47,13 @@ public class SkbController {
 		return "skbAdminPage";
 	}
 
+	/* SKB create */
+	@RequestMapping("/badminton/skb/admin/skbform")
+	public String showform(Model m) {
+		m.addAttribute("command", new Skb());
+		return "skbform";
+	}
+	
 	/* SKB edit */
 	@RequestMapping(value = "/badminton/skb/admin/editskb/{skb_event_id}")
 	public String edit(@PathVariable int skb_event_id, Model m) {
@@ -63,17 +70,17 @@ public class SkbController {
 		return "redirect:/badminton/skb/admin";
 	}
 
-	/* SKB create */
-	@RequestMapping("/badminton/skb/admin/skbform")
-	public String showform(Model m) {
-		m.addAttribute("command", new Skb());
-		return "skbform";
-	}
-	
 	/* SKB update */
 	@RequestMapping(value = "/badminton/skb/admin/editsave", method = RequestMethod.POST)
 	public String editsave(@ModelAttribute("skb") Skb skb) {
 		skbdao.update(skb);
+		return "redirect:/badminton/skb/admin";
+	}
+	
+	/* SKB logical Delete */
+	@RequestMapping(value = "/badminton/skb/admin/logicDeleteskb/{id}", method = RequestMethod.POST)
+	public String logicaldelete(@ModelAttribute("skb") Skb skb) {
+		skbdao.logicDelete(skb);
 		return "redirect:/badminton/skb/admin";
 	}
 

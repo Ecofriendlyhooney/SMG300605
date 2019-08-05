@@ -1,10 +1,13 @@
 
 -- GCP SKB main create Minimum START
 -- Begining of skb
+
+--skb_event_date varchar(5),
 CREATE TABLE skb_main (
   skb_event_id int(10) NOT NULL AUTO_INCREMENT,
   skb_event_title varchar(18) NOT NULL,
-  skb_event_date varchar(5),
+  skb_event_date Date NOT NULL,
+  
   skb_event_day varchar(3),
   skb_event_start_time varchar(5),
   skb_event_end_time varchar(5),
@@ -44,11 +47,11 @@ INSERT INTO skb_main(
   
   VALUES(
   "池袋 第三小学校" ,
-  "08/13" ,
+  "2019-08-12" ,
   "火曜日" ,
   "18:30" ,
   "21:30" ,
-  "" ,
+  "★" ,
   "詳細はLINEお願いします。" ,
   "参加費は600円です(*^^*)" ,
   "★★★★★★★★★★★★★" ,
@@ -65,4 +68,12 @@ INSERT INTO skb_main(
    skb_event_day='日曜日' 
    where skb_event_id=1;
    
+   update skb_main
+   set skb_event_flag='ready'
+   where skb_event_id=9;
+
+   select *
+   from skb_main
+   where skb_event_flag='ready'
+   order by skb_event_date asc;
    

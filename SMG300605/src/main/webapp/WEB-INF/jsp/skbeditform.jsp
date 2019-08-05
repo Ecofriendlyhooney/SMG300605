@@ -14,12 +14,7 @@
 <title>SKB 2019年</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property=”og:title” content=”SKB” />
-<meta property=”og:image”
-	content=”https://storage.googleapis.com/skb_files/badminton.png“ />
-<meta property=”og:image:width” content="200" />
-<meta property=”og:image:height” content="100" />
-<meta property=”og:description” content=”schedule” />
+
 </head>
 
 <body>
@@ -44,66 +39,78 @@
 				</div>
 				<div class="fontSize_100">
 					<input type="text" name="skb_event_title" maxlength="18"
-						value="${skb.skb_event_title}" />
+						value="${skb.skb_event_title}" placeholder="Event Title"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_date" maxlength="5"
-						value="${skb.skb_event_date}" />
+						value="${skb.skb_event_date}" placeholder="2019-08-30"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_day" maxlength="3"
-						value="${skb.skb_event_day}" />
+						value="${skb.skb_event_day}" placeholder="Mon"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_start_time" maxlength="5"
-						value="${skb.skb_event_start_time}" />
+						value="${skb.skb_event_start_time}" placeholder="18:30"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_end_time" maxlength="5"
-						value="${skb.skb_event_end_time}" />
+						value="${skb.skb_event_end_time}" placeholder="21:30"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_01" maxlength="20"
-						value="${skb.skb_event_text_01}" />
+						value="${skb.skb_event_text_01}" placeholder="Text Input 01"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_02" maxlength="20"
-						value="${skb.skb_event_text_02}" />
+						value="${skb.skb_event_text_02}" placeholder="Text Input 02"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_03" maxlength="20"
-						value="${skb.skb_event_text_03}" />
+						value="${skb.skb_event_text_03}" placeholder="Text Input 03"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_04" maxlength="20"
-						value="${skb.skb_event_text_04}" />
+						value="${skb.skb_event_text_04}" placeholder="Text Input 04"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_05" maxlength="20"
-						value="${skb.skb_event_text_05}" />
+						value="${skb.skb_event_text_05}" placeholder="Text Input 05"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_06" maxlength="20"
-						value="${skb.skb_event_text_06}" />
+						value="${skb.skb_event_text_06}" placeholder="Text Input 06"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_07" maxlength="20"
-						value="${skb.skb_event_text_07}" />
+						value="${skb.skb_event_text_07}" placeholder="Text Input 07"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_08" maxlength="20"
-						value="${skb.skb_event_text_08}" />
+						value="${skb.skb_event_text_08}" placeholder="Text Input 08"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_09" maxlength="20"
-						value="${skb.skb_event_text_09}" />
+						value="${skb.skb_event_text_09}" placeholder="Text Input 09"/>
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_10" maxlength="20"
-						value="${skb.skb_event_text_10}" />
+						value="${skb.skb_event_text_10}" placeholder="Text Input 10"/>
 				</div>
 				<button class="button bgGreen">Edit Save</button>
 			</form:form>
+			
+			
+			<form:form method="POST"
+				action="/300605.com/badminton/skb/admin/logicDeleteskb/${skb.skb_event_id}">
+				<div class="fontSize_100">
+					<input type="hidden" name="skb_event_id" 
+						value="${skb.skb_event_id}" />
+				</div>
+				<button class="button bgGreen">Logical Delete</button>
+			</form:form>
+			
+			
 		</div>
 		<div class="r40  left fontSize_100">
 			<div>title</div>
@@ -133,13 +140,10 @@
 		</div>
 		<div>
 			<button class="button bgGreen left">
-				<a
-					href="/300605.com/badminton/skb/admin/deleteskb/${skb.skb_event_id}">Delete</a>
+				<a href="/300605.com/badminton/skb/admin/deleteskb/"${skb.skb_event_id}">Permenent Delete</a>
 			</button>
 		</div>
 	</div>
-
-
 
 	<!-- 	<div class="space">EcofriendlyHooney</div>  -->
 	<div class="copyright">Powered by EcofriendlyHooney</div>

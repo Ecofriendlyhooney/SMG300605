@@ -28,10 +28,25 @@
 
 [x] nifty html backup
 [ ] GCP Stack Driver setting
-[ ] Google analytics Setting
+[x] Google analytics Setting
 [ ] GCP Batch : Clone tab - SKB event activate flag update batch
 [ ] GCP Bitnami : bash shell - (delete ROOT folder/ delete ROOT.war/ mv ROOT.war /./catalina.sh stop/start 
 
-[ ] SKB EDIT Button CSS apply
-[ ] VM instance rearrangement (skb-test-cloud, skb-cloud => smg300605 instance)
-[ ] VM instance remove (skb-test-cloud, skb-cloud) Due to bill
+[ ] SKB EDIT Button CSS apply]
+
+[X] VM instance rearrangement 
+[X] old skb-test-cloud, skb-cloud VM => smg300605 instance
+[X] JSP URL reference amend
+[X] updated JSP release
+[X] old VM Shutdown   (skb-test-cloud, skb-cloud) Due to bill
+[X] SQL select function (+ where flag="") 
+[X] SQL Logical detele function => logical delete (update flag)
+[X] SQL order by Date (ascending order)
+[X] JSP place holder
+[X] JSP validator- Max length
+[ ] SQL timestamp CRUD function - event date
+[ ] SQL timestamp CRUD function - event time
+
+
+
+

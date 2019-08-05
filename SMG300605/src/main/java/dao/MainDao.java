@@ -100,6 +100,13 @@ public class MainDao {
 		return template.update(sql);
 	}
 
+	public int logicDelete(Skb p) {
+		String sql = "update skb_main "
+				+ "set skb_event_flag='old'"
+				+ "where skb_event_id=" + p.getSkb_event_id();                        
+		return template.update(sql);
+	}
+	
 	public int deleteSkb(int id) {
 		String sql = "delete from skb_main where skb_event_id=" + id + "";
 		return template.update(sql);
@@ -111,12 +118,12 @@ public class MainDao {
 	}
 
 	public List<Skb> getSkbSchedule() {
-		return template.query("select * from skb_main", new RowMapper<Skb>() {
+		return template.query("select * from skb_main where skb_event_flag='ready' order by skb_event_date asc", new RowMapper<Skb>() {
 			public Skb mapRow(ResultSet rs, int row) throws SQLException {
 				Skb e = new Skb();
 				e.setSkb_event_id(rs.getInt(1));
 				e.setSkb_event_title(rs.getString(2));
-				e.setSkb_event_date(rs.getString(3));
+				e.setSkb_event_date(rs.getString(3).substring(5, 7) + "/"+rs.getString(3).substring(8,10));
 				e.setSkb_event_day(rs.getString(4));
 				e.setSkb_event_start_time(rs.getString(5));
 				e.setSkb_event_end_time(rs.getString(6));
