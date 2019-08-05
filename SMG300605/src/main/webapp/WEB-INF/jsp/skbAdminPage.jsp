@@ -29,7 +29,7 @@
 	<div class="menu bpHead">
 		<div class="bpHeadFirstLine">
 			<img class="left"
-				src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/01_icon/badminton.png"
+				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
 				alt="" style="width: 35px; height: 35px;">
 			<div class="fontSize_200"
 				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen">Syusei

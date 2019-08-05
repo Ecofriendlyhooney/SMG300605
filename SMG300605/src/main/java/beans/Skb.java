@@ -7,7 +7,6 @@ import java.util.Date;
 // SKB 
 public class Skb {
 	private int skb_event_id;
-	
 	private String skb_event_title;
 	private String skb_event_date;
 	private String skb_event_day;
@@ -24,8 +23,7 @@ public class Skb {
 	private String skb_event_text_09;
 	private String skb_event_text_10;
 	private String skb_event_flag;
-
-
+	
 	public int getSkb_event_id() {
 		return skb_event_id;
 	}

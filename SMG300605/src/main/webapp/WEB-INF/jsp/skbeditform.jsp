@@ -14,14 +14,26 @@
 <title>SKB 2019年</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+  
 </head>
 
 <body>
 	<div class="menu bpHead">
 		<div class="bpHeadFirstLine">
 			<img class="left"
-				src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/01_icon/badminton.png"
+				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
 				alt="" style="width: 35px; height: 35px;">
 			<div class="fontSize_200 text_align_center">Syusei Admin Edit</div>
 		</div>
@@ -42,13 +54,12 @@
 						value="${skb.skb_event_title}" placeholder="Event Title"/>
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_date" maxlength="5"
-						value="${skb.skb_event_date}" placeholder="2019-08-30"/>
+					<input type="text" id="datepicker" name="skb_event_date" value="${skb.skb_event_date}" maxlength="10" placeholder="click "/>
 				</div>
-				<div class="inputBorder">
-					<input type="text" name="skb_event_day" maxlength="3"
-						value="${skb.skb_event_day}" placeholder="Mon"/>
-				</div>
+				<%-- <div class="inputBorder">
+					<input type="text" id="datepicker" name="skb_event_date"
+						value="${skb.skb_event_date}" placeholder="click "/>
+				</div> --%>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_start_time" maxlength="5"
 						value="${skb.skb_event_start_time}" placeholder="18:30"/>
@@ -115,7 +126,6 @@
 		<div class="r40  left fontSize_100">
 			<div>title</div>
 			<div>日付</div>
-			<div>何曜日</div>
 			<div>start_time</div>
 			<div>end_time</div>
 			<div>text_01</div>
@@ -138,9 +148,9 @@
 				<button class="button bgGreen left ">Cancel</button>
 			</form>
 		</div>
-		<div>
+		<div>	
 			<button class="button bgGreen left">
-				<a href="/300605.com/badminton/skb/admin/deleteskb/"${skb.skb_event_id}">Permenent Delete</a>
+				<a href="/300605.com/badminton/skb/admin/deleteskb/${skb.skb_event_id}">Permenent Delete</a>
 			</button>
 		</div>
 	</div>

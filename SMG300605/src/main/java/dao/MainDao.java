@@ -4,6 +4,8 @@ import java.security.Timestamp;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -25,7 +27,7 @@ public class MainDao {
 		String sql = "INSERT INTO skb_main"
 				+ "(skb_event_title,"
 				+ "skb_event_date,"
-				+ "skb_event_day,"
+				
 				+ "skb_event_start_time,"
 				+ "skb_event_end_time,"
 				+ "skb_event_text_01,"
@@ -41,8 +43,8 @@ public class MainDao {
 				+ "skb_event_flag"
 				+ ") VALUES ('" 
 				+ p.getSkb_event_title()      + "','"
-				+ p.getSkb_event_date()       + "','"
-				+ p.getSkb_event_day()        + "','"
+				+ p.getSkb_event_date().substring(6,10) + "-" + p.getSkb_event_date().substring(0,2) + "-" + p.getSkb_event_date().substring(3,5) + "','"
+				
 				+ p.getSkb_event_start_time() + "','"
 				+ p.getSkb_event_end_time()   + "','"
 				+ p.getSkb_event_text_01()    + "','"
@@ -67,9 +69,7 @@ public class MainDao {
 				+ "skb_event_title='" 
 				+ p.getSkb_event_title() + "',"
 				+ "skb_event_date='"
-				+ p.getSkb_event_date() + "',"
-				+ "skb_event_day='"
-				+ p.getSkb_event_day() + "',"
+				+ p.getSkb_event_date().substring(6,10) + "-" + p.getSkb_event_date().substring(0,2) + "-" + p.getSkb_event_date().substring(3,5) + "',"
 				+ "skb_event_start_time='"
 				+ p.getSkb_event_start_time() + "',"
 				+ "skb_event_end_time='"
@@ -120,11 +120,12 @@ public class MainDao {
 	public List<Skb> getSkbSchedule() {
 		return template.query("select * from skb_main where skb_event_flag='ready' order by skb_event_date asc", new RowMapper<Skb>() {
 			public Skb mapRow(ResultSet rs, int row) throws SQLException {
+				SimpleDateFormat simpleDateformat = new SimpleDateFormat("E"); 
 				Skb e = new Skb();
 				e.setSkb_event_id(rs.getInt(1));
 				e.setSkb_event_title(rs.getString(2));
 				e.setSkb_event_date(rs.getString(3).substring(5, 7) + "/"+rs.getString(3).substring(8,10));
-				e.setSkb_event_day(rs.getString(4));
+				e.setSkb_event_day(simpleDateformat.format(rs.getDate(3)));
 				e.setSkb_event_start_time(rs.getString(5));
 				e.setSkb_event_end_time(rs.getString(6));
 				e.setSkb_event_text_01(rs.getString(7));
@@ -142,6 +143,8 @@ public class MainDao {
 			}
 		});
 	}
+	
+
 	
 	
 	

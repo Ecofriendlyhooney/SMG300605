@@ -5,6 +5,7 @@
 <%@ page import = "java.io.*,java.util.*" %>
 <%@ page import = "javax.servlet.*,java.text.*" %>
 
+
 <!DOCTYPE html>
 
 <html class="bg-color" xmlns:og="http://ogp.me/ns#">
@@ -70,7 +71,8 @@
 					<div class="r20  left" >
 						<div class=" " >
 						${skb.skb_event_date}</div>
-						<div class=" " >${skb.skb_event_day}</div>
+						<div class=" " >
+						${skb.skb_event_day}</div>
 					</div>
 					<div class=" r70">
 						<div class=" ">

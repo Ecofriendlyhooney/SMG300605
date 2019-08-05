@@ -13,10 +13,43 @@
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet"
+	href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+
+<script>
+	$(function() {
+		$("#datepicker").datepicker();
+	});
+	
+	$(document).ready(function(){
+	    $('input.timepicker').timepicker({});
+	});
+</script>
+
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+<script>
+$('.timepicker').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 60,
+    minTime: '10',
+    maxTime: '6:00pm',
+    defaultTime: '11',
+    startTime: '10:00',
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+});
+</script>	
 <title>SKB Create</title>
 
 <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -25,18 +58,11 @@
 	<div class="menu bpHead">
 		<div class="bpHeadFirstLine">
 			<img class="left"
-				src="https://storage.googleapis.com/skb-bucket/03_contents_gallery/01_icon/badminton.png"
+				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
 				alt="" style="width: 35px; height: 35px;">
 			<div class="fontSize_150 text_align_center">Syusei Admin Create</div>
 		</div>
-		<!-- 		<div class="bpHeadSecondLine"> 
-			<div class="r33 left menubutton bgGrey">
-				<a href="">Create</a></div>
-			<div class="r33 left menubutton bgWhite">
-				<a href="">====</a></div>
-			<div class="r33 left menubutton bgWhite">
-				<a href="">====</a></div>
-		</div> -->
+
 	</div>
 
 	<div class="space ">EcofriendlyHooney</div>
@@ -142,51 +168,70 @@
 
 		<div class="r50  left">
 			<form:form method="POST"
-				action="/300605.com/badminton/skb/admin/save" >
+				action="/300605.com/badminton/skb/admin/save">
 				<div class="fontSize_100">
-					<input type="text" name="skb_event_title" value="池袋" maxlength="18" placeholder="ex) Event Title"/>
+					<input type="text" name="skb_event_title" value="池袋" maxlength="18"
+						placeholder="ex) Event Title" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_date" value="2019-08-30" maxlength="10" placeholder="ex) 2019-08-30"/>
+					<input type="text" id="datepicker" name="skb_event_date" value=""
+						maxlength="10" placeholder="click " />
+				</div>
+
+				<div class="inputBorder">
+					<input type="text" id="timepicker" name="skb_event_start_time" value="" 
+					maxlength="3" placeholder="click" /> 
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_day" value="火曜日" maxlength="3" placeholder="ex) Mon"/>
+					<input type="text" name="skb_event_end_time" value="21:30"
+						maxlength="5" placeholder="ex) 21:30" />
+				</div>
+
+
+				<div class="inputBorder">
+					<input type="text" name="skb_event_text_01" value="" maxlength="20"
+						placeholder="Text Input 01" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_start_time" value="19:00" maxlength="3" placeholder="ex) 18:30"/>
+					<input type="text" name="skb_event_text_02" value="詳細はLINEお願いします。"
+						maxlength="20" placeholder="Text Input 02" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_end_time" value="21:30" maxlength="5" placeholder="ex) 21:30"/>
+					<input type="text" name="skb_event_text_03"
+						value="参加費は600円です(*^^*)" maxlength="20"
+						placeholder="Text Input 03" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_text_01" value="" maxlength="20" placeholder="Text Input 01"/>
+					<input type="text" name="skb_event_text_04"
+						value="参加費は600円です(*^^*)" maxlength="20"
+						placeholder="Text Input 04" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_text_02" value="詳細はLINEお願いします。" maxlength="20" placeholder="Text Input 02"/>
+					<input type="text" name="skb_event_text_05"
+						value="ご不明点あれば代表までご連絡ください" maxlength="20"
+						placeholder="Text Input 05" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_text_03" value="参加費は600円です(*^^*)" maxlength="20" placeholder="Text Input 03" />
+					<input type="text" name="skb_event_text_06"
+						value="よろしくお願いします(*^^)♪" maxlength="20"
+						placeholder="Text Input 06" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_text_04" value="参加費は600円です(*^^*)" maxlength="20" placeholder="Text Input 04" />
+					<input type="text" name="skb_event_text_07" value="SKB代表 秀星(しゅうせい)"
+						maxlength="20" placeholder="Text Input 07" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_text_05" value="ご不明点あれば代表までご連絡ください" maxlength="20" placeholder="Text Input 05" />
+					<input type="text" name="skb_event_text_08" value="09081174283"
+						maxlength="20" placeholder="Text Input 08" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_text_06" value="よろしくお願いします(*^^)♪" maxlength="20" placeholder="Text Input 06" />
+					<input type="text" name="skb_event_text_09" value="" maxlength="20"
+						placeholder="Text Input 09" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_text_07" value="SKB代表 秀星(しゅうせい)" maxlength="20" placeholder="Text Input 07" />
-				</div>
-				<div class="inputBorder">
-					<input type="text" name="skb_event_text_08" value="09081174283" maxlength="20" placeholder="Text Input 08" />
-				</div>
-				<div class="inputBorder">
-					<input type="text" name="skb_event_text_09" value="" maxlength="20" placeholder="Text Input 09" />
-				</div>
-				<div class="inputBorder">
-					<input type="text" name="skb_event_text_10" value="LINEID: ma_ko_to_o" maxlength="20" placeholder="Text Input 10" />
+					<input type="text" name="skb_event_text_10"
+						value="LINEID: ma_ko_to_o" maxlength="20"
+						placeholder="Text Input 10" />
 				</div>
 				<button class="button bgGreen">Save</button>
 			</form:form>
@@ -194,7 +239,6 @@
 		<div class="r40  left fontSize_100">
 			<div>title</div>
 			<div>日付</div>
-			<div>何曜日</div>
 			<div>start_time</div>
 			<div>end_time</div>
 			<div>text_01</div>
