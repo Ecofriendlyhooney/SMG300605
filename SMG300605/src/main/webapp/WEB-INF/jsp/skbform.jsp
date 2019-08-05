@@ -26,22 +26,36 @@
 		$("#datepicker").datepicker();
 	});
 	
-	$(document).ready(function(){
-	    $('input.timepicker').timepicker({});
+	$(function(){
+	    $("#timepicker1").timepicker();
+	});
+	$(function(){
+	    $("#timepicker2").timepicker();
 	});
 </script>
 
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 <script>
-$('.timepicker').timepicker({
+$('#timepicker1').timepicker({
     timeFormat: 'h:mm p',
-    interval: 60,
-    minTime: '10',
-    maxTime: '6:00pm',
-    defaultTime: '11',
-    startTime: '10:00',
-    dynamic: false,
+    interval: 30,
+    minTime: '09:00',
+    maxTime: '23:30',
+    defaultTime: '18:30',
+    startTime: '09:00',
+    dynamic: true,
+    dropdown: true,
+    scrollbar: true
+});
+$('#timepicker2').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 30,
+    minTime: '09:00',
+    maxTime: '23:30',
+    defaultTime: '18:30',
+    startTime: '09:00',
+    dynamic: true,
     dropdown: true,
     scrollbar: true
 });
@@ -67,103 +81,6 @@ $('.timepicker').timepicker({
 
 	<div class="space ">EcofriendlyHooney</div>
 
-	<!-- TODO Roll Select Button -->
-
-	<!-- <button class="accordionSizeCreateNewEvent">	
-				<div class="oneUnit r90 left">
-					<div class="r20  left">
-						<div class=" ">
-							<nav> 
-							  <select> 
-							    <option value="" selected="selected">08/01</option> 
-							    <option value="">08/01</option> 
-							    <option value="">08/02</option> 
-							    <option value="">08/03</option> 
-							    <option value="">08/04</option> 
-							    <option value="">08/05</option> 
-							    <option value="">08/06</option> 
-							    <option value="">08/07</option> 
-							    <option value="">08/08</option> 
-							    <option value="">08/09</option> 
-							    <option value="">08/10</option> 
-							    <option value="">08/11</option> 
-							    <option value="">08/12</option> 
-							    <option value="">08/13</option> 
-							    <option value="">08/14</option> 
-							    <option value="">08/15</option> 
-							    <option value="">08/16</option> 
-							    <option value="">08/17</option> 
-							    <option value="">08/18</option> 
-							    <option value="">08/19</option> 
-							    <option value="">08/20</option> 
-							    <option value="">08/21</option> 
-							    <option value="">08/22</option> 
-							    
-							  </select> 
-							</nav>
-							
-						</div>
-						<div class=" ">Sun</div>
-					</div>
-					<div class= " r70">
-						<div class=" ">
-							<div class="r40 left ">
-								<nav> 
-								  <select> 
-								    <option value="" selected="selected">18:30</option> 
-								    <option value="">18:00</option> 
-								    <option value="">18:30</option> 
-								    <option value="">19:00</option> 
-								    <option value="">19:30</option> 
-								    <option value="">20:00</option> 
-								    <option value="">18:00</option> 
-								    <option value="">18:30</option> 
-								    <option value="">19:00</option> 
-								    <option value="">19:30</option> 
-								    <option value="">20:00</option> 
-								    <option value="">18:00</option> 
-								    <option value="">18:30</option> 
-								    <option value="">19:00</option> 
-								    <option value="">19:30</option> 
-								    <option value="">20:00</option> 
-								    <option value="">18:00</option> 
-								    <option value="">18:30</option> 
-								    <option value="">19:00</option> 
-								    <option value="">19:30</option> 
-								    <option value="">20:00</option> 
-								    <option value="">18:00</option> 
-								    <option value="">18:30</option> 
-								    <option value="">19:00</option> 
-								    <option value="">19:30</option> 
-								    <option value="">20:00</option> 
-								  </select> 
-								</nav>
-							</div>
-							<div class="r10 left "> ~ </div>
-							<div class="r35 left ">
-								<nav> 
-								  <select> 
-								    <option value="" selected="selected">21:30</option> 
-								    <option value="">21:00</option> 
-								    <option value="">21:30</option> 
-								    <option value="">22:00</option> 
-								    <option value="">22:30</option> 
-								    <option value="">23:00</option> 
-								  </select> 
-								</nav>
-							</div> 
-						</div>
-						<div class=" "> 
-							<div class="r40 left " >
-									SKB-title-default
-							</div>
-							<div class="r10 left "> ~ </div>
-							<div class="r35 left ">empty block</div> 
-					    </div>
-					</div>
-				</div>
-			 </button> -->
-
 	<div class=" left r90" style="padding-left: 2rem; padding-right: 3rem">
 
 		<div class="r50  left">
@@ -175,19 +92,16 @@ $('.timepicker').timepicker({
 				</div>
 				<div class="inputBorder">
 					<input type="text" id="datepicker" name="skb_event_date" value=""
-						maxlength="10" placeholder="click " />
-				</div>
-
-				<div class="inputBorder">
-					<input type="text" id="timepicker" name="skb_event_start_time" value="" 
-					maxlength="3" placeholder="click" /> 
+						maxlength="10" placeholder="click (Date)" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_end_time" value="21:30"
-						maxlength="5" placeholder="ex) 21:30" />
+					<input type="text" id="timepicker1" name="skb_event_start_time" value="start" 
+						maxlength="5" placeholder="click (start Time)" /> 
 				</div>
-
-
+				<div class="inputBorder">
+					<input type="text" id="timepicker2" name="skb_event_end_time" value="end"
+						maxlength="5" placeholder="click (finish Time)" />
+				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_01" value="" maxlength="20"
 						placeholder="Text Input 01" />

@@ -46,7 +46,8 @@
 [X] JSP validator- Max length
 [ ] SQL timestamp CRUD function - event date
 [ ] SQL timestamp CRUD function - event time
-
+[X] TIME Picker https://timepicker.co/
+[X] Date Picker
 
 
 
