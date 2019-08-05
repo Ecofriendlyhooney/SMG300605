@@ -20,7 +20,7 @@
 </script>
 <!--  -->
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
-<script src="/resources/js/main.js"></script>
+
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!--  -->
@@ -85,7 +85,15 @@
 			src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/03_about_us/about_us_05.jpg"
 			width=100% height=auto loading="lazy" />
 	</div>
-
+	
+	<div class="space">EcofriendlyHooney</div>
+	<div class="copyright">Powered by Ecofriendly Hooney</div>
+	<div class="copyright">© 2019 300605.com All rights reserved.</div>
+	
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-145004692-1"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 
 </body>
 

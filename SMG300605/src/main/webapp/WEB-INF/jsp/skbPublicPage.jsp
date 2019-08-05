@@ -19,7 +19,7 @@
 </script>
 <!--  -->
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
-<script src="/resources/js/main.js"></script>
+
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!--  -->
@@ -47,9 +47,9 @@
 		</div>
 		
 		<div class="bpHeadSecondLine"> 
-			<div class="r33 left menubutton bgWhite">
-				<a href="entrance">Home</a></div>
 			<div class="r33 left menubutton bgGrey">
+				<a href="entrance">Home</a></div>
+			<div class="r33 left menubutton bgWhite">
 				<a href="skbaboutus">SKB</a></div>
 			<div class="r33 left menubutton bgWhite">
 				<a href="skbmap">Map</a></div>

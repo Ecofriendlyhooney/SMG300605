@@ -20,7 +20,7 @@
 </script>
 <!--  -->
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
-<script src="/resources/js/main.js"></script>
+
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!--  -->
@@ -49,10 +49,10 @@
 			<div class="r33 left menubutton bgWhite">
 				<a href="entrance">Home</a>
 			</div>
-			<div class="r33 left menubutton bgGrey">
+			<div class="r33 left menubutton bgWhite">
 				<a href="skbaboutus">SKB</a>
 			</div>
-			<div class="r33 left menubutton bgWhite">
+			<div class="r33 left menubutton bgGrey">
 				<a href="skbmap">Map</a>
 			</div>
 		</div>
@@ -195,7 +195,7 @@
 		</div>
 
 	</div>
-	</div>
+
 	<div class="space">EcofriendlyHooney</div>
 	<div class="copyright">Powered by Ecofriendly Hooney</div>
 	<div class="copyright">© 2019 300605.com All rights reserved.</div>
@@ -216,7 +216,10 @@
 			});
 		}
 	</script>
-
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-145004692-1"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 </body>
 
 </html>
