@@ -9,12 +9,26 @@
 <html class="bg-color" xmlns:og="http://ogp.me/ns#">
 
 <head>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-145004692-1');
+</script>
+
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<script
+	src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js">
+</script>
+
 <link rel="stylesheet"
 	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet"
 	href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
@@ -70,7 +84,7 @@
 			<img class="left"
 				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
 				alt="" style="width: 35px; height: 35px;">
-			<div class="fontSize_200"
+			<div class="fontSize_100"
 				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen">Syusei
 				Admin Edit</div>
 		</div>
@@ -153,11 +167,13 @@
 
 			<form:form method="POST"
 				action="/300605.com/badminton/skb/admin/logicDeleteskb/${skb.skb_event_id}">
-				<div class="fontSize_100">
+				<div class="fontSize_100 left">
 					<input type="hidden" name="skb_event_id"
 						value="${skb.skb_event_id}" />
 				</div>
-				<button class="button bgGreen">Logical Delete</button>
+				<button class="button" id="bgRed">
+					Delete
+				</button>
 			</form:form>
 
 
@@ -187,13 +203,13 @@
 				<button class="button bgGreen left ">Cancel</button>
 			</form>
 		</div>
-		<div>
+<%-- 		<div>
 			<button class="button bgGreen left">
 				<a
 					href="/300605.com/badminton/skb/admin/deleteskb/${skb.skb_event_id}">Permenent
 					Delete</a>
 			</button>
-		</div>
+		</div> --%>
 	</div>
 
 	<!-- 	<div class="space">EcofriendlyHooney</div>  -->
@@ -216,6 +232,10 @@
 			});
 		}
 	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-145004692-1"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 </body>
 
 </html>

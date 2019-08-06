@@ -162,7 +162,9 @@
 .bgYellow {
 	background-color: yellow;
 }
-
+#bgRed {
+	background-color: red;
+}
 .bgBlue {
 	background-color: lightblue;
 }

@@ -8,21 +8,29 @@
 <html class="bg-color" xmlns:og="http://ogp.me/ns#">
 
 <head>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-145004692-1');
+</script>
 
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<title>SKB Admin</title>
-
+<!--  -->
+<title>SKB Admin page</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property=”og:title” content=”SyuseiAdminPage” />
-<meta property=”og:image”
-	content=”https://storage.googleapis.com/skb_files/badminton.png“ />
-<meta property=”og:image:width” content="200" />
-<meta property=”og:image:height” content="100" />
-<meta property=”og:description” content=”schedule” />
+<meta property="og:title" content="Syusei Admin" />
+<meta property="og:image" content="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="100" />
+<meta property="og:description" content="Syusei only" />
 </head>
 
 <body>
@@ -31,7 +39,7 @@
 			<img class="left"
 				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
 				alt="" style="width: 35px; height: 35px;">
-			<div class="fontSize_200"
+			<div class="fontSize_100"
 				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen">Syusei
 				Admin View</div>
 		</div>
@@ -53,7 +61,7 @@
 							<div class="r35 left ">${skb.skb_event_end_time}</div>
 						</div>
 						<div class=" ">
-							<div class="r40 left " style="text-align: center;">${skb.skb_event_title}</div>
+							<div class="r80 left " style="text-align: center;">${skb.skb_event_title}</div>
 						</div>
 					</div>
 				</div>
@@ -107,6 +115,10 @@
 			});
 		}
 	</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-145004692-1"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 </body>
 
 </html>

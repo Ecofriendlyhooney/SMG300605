@@ -9,12 +9,26 @@
 <html class="bg-color" xmlns:og="http://ogp.me/ns#">
 
 <head>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-145004692-1');
+</script>
+
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<script
+	src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js">
+</script>
+
 <link rel="stylesheet"
 	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet"
 	href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
@@ -23,6 +37,7 @@
 	$(function() {
 		$("#datepicker").datepicker();
 		$.datepicker.setDefaults({
+			defaultDate: "+1",
 			showOn : "both",
 			buttonImageOnly : true,
 			buttonImage : "calender.gif",
@@ -31,6 +46,9 @@
 			minDate : 0,
 			maxDate : +30
 		});
+		$('#datepicker').datepicker({ dateFormat: 'yy-mm-dd' });
+		$('#datepicker').datepicker('setDate', new Date());
+
 	});
 
 	$(function() {
@@ -58,6 +76,7 @@
 			scrollbar : true
 		});
 	});
+
 </script>
 
 <script
@@ -71,7 +90,7 @@
 			<img class="left"
 				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
 				alt="" style="width: 35px; height: 35px;">
-			<div class="fontSize_200"
+			<div class="fontSize_100"
 				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen">Syusei
 				Admin Create</div>
 		</div>
@@ -82,11 +101,12 @@
 	<div class=" left r90" style="padding-left: 2rem; padding-right: 3rem">
 
 		<div class="r50  left">
-			<form:form method="POST"
+			<form:form id="skb_create" method="POST"
 				action="/300605.com/badminton/skb/admin/save">
-				<div class="fontSize_100">
-					<input type="text" name="skb_event_title" value="池袋" maxlength="18"
-						placeholder="ex) Event Title" />
+
+				<div class="inputBorder">
+					<input type="text" id="skb_title" name="skb_event_title" value="池袋"
+						maxlength="18" placeholder="ex) Event Title" />
 				</div>
 				<div class="inputBorder">
 					<input type="text" id="datepicker" name="skb_event_date" value=""
@@ -197,6 +217,10 @@
 			});
 		}
 	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async
+		src="https://www.googletagmanager.com/gtag/js?id=UA-145004692-1"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 </body>
 
 </html>
