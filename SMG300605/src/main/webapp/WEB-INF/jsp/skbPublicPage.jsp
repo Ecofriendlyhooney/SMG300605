@@ -31,12 +31,15 @@
 <title>SKB</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:title" content="SKB"/>
-<meta property="og:image"
-	content="https://storage.googleapis.com/skb_files/badminton.png" />
+
+<meta property="og:title" content="SKB Badminton" />
+<meta property="og:image" content="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png" />
 <meta property="og:image:width" content="200" />
-<meta property="og:image:heigh" content="100" />
+<meta property="og:image:height" content="100" />
+<meta property="og:url"
+	content="http://300605.com/badminton/skb/entrance" />
 <meta property="og:description" content="schedule" />
+
 </head>
 
 <body>

@@ -8,9 +8,9 @@ CREATE TABLE skb_main (
   skb_event_title varchar(18) NOT NULL,
   skb_event_date Date NOT NULL,
   
-  skb_event_day varchar(3),
-  skb_event_start_time varchar(5),
-  skb_event_end_time varchar(5),
+  skb_event_start_time TIME (6),
+  skb_event_end_time TIME(6),
+  
   skb_event_text_01 varchar(20),
   skb_event_text_02 varchar(20),
   skb_event_text_03 varchar(20),
@@ -29,9 +29,10 @@ CREATE TABLE skb_main (
 INSERT INTO skb_main(
   skb_event_title ,
   skb_event_date ,
-  skb_event_day ,
+  
   skb_event_start_time ,
   skb_event_end_time ,
+  
   skb_event_text_01 ,
   skb_event_text_02 ,
   skb_event_text_03 ,
@@ -48,9 +49,10 @@ INSERT INTO skb_main(
   VALUES(
   "池袋 第三小学校" ,
   "2019-08-12" ,
-  "火曜日" ,
-  "18:30" ,
-  "21:30" ,
+
+  "111111" ,
+  "121212" ,
+  
   "★" ,
   "詳細はLINEお願いします。" ,
   "参加費は600円です(*^^*)" ,

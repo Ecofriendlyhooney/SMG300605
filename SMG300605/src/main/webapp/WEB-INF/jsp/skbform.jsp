@@ -1,21 +1,19 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@ page contentType="text/html; charset=UTF-8"%>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
 <!DOCTYPE html>
-
 <html class="bg-color" xmlns:og="http://ogp.me/ns#">
 
 <head>
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 <link rel="stylesheet"
 	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet"
@@ -24,48 +22,47 @@
 <script>
 	$(function() {
 		$("#datepicker").datepicker();
+		$.datepicker.setDefaults({
+			showOn : "both",
+			buttonImageOnly : true,
+			buttonImage : "calender.gif",
+			buttonText : "Calendar",
+			dateFormat : "yy-mm-dd",
+			minDate : 0,
+			maxDate : +30
+		});
 	});
-	
-	$(function(){
-	    $("#timepicker1").timepicker();
+
+	$(function() {
+		$("#timepicker1").timepicker({
+			timeFormat : 'HH:mm',
+			interval : 30,
+			defaultTime : '18:30',
+			minTime : '09:00',
+			maxTime : '23:30',
+			dynamic : true,
+			dropdown : true,
+			scrollbar : true
+		});
 	});
-	$(function(){
-	    $("#timepicker2").timepicker();
+
+	$(function() {
+		$("#timepicker2").timepicker({
+			timeFormat : 'HH:mm',
+			interval : 30,
+			defaultTime : '21:30',
+			minTime : '09:00',
+			maxTime : '23:30',
+			dynamic : true,
+			dropdown : true,
+			scrollbar : true
+		});
 	});
 </script>
 
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
-<script>
-$('#timepicker1').timepicker({
-    timeFormat: 'h:mm p',
-    interval: 30,
-    minTime: '09:00',
-    maxTime: '23:30',
-    defaultTime: '18:30',
-    startTime: '09:00',
-    dynamic: true,
-    dropdown: true,
-    scrollbar: true
-});
-$('#timepicker2').timepicker({
-    timeFormat: 'h:mm p',
-    interval: 30,
-    minTime: '09:00',
-    maxTime: '23:30',
-    defaultTime: '18:30',
-    startTime: '09:00',
-    dynamic: true,
-    dropdown: true,
-    scrollbar: true
-});
-</script>	
-<title>SKB Create</title>
-
-<!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
-<%@ page contentType="text/html; charset=UTF-8"%>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<title>SKB</title>
 </head>
 
 <body>
@@ -74,9 +71,10 @@ $('#timepicker2').timepicker({
 			<img class="left"
 				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
 				alt="" style="width: 35px; height: 35px;">
-			<div class="fontSize_150 text_align_center">Syusei Admin Create</div>
+			<div class="fontSize_200"
+				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen">Syusei
+				Admin Create</div>
 		</div>
-
 	</div>
 
 	<div class="space ">EcofriendlyHooney</div>
@@ -93,14 +91,15 @@ $('#timepicker2').timepicker({
 				<div class="inputBorder">
 					<input type="text" id="datepicker" name="skb_event_date" value=""
 						maxlength="10" placeholder="click (Date)" />
+
 				</div>
 				<div class="inputBorder">
-					<input type="text" id="timepicker1" name="skb_event_start_time" value="start" 
-						maxlength="5" placeholder="click (start Time)" /> 
+					<input type="text" id="timepicker1" name="skb_event_start_time"
+						value="" maxlength="5" placeholder="click (start Time)" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" id="timepicker2" name="skb_event_end_time" value="end"
-						maxlength="5" placeholder="click (finish Time)" />
+					<input type="text" id="timepicker2" name="skb_event_end_time"
+						value="" maxlength="5" placeholder="click (finish Time)" />
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_01" value="" maxlength="20"

@@ -43,10 +43,9 @@ public class MainDao {
 				+ "skb_event_flag"
 				+ ") VALUES ('" 
 				+ p.getSkb_event_title()      + "','"
-				+ p.getSkb_event_date().substring(6,10) + "-" + p.getSkb_event_date().substring(0,2) + "-" + p.getSkb_event_date().substring(3,5) + "','"
-				
-				+ p.getSkb_event_start_time() + "','"
-				+ p.getSkb_event_end_time()   + "','"
+				+ p.getSkb_event_date()       + "','"
+				+ p.getSkb_event_start_time().substring(0,2) + p.getSkb_event_start_time().substring(3,5) + "00','"
+				+ p.getSkb_event_end_time().substring(0,2) + p.getSkb_event_end_time().substring(3,5) + "00','"
 				+ p.getSkb_event_text_01()    + "','"
 				+ p.getSkb_event_text_02()    + "','"
 				+ p.getSkb_event_text_03()    + "','"
@@ -67,31 +66,31 @@ public class MainDao {
 		String sql = "update skb_main set "
 				
 				+ "skb_event_title='" 
-				+ p.getSkb_event_title() + "',"
+				+ p.getSkb_event_title()      + "',"
 				+ "skb_event_date='"
-				+ p.getSkb_event_date().substring(6,10) + "-" + p.getSkb_event_date().substring(0,2) + "-" + p.getSkb_event_date().substring(3,5) + "',"
+				+ p.getSkb_event_date()       + "',"
 				+ "skb_event_start_time='"
-				+ p.getSkb_event_start_time() + "',"
+				+ p.getSkb_event_start_time().substring(0,2) + p.getSkb_event_start_time().substring(3,5) + "00',"
 				+ "skb_event_end_time='"
-				+ p.getSkb_event_end_time() + "',"
+				+ p.getSkb_event_end_time().substring(0,2) + p.getSkb_event_end_time().substring(3,5) + "00',"
 				+ "skb_event_text_01='" 
-				+ p.getSkb_event_text_01() + "',"
+				+ p.getSkb_event_text_01()    + "',"
 				+ "skb_event_text_02='" 
-				+ p.getSkb_event_text_02() + "',"
+				+ p.getSkb_event_text_02()    + "',"
 				+ "skb_event_text_03='" 
-				+ p.getSkb_event_text_03() + "',"
+				+ p.getSkb_event_text_03()    + "',"
 				+ "skb_event_text_04='" 
-				+ p.getSkb_event_text_04() + "',"
+				+ p.getSkb_event_text_04()    + "',"
 				+ "skb_event_text_05='" 
-				+ p.getSkb_event_text_05() + "',"
+				+ p.getSkb_event_text_05()    + "',"
 				+ "skb_event_text_06='" 
-				+ p.getSkb_event_text_06() + "',"
+				+ p.getSkb_event_text_06()    + "',"
 				+ "skb_event_text_07='" 
-				+ p.getSkb_event_text_07() + "',"
+				+ p.getSkb_event_text_07()    + "',"
 				+ "skb_event_text_08='" 
-				+ p.getSkb_event_text_08() + "',"
+				+ p.getSkb_event_text_08()    + "',"
 				+ "skb_event_text_09='" 
-				+ p.getSkb_event_text_09() + "',"
+				+ p.getSkb_event_text_09()    + "',"
 				+ "skb_event_text_10='" 
 				+ p.getSkb_event_text_10() 
 				
@@ -102,7 +101,7 @@ public class MainDao {
 
 	public int logicDelete(Skb p) {
 		String sql = "update skb_main "
-				+ "set skb_event_flag='old'"
+				+ "set skb_event_flag='4'"
 				+ "where skb_event_id=" + p.getSkb_event_id();                        
 		return template.update(sql);
 	}
@@ -126,18 +125,18 @@ public class MainDao {
 				e.setSkb_event_title(rs.getString(2));
 				e.setSkb_event_date(rs.getString(3).substring(5, 7) + "/"+rs.getString(3).substring(8,10));
 				e.setSkb_event_day(simpleDateformat.format(rs.getDate(3)));
-				e.setSkb_event_start_time(rs.getString(5));
-				e.setSkb_event_end_time(rs.getString(6));
-				e.setSkb_event_text_01(rs.getString(7));
-				e.setSkb_event_text_02(rs.getString(8));
-				e.setSkb_event_text_03(rs.getString(9));
-				e.setSkb_event_text_04(rs.getString(10));
-				e.setSkb_event_text_05(rs.getString(11));
-				e.setSkb_event_text_06(rs.getString(12));
-				e.setSkb_event_text_07(rs.getString(13));
-				e.setSkb_event_text_08(rs.getString(14));
-				e.setSkb_event_text_09(rs.getString(15));
-				e.setSkb_event_text_10(rs.getString(16));
+				e.setSkb_event_start_time(rs.getString(4).substring(0,2) + ":" + rs.getString(4).substring(3,5));
+				e.setSkb_event_end_time(rs.getString(5).substring(0,2) + ":" + rs.getString(5).substring(3,5));
+				e.setSkb_event_text_01(rs.getString(6));
+				e.setSkb_event_text_02(rs.getString(7));
+				e.setSkb_event_text_03(rs.getString(8));
+				e.setSkb_event_text_04(rs.getString(9));
+				e.setSkb_event_text_05(rs.getString(10));
+				e.setSkb_event_text_06(rs.getString(11));
+				e.setSkb_event_text_07(rs.getString(12));
+				e.setSkb_event_text_08(rs.getString(13));
+				e.setSkb_event_text_09(rs.getString(14));
+				e.setSkb_event_text_10(rs.getString(15));
 				
 				return e;
 			}
