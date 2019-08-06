@@ -32,7 +32,7 @@
 [ ] GCP Batch : Clone tab - SKB event activate flag update batch
 [ ] GCP Bitnami : bash shell - (delete ROOT folder/ delete ROOT.war/ mv ROOT.war /./catalina.sh stop/start 
 
-[ ] SKB EDIT Button CSS apply]
+[X] SKB EDIT Button CSS apply]
 
 [X] VM instance rearrangement 
 [X] old skb-test-cloud, skb-cloud VM => smg300605 instance
@@ -44,10 +44,10 @@
 [X] SQL order by Date (ascending order)
 [X] JSP place holder
 [X] JSP validator- Max length
-[ ] SQL timestamp CRUD function - event date
-[ ] SQL timestamp CRUD function - event time
-[X] TIME Picker https://timepicker.co/
-[X] Date Picker
+[X] SQL timestamp CRUD function - event date
+[X] SQL timestamp CRUD function - event time
+[X] TIME Picker https://timepicker.co/ https://timepicker.co/options/
+[X] Date Picker https://api.jqueryui.com/datepicker/
 
 
 
