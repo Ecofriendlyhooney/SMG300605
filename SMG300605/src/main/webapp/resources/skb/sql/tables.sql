@@ -7,10 +7,8 @@ CREATE TABLE skb_main (
   skb_event_id int(10) NOT NULL AUTO_INCREMENT,
   skb_event_title varchar(18) NOT NULL,
   skb_event_date Date NOT NULL,
-  
   skb_event_start_time TIME (6),
   skb_event_end_time TIME(6),
-  
   skb_event_text_01 varchar(20),
   skb_event_text_02 varchar(20),
   skb_event_text_03 varchar(20),
@@ -29,10 +27,8 @@ CREATE TABLE skb_main (
 INSERT INTO skb_main(
   skb_event_title ,
   skb_event_date ,
-  
   skb_event_start_time ,
   skb_event_end_time ,
-  
   skb_event_text_01 ,
   skb_event_text_02 ,
   skb_event_text_03 ,
@@ -46,13 +42,12 @@ INSERT INTO skb_main(
   skb_event_flag
   )
   
-  VALUES(
-  "池袋 第三小学校" ,
-  "2019-08-12" ,
-
-  "111111" ,
-  "121212" ,
   
+  VALUES(
+  "池袋小学校" ,
+  "2019-08-04" ,
+  "190000" ,
+  "220000" ,
   "★" ,
   "詳細はLINEお願いします。" ,
   "参加費は600円です(*^^*)" ,
@@ -65,6 +60,12 @@ INSERT INTO skb_main(
   "",
   "ready"
   );
+  
+  池袋小学校      2019-08-04 190000 220000
+  池袋 第三小学校  2019-08-11 1830 2130
+  池袋 第三小学校  2019-08-12 1830 2130
+  池袋 第三小学校  2019-08-13 1830 2130
+  
   
    update skb_main set 
    skb_event_day='日曜日' 
