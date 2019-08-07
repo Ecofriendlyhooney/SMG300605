@@ -36,8 +36,12 @@
 [X] TIME Picker https://timepicker.co/ https://timepicker.co/options/
 [X] Date Picker https://api.jqueryui.com/datepicker/
 
+[ ] LINE social Login http://blog.naver.com/PostView.nhn?blogId=chan2rrj&logNo=220960346707
 [ ] GCP Batch : Clone tab - SKB event activate flag update batch
 [ ] GCP Bitnami : bash shell - (delete ROOT folder/ delete ROOT.war/ mv ROOT.war /./catalina.sh stop/start 
 [ ] GCP Stack Driver setting
 [ ] https://cloud.google.com/scheduler/docs/tut-pub-sub
+[ ] Ultimate Guide to LINE For Business https://rocketbots.io/blog/the-ultimate-guide-to-line-for-business/
+[ ] Using OAuth 2.0 and Google Cloud Functions to access Google services https://cloud.google.com/community/tutorials/cloud-functions-oauth-gmail
+[ ] Integrating LINE Login with your web app https://developers.line.biz/en/docs/line-login/web/integrate-line-login/
 
