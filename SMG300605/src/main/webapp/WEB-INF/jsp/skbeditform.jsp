@@ -200,7 +200,7 @@
 		style="padding-left: 2rem; padding-right: 3rem; padding-bottom: 10rem">
 		<div>
 			<form action="/300605.com/badminton/skb/admin" method="get">
-				<button class="button bgGreen left ">Cancel</button>
+				<button class="button left " id="bgGrey">Cancel</button>
 			</form>
 		</div>
 <%-- 		<div>
