@@ -96,7 +96,7 @@
 
 		<div class="r50  left">
 			<form:form method="POST"
-				action="/300605.com/badminton/skb/admin/editsave">
+				action="/badminton/skb/admin/editsave">
 				<div class="fontSize_100">
 					<input type="hidden" name="skb_event_id"
 						value="${skb.skb_event_id}" />
@@ -166,7 +166,7 @@
 
 
 			<form:form method="POST"
-				action="/300605.com/badminton/skb/admin/logicDeleteskb/${skb.skb_event_id}">
+				action="/badminton/skb/admin/logicDeleteskb/${skb.skb_event_id}">
 				<div class="fontSize_100 left">
 					<input type="hidden" name="skb_event_id"
 						value="${skb.skb_event_id}" />
@@ -199,17 +199,10 @@
 	<div class=" left r90"
 		style="padding-left: 2rem; padding-right: 3rem; padding-bottom: 10rem">
 		<div>
-			<form action="/300605.com/badminton/skb/admin" method="get">
+			<form action="/badminton/skb/admin" method="get">
 				<button class="button left " id="bgGrey">Cancel</button>
 			</form>
 		</div>
-<%-- 		<div>
-			<button class="button bgGreen left">
-				<a
-					href="/300605.com/badminton/skb/admin/deleteskb/${skb.skb_event_id}">Permenent
-					Delete</a>
-			</button>
-		</div> --%>
 	</div>
 
 	<!-- 	<div class="space">EcofriendlyHooney</div>  -->

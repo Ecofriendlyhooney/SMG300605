@@ -22,9 +22,9 @@
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
 <script
 	src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js">
+	
 </script>
 
 <link rel="stylesheet"
@@ -37,7 +37,7 @@
 	$(function() {
 		$("#datepicker").datepicker();
 		$.datepicker.setDefaults({
-			defaultDate: "+1",
+			defaultDate : "+1",
 			showOn : "both",
 			buttonImageOnly : true,
 			buttonImage : "calender.gif",
@@ -46,7 +46,9 @@
 			minDate : 0,
 			maxDate : +30
 		});
-		$('#datepicker').datepicker({ dateFormat: 'yy-mm-dd' });
+		$('#datepicker').datepicker({
+			dateFormat : 'yy-mm-dd'
+		});
 		$('#datepicker').datepicker('setDate', new Date());
 
 	});
@@ -76,7 +78,6 @@
 			scrollbar : true
 		});
 	});
-
 </script>
 
 <script
@@ -102,7 +103,7 @@
 
 		<div class="r50  left">
 			<form:form id="skb_create" method="POST"
-				action="/300605.com/badminton/skb/admin/save">
+				action="/badminton/skb/admin/save">
 
 				<div class="inputBorder">
 					<input type="text" id="skb_title" name="skb_event_title" value="池袋"
@@ -190,7 +191,7 @@
 	<div class=" left r90"
 		style="padding-left: 2rem; padding-right: 3rem; padding-bottom: 10rem">
 		<div>
-			<form action="/300605.com/badminton/skb/admin" method="get">
+			<form action="/badminton/skb/admin" method="get">
 				<button class="button left " id="bgGrey">Cancel</button>
 			</form>
 		</div>
