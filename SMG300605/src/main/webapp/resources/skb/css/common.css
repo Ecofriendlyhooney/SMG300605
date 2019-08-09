@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+.menu {
+	background-color: white;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 99%;
+}
+.space {
+	margin-top: 25%;
+	color: white;
+}
+.borderLineRed {
+	border-style:solid;
+	border-color:red;
+}
+.fontSize100rem{
+	font-size:1rem;
+}
+.fontSize120rem{
+	font-size:1.2rem;
+}
+.fontSize130rem{
+	font-size:1.3rem;
+}
+.fontSize150rem{
+	font-size:1.5rem;
+}
+.fontSize200rem{
+	font-size:2rem;
+}
+
+.textAlignLeft {
+	text-align:left;
+}
+.textAlignCenter {
+	text-align:center;
+}
+.textAlignRight {
+	text-align:right;
+}
+
+.floatLeft {
+	float:left;
+}
+.floatCenter {
+	float:center;
+}
+.floatRight {
+	float:right;
+}
+
+#bgGrey {
+	background-color: lightGrey;
+}
+#bgWhite {
+	background-color: white;
+}
+
+
+.width5percent {
+	width:5%;
+}
+.width10percent {
+	width:5%;
+}
+.width15percent {
+	width:15%;
+}
+.width20percent {
+	width:20%;
+}
+.width25percent {
+	width:25%;
+}
+.width30percent {
+	width:30%;
+}
+.width33percent {
+	width:33%;
+}
+.width35percent {
+	width:35%;
+}
+.width40percent {
+	width:40%;
+}
+.width45percent {
+	width:45%;
+}
+.width50percent {
+	width:50%;
+}
+.width55percent {
+	width:55%;
+}
+.width60percent {
+	width:60%;
+}
+.width65percent {
+	width:65%;
+}
+.width70percent {
+	width:70%;
+}
+.width75percent {
+	width:75%;
+}
+.width80percent {
+	width:80%;
+}
+.width85percent {
+	width:85%;
+}
+.width90percent {
+	width:90%;
+}
+.width95percent {
+	width:95%;
+}
+.width100percent {
+	width:100%;
+}

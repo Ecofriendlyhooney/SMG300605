@@ -16,12 +16,13 @@
 	gtag('config', 'UA-145004692-1');
 </script>
 
-
-<link href="<c:url value="/resources/css/main.css" />"
+<link href="<c:url value="/resources/css/tseMain.css" />"
 	rel="stylesheet">
+<link href="<c:url value="/resources/css/common.css" />"
+	rel="stylesheet">
+	
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 
 <title>300605 Salsa Tokyo</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -36,69 +37,67 @@
 </head>
 
 <body>
-
-
-	<div class="menu bpHead">
-		<div class="bpHeadFirstLine">
-			<img class="left"
+	<div class="menu ">
+		<div class="width100percent ">
+			<img class="floatLeft"
 				src="https://storage.googleapis.com/salsa_tokyo_bucket/dance-icon-png-15.jpg"
 				alt="" style="width: 25px; height: 35px;">
-			<div class="fontSize_200 text_align_center">300605 Salsa Event</div>
+			<div class="fontSize200rem  textAlignCenter">300605 Salsa</div>
 		</div>
 
-		<div class="bpHeadSecondLine">
-			<div class="r33 left menubutton bgWhite">
+		<div class="width100percent ">
+			<div class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
+				id="bgWhite">
 				<a href="entrance">Today</a>
 			</div>
-			<div class="r33 left menubutton bgGrey">
-				<a href="thisweek">this week</a>
+			<div class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
+				id="bgGrey">
+				<a href="thisweek">Weekly</a>
 			</div>
-			<div class="r33 left menubutton bgWhite">
+			<div class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
+				id="bgWhite">
 				<a>blank</a>
 			</div>
 		</div>
 	</div>
 
-
 	<div class="space ">EcofriendlyHooney</div>
-
-
 
 	<div>
 		<c:forEach var="tse" items="${list}">
 			<!-- 	One Unit START -->
-			<button class="accordion">
-				<div class="r90 left">
-					<div class="r20  left">
-						<div class=" ">${tse.tse_event_date}</div>
-						<div class=" ">${tse.tse_event_day}</div>
+			<button class="accordion ">
+				<div class="width90percent floatLeft ">
+					<div class="width15percent floatLeft ">
+						<div class="fontSize130rem">${tse.tse_event_date}</div>
+						<div class="fontSize130rem">${tse.tse_event_day}</div>
 					</div>
-					<div class=" r70">
+					<div class=" width85percent floatLeft ">
 						<div class=" ">
-							<div class="r80 left " style="text-align: left;">${tse.tse_event_title}</div>
-							
+							<div
+								class="width100percent floatLeft fontSize120rem textAlignLeft">&#160;&#160;&#160;&#160;${tse.tse_event_title}</div>
 						</div>
-						<div class=" ">
-							<div class="r30 left " style="text-align: left;" >${tse.tse_event_start_time}</div>
-							<div class="left " style="text-align: left;" >&#160;~&#160;</div>
-							<div class="r35 left " style="text-align: left;" >${tse.tse_event_end_time}</div>
-						</div>
+
+						<div class="width20percent floatLeft fontSize130rem textAlignLeft">&#160;&#160;&#160;${tse.tse_event_start_time}</div>
+						<div class="floatLeft textAlignLeft">&#160;&#160;&#160;&#160;&#160;&#160;~&#160;&#160;</div>
+						<div class="width20percent floatLeft fontSize130rem textAlignLeft">${tse.tse_event_end_time}</div>
+						<div class="width45percent floatLeft fontSize130rem">シゲとゆ</div>
 					</div>
 				</div>
 			</button>
 
 			<div class="panel">
 				<div></div>
-				<div>${tse.tse_event_text_01}</div>
-				<div>${tse.tse_event_text_02}</div>
-				<div>${tse.tse_event_text_03}</div>
-				<div>${tse.tse_event_text_04}</div>
-				<div>${tse.tse_event_text_05}</div>
-				<div>${tse.tse_event_text_06}</div>
-				<div>${tse.tse_event_text_07}</div>
-				<div>${tse.tse_event_text_08}</div>
-				<div>${tse.tse_event_text_09}</div>
-				<div>${tse.tse_event_text_10}</div>
+				<div class="fontSize200rem">${tse.tse_event_text_01}</div>
+				<div class="fontSize200rem">${tse.tse_event_text_02}</div>
+				<div class="fontSize200rem">${tse.tse_event_text_03}</div>
+				<div class="fontSize200rem">${tse.tse_event_text_04}</div>
+				<div class="fontSize200rem">${tse.tse_event_text_05}</div>
+				<div class="fontSize200rem">${tse.tse_event_text_06}</div>
+				<div class="fontSize200rem">${tse.tse_event_text_07}</div>
+				<div class="fontSize200rem">${tse.tse_event_text_08}</div>
+				<div class="fontSize200rem">${tse.tse_event_text_09}</div>
+				<div class="fontSize200rem">${tse.tse_event_text_10}</div>
 				<br />
 			</div>
 			<!-- 	One Unit END -->
