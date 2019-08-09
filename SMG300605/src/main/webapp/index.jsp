@@ -47,7 +47,7 @@
 </head>
 
 <body>
-	<form action="/300605.com/badminton/skb/entrance" method="get"
+	<form action="/badminton/skb/entrance" method="get"
 		target="_blank">
 		<button class="button button4" style="background-color: #4CAF50; margin:2rem; padding:5rem ">SKB Public entrance</button>
 	</form>

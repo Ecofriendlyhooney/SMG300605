@@ -148,7 +148,60 @@ public class MainDao {
 	
 	
 	
+	//TOKYO SALSA START 
+	public List<Tse> getTseTodaySchedule() {
+		return template.query("select * from salsa_tokyo_main where tse_event_flag='ready' AND tse_event_date = DATE(NOW())", new RowMapper<Tse>() {
+			public Tse mapRow(ResultSet rs, int row) throws SQLException {
+				SimpleDateFormat simpleDateformat = new SimpleDateFormat("E"); 
+				Tse e = new Tse();
+				e.setTse_event_id(rs.getInt(1));
+				e.setTse_event_title(rs.getString(2));
+				e.setTse_event_date(rs.getString(3).substring(5, 7) + "/"+rs.getString(3).substring(8,10));
+				e.setTse_event_day(simpleDateformat.format(rs.getDate(3)));
+				e.setTse_event_start_time(rs.getString(4).substring(0,2) + ":" + rs.getString(4).substring(3,5));
+				e.setTse_event_end_time(rs.getString(5).substring(0,2) + ":" + rs.getString(5).substring(3,5));
+				e.setTse_event_text_01(rs.getString(6));
+				e.setTse_event_text_02(rs.getString(7));
+				e.setTse_event_text_03(rs.getString(8));
+				e.setTse_event_text_04(rs.getString(9));
+				e.setTse_event_text_05(rs.getString(10));
+				e.setTse_event_text_06(rs.getString(11));
+				e.setTse_event_text_07(rs.getString(12));
+				e.setTse_event_text_08(rs.getString(13));
+				e.setTse_event_text_09(rs.getString(14));
+				e.setTse_event_text_10(rs.getString(15));
+				
+				return e;
+			}
+		});
+	}
 	
+	public List<Tse> getTseSchedule() {
+		return template.query("select * from salsa_tokyo_main where tse_event_flag='ready' AND tse_event_date >= DATE(NOW()) order by tse_event_date asc", new RowMapper<Tse>() {
+			public Tse mapRow(ResultSet rs, int row) throws SQLException {
+				SimpleDateFormat simpleDateformat = new SimpleDateFormat("E"); 
+				Tse e = new Tse();
+				e.setTse_event_id(rs.getInt(1));
+				e.setTse_event_title(rs.getString(2));
+				e.setTse_event_date(rs.getString(3).substring(5, 7) + "/"+rs.getString(3).substring(8,10));
+				e.setTse_event_day(simpleDateformat.format(rs.getDate(3)));
+				e.setTse_event_start_time(rs.getString(4).substring(0,2) + ":" + rs.getString(4).substring(3,5));
+				e.setTse_event_end_time(rs.getString(5).substring(0,2) + ":" + rs.getString(5).substring(3,5));
+				e.setTse_event_text_01(rs.getString(6));
+				e.setTse_event_text_02(rs.getString(7));
+				e.setTse_event_text_03(rs.getString(8));
+				e.setTse_event_text_04(rs.getString(9));
+				e.setTse_event_text_05(rs.getString(10));
+				e.setTse_event_text_06(rs.getString(11));
+				e.setTse_event_text_07(rs.getString(12));
+				e.setTse_event_text_08(rs.getString(13));
+				e.setTse_event_text_09(rs.getString(14));
+				e.setTse_event_text_10(rs.getString(15));
+				
+				return e;
+			}
+		});
+	}
 	
 	
 	
@@ -157,34 +210,25 @@ public class MainDao {
 	
 	
     /* ===== TSE =====*/ 
-	public int save(Tse p) {
-		String sql = "insert into tse2019(name) values('" + p.getName() + "')";
-		return template.update(sql);
-	}
+//	public int save(Tse p) {
+//		String sql = "insert into tse_main(name) values('" + p.getTitle() + "')";
+//		return template.update(sql);
+//	}
+//
+//	public int update(Tse p) {
+//		String sql = "update tse_main set name='" + p.getTitle() + "' where id=" + p.getId() + "";
+//		return template.update(sql);
+//	}
+//
+//	public int deleteTse(int id) {
+//		String sql = "delete from tse_main where id=" + id + "";
+//		return template.update(sql);
+//	}
+//
+//	public Tse getTseById(int id) {
+//		String sql = "select * from tse_main where id=?";
+//		return template.queryForObject(sql, new Object[] { id }, new BeanPropertyRowMapper<Tse>(Tse.class));
+//	}
 
-	public int update(Tse p) {
-		String sql = "update tse2019 set name='" + p.getName() + "' where id=" + p.getId() + "";
-		return template.update(sql);
-	}
 
-	public int deleteTse(int id) {
-		String sql = "delete from tse2019 where id=" + id + "";
-		return template.update(sql);
-	}
-
-	public Tse getTseById(int id) {
-		String sql = "select * from tse2019 where id=?";
-		return template.queryForObject(sql, new Object[] { id }, new BeanPropertyRowMapper<Tse>(Tse.class));
-	}
-
-	public List<Tse> getTseSchedule() {
-		return template.query("select * from tse2019", new RowMapper<Tse>() {
-			public Tse mapRow(ResultSet rs, int row) throws SQLException {
-				Tse e = new Tse();
-				e.setId(rs.getInt(1));
-				e.setName(rs.getString(2));
-				return e;
-			}
-		});
-	}
 }
