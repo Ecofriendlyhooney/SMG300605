@@ -25,6 +25,7 @@
 <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
 <script
 	src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js">
+	
 </script>
 
 <link rel="stylesheet"
@@ -82,21 +83,20 @@
 	<div class="menu bpHead">
 		<div class="bpHeadFirstLine">
 			<img class="left"
-				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
-				alt="" style="width: 35px; height: 35px;">
-			<div class="fontSize_100"
-				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen">Syusei
-				Admin Edit</div>
+				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/syuusei_picture_01.jpg"
+				alt="" style="width: 5rem; height: 5rem;">
+			<div class="fontSize_150"
+				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen; text-align:center">Syusei
+				Admin 編集</div>
 		</div>
 	</div>
-	
+
 	<div class="space">EcofriendlyHooney</div>
 
 	<div class=" left r90" style="padding-left: 2rem; padding-right: 3rem">
 
 		<div class="r50  left">
-			<form:form method="POST"
-				action="/badminton/skb/admin/editsave">
+			<form:form method="POST" action="/badminton/skb/admin/editsave">
 				<div class="fontSize_100">
 					<input type="hidden" name="skb_event_id"
 						value="${skb.skb_event_id}" />
@@ -161,7 +161,12 @@
 					<input type="text" name="skb_event_text_10" maxlength="20"
 						value="${skb.skb_event_text_10}" placeholder="Text Input 10" />
 				</div>
-				<button class="button bgGreen">Edit Save</button>
+				<button class=" bgLightGreen left">
+					<img
+						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-ok-48.png"
+						style="width: 5rem; height: 5rem;"> 
+						<div>Edit Save</div>
+				</button>
 			</form:form>
 
 
@@ -171,8 +176,11 @@
 					<input type="hidden" name="skb_event_id"
 						value="${skb.skb_event_id}" />
 				</div>
-				<button class="button" id="bgRed">
-					Delete
+				<button class="left">
+					<img
+						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-delete-bin-64_2.png"
+						style="width: 5rem; height: 5rem;">
+						<div >Delete</div> 
 				</button>
 			</form:form>
 
@@ -200,7 +208,12 @@
 		style="padding-left: 2rem; padding-right: 3rem; padding-bottom: 10rem">
 		<div>
 			<form action="/badminton/skb/admin" method="get">
-				<button class="button left " id="bgGrey">Cancel</button>
+				<button class="left">
+					<img
+						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-cancel-48.png"
+						style="width: 5rem; height: 5rem;">
+						<div>Cancel</div> 				
+				</button>
 			</form>
 		</div>
 	</div>

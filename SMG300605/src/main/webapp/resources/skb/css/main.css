@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
-
+.main_icon_size {
+	width: 3rem; 
+	height: 3rem;
+}
 .textAlignLeft {
 	text-align: left;
 }
@@ -39,7 +42,7 @@
 }
 
 .space {
-	margin-top: 25%;
+	margin-top: 5rem;
 	color: white;
 }
 
@@ -169,6 +172,9 @@
 #bgGrey {
 	background-color: lightGrey;
 }
+.bgAntiquewhite {
+	background-color: antiquewhite;
+}
 .bgBlue {
 	background-color: lightblue;
 }
@@ -181,7 +187,9 @@
 .bgGreen {
 	background-color: #4CAF50; /* Green */
 }
-
+.bgLightGreen {
+	background-color: lightGreen; /* Green */
+}
 .left {
 	float: left;
 }

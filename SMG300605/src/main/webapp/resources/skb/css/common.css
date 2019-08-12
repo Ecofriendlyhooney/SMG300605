@@ -7,118 +7,161 @@
 	top: 0;
 	width: 99%;
 }
+
 .space {
-	margin-top: 25%;
+	margin-top: 6rem;
 	color: white;
 }
+.font_Comic_Sans_MS {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.font_serif {
+	font-family: "Times New Roman", Times, serif;
+}
+.font_Arial {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 .borderLineRed {
-	border-style:solid;
-	border-color:red;
+	border-style: solid;
+	border-color: red;
 }
-.fontSize100rem{
-	font-size:1rem;
+
+.fontSize100rem {
+	font-size: 1rem;
 }
-.fontSize120rem{
-	font-size:1.2rem;
+
+.fontSize120rem {
+	font-size: 1.2rem;
 }
-.fontSize130rem{
-	font-size:1.3rem;
+
+.fontSize130rem {
+	font-size: 1.3rem;
 }
-.fontSize150rem{
-	font-size:1.5rem;
+
+.fontSize150rem {
+	font-size: 1.5rem;
 }
-.fontSize200rem{
-	font-size:2rem;
+
+.fontSize200rem {
+	font-size: 2rem;
 }
 
 .textAlignLeft {
-	text-align:left;
+	text-align: left;
 }
+
 .textAlignCenter {
-	text-align:center;
+	text-align: center;
 }
+
 .textAlignRight {
-	text-align:right;
+	text-align: right;
 }
 
 .floatLeft {
-	float:left;
+	float: left;
 }
+
 .floatCenter {
-	float:center;
+	float: center;
 }
+
 .floatRight {
-	float:right;
+	float: right;
 }
 
 #bgGrey {
 	background-color: lightGrey;
 }
+
 #bgWhite {
 	background-color: white;
 }
 
+#bglightgoldenrodyellow {
+	background-color: lightgoldenrodyellow;
+}
 
 .width5percent {
-	width:5%;
+	width: 5%;
 }
+
 .width10percent {
-	width:5%;
+	width: 5%;
 }
+
 .width15percent {
-	width:15%;
+	width: 15%;
 }
+
 .width20percent {
-	width:20%;
+	width: 20%;
 }
+
 .width25percent {
-	width:25%;
+	width: 25%;
 }
+
 .width30percent {
-	width:30%;
+	width: 30%;
 }
+
 .width33percent {
-	width:33%;
+	width: 33%;
 }
+
 .width35percent {
-	width:35%;
+	width: 35%;
 }
+
 .width40percent {
-	width:40%;
+	width: 40%;
 }
+
 .width45percent {
-	width:45%;
+	width: 45%;
 }
+
 .width50percent {
-	width:50%;
+	width: 50%;
 }
+
 .width55percent {
-	width:55%;
+	width: 55%;
 }
+
 .width60percent {
-	width:60%;
+	width: 60%;
 }
+
 .width65percent {
-	width:65%;
+	width: 65%;
 }
+
 .width70percent {
-	width:70%;
+	width: 70%;
 }
+
 .width75percent {
-	width:75%;
+	width: 75%;
 }
+
 .width80percent {
-	width:80%;
+	width: 80%;
 }
+
 .width85percent {
-	width:85%;
+	width: 85%;
 }
+
 .width90percent {
-	width:90%;
+	width: 90%;
 }
+
 .width95percent {
-	width:95%;
+	width: 95%;
 }
+
 .width100percent {
-	width:100%;
+	width: 100%;
 }

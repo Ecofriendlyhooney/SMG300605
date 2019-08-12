@@ -41,22 +41,34 @@
 		<div class="width100percent ">
 			<img class="floatLeft"
 				src="https://storage.googleapis.com/salsa_tokyo_bucket/dance-icon-png-15.jpg"
-				alt="" style="width: 25px; height: 35px;">
-			<div class="fontSize200rem  textAlignCenter">300605 Salsa</div>
+				alt="" style="width: 1.5rem; height: 2.2rem;">
+			<div class="fontSize200rem  textAlignCenter font_Arial">300605 Salsa</div>
 		</div>
 
 		<div class="width100percent ">
-			<div class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
+			<div
+				class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
 				id="bgWhite">
-				<a href="entrance">Today</a>
+				<a href="entrance"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-today-48.png"
+					style="width: 4rem; height: 4rem;">
+				</a>
 			</div>
-			<div class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
-				id="bgGrey">
-				<a href="thisweek">Weekly</a>
+			<div
+				class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
+				id="bglightgoldenrodyellow">
+				<a href="thisweek"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48.png"
+					style="width: 4rem; height: 4rem;">
+				</a>
 			</div>
-			<div class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
+			<div
+				class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
 				id="bgWhite">
-				<a>blank</a>
+				<a href=""> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-add-48.png"
+					style="width: 4rem; height: 4rem;">
+				</a> 
 			</div>
 		</div>
 	</div>

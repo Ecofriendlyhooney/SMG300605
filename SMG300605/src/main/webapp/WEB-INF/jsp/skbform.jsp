@@ -89,11 +89,11 @@
 	<div class="menu bpHead">
 		<div class="bpHeadFirstLine">
 			<img class="left"
-				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
-				alt="" style="width: 35px; height: 35px;">
-			<div class="fontSize_100"
-				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen">Syusei
-				Admin Create</div>
+				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/syuusei_picture_01.jpg"
+				alt="" style="width: 5rem; height: 5rem;">
+			<div class="fontSize_150"
+				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen; text-align:center">Syusei
+				Admin 新規登録</div>
 		</div>
 	</div>
 
@@ -167,7 +167,12 @@
 						value="LINEID: ma_ko_to_o" maxlength="20"
 						placeholder="Text Input 10" />
 				</div>
-				<button class="button bgGreen">Save</button>
+				<button class=" bgLightGreen left">
+					<img
+						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-ok-48.png"
+						style="width: 5rem; height: 5rem;"> 
+						<div>Save</div>
+				</button>
 			</form:form>
 		</div>
 		<div class="r40  left fontSize_100">
@@ -192,7 +197,12 @@
 		style="padding-left: 2rem; padding-right: 3rem; padding-bottom: 10rem">
 		<div>
 			<form action="/badminton/skb/admin" method="get">
-				<button class="button left " id="bgGrey">Cancel</button>
+				<button class="left ">
+					<img
+						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-cancel-48.png"
+						style="width: 5rem; height: 5rem;">
+						<div>Cancel</div> 		
+				</button>
 			</form>
 		</div>
 	</div>

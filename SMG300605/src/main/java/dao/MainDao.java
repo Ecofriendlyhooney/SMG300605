@@ -27,7 +27,6 @@ public class MainDao {
 		String sql = "INSERT INTO skb_main"
 				+ "(skb_event_title,"
 				+ "skb_event_date,"
-				
 				+ "skb_event_start_time,"
 				+ "skb_event_end_time,"
 				+ "skb_event_text_01,"
@@ -206,7 +205,7 @@ public class MainDao {
 	
 	
 	
-	
+
 	
 	
     /* ===== TSE =====*/ 

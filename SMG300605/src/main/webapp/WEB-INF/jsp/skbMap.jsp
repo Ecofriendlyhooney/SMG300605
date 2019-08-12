@@ -46,14 +46,21 @@
 		</div>
 
 		<div class="bpHeadSecondLine">
-			<div class="r33 left menubutton bgWhite">
-				<a href="entrance">Home</a>
+			<div class="r33 left text_align_center main_icon_size bgWhite">
+				<a href="entrance"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48.png">
+				</a>
 			</div>
-			<div class="r33 left menubutton bgWhite">
-				<a href="skbaboutus">SKB</a>
+			<div
+				class="r33 left  text_align_center main_icon_size bgWhite">
+				<a href="skbaboutus"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-people-48.png">
+				</a>
 			</div>
-			<div class="r33 left menubutton bgGrey">
-				<a href="skbmap">Map</a>
+			<div class="r33 left text_align_center main_icon_size bgAntiquewhite">
+				<a href="skbmap"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-google-maps-48.png">
+				</a>
 			</div>
 		</div>
 	</div>
@@ -216,7 +223,7 @@
 			});
 		}
 	</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async
 		src="https://www.googletagmanager.com/gtag/js?id=UA-145004692-1"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->

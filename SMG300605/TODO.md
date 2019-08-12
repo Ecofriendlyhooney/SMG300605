@@ -44,6 +44,6 @@
 [ ] Ultimate Guide to LINE For Business https://rocketbots.io/blog/the-ultimate-guide-to-line-for-business/
 [ ] Using OAuth 2.0 and Google Cloud Functions to access Google services https://cloud.google.com/community/tutorials/cloud-functions-oauth-gmail
 [ ] Integrating LINE Login with your web app https://developers.line.biz/en/docs/line-login/web/integrate-line-login/
-
+[ ] icon https://icons8.com/icons/set/today
 [ ] mobile site test https://search.google.com/test/mobile-friendly
 [ ] mobile friendly test https://ready.mobi/

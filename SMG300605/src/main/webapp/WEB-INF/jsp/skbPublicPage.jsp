@@ -2,8 +2,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ page import = "java.io.*,java.util.*" %>
-<%@ page import = "javax.servlet.*,java.text.*" %>
+<%@ page import="java.io.*,java.util.*"%>
+<%@ page import="javax.servlet.*,java.text.*"%>
 
 
 <!DOCTYPE html>
@@ -32,7 +32,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:title" content="SKB Badminton" />
-<meta property="og:image" content="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png" />
+<meta property="og:image"
+	content="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png" />
 <meta property="og:image:width" content="200" />
 <meta property="og:image:height" content="100" />
 <meta property="og:description" content="Public for everyone" />
@@ -40,23 +41,32 @@
 </head>
 
 <body>
-	
+
 
 	<div class="menu bpHead">
-		<div class="bpHeadFirstLine"> 
+		<div class="bpHeadFirstLine">
 			<img class="left"
-			src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png" alt=""
-			style="width: 35px; height: 35px;">
+				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
+				alt="" style="width: 35px; height: 35px;">
 			<div class="fontSize_200 text_align_center">SKB badminton</div>
 		</div>
-		
-		<div class="bpHeadSecondLine"> 
-			<div class="r33 left menubutton bgGrey">
-				<a href="entrance">Home</a></div>
-			<div class="r33 left menubutton bgWhite">
-				<a href="skbaboutus">SKB</a></div>
-			<div class="r33 left menubutton bgWhite">
-				<a href="skbmap">Map</a></div>
+
+		<div class="bpHeadSecondLine">
+			<div class="r33 left text_align_center main_icon_size bgAntiquewhite">
+				<a href="entrance"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48.png">
+				</a>
+			</div>
+			<div class="r33 left  text_align_center main_icon_size bgWhite">
+				<a href="skbaboutus"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-people-48.png">
+				</a>
+			</div>
+			<div class="r33 left text_align_center main_icon_size bgWhite">
+				<a href="skbmap"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-google-maps-48.png">
+				</a>
+			</div>
 		</div>
 	</div>
 
@@ -68,11 +78,9 @@
 			<!-- 	One Unit START -->
 			<button class="accordion">
 				<div class="r90 left">
-					<div class="r20  left" >
-						<div class=" " >
-						${skb.skb_event_date}</div>
-						<div class=" " >
-						${skb.skb_event_day}</div>
+					<div class="r20  left">
+						<div class=" ">${skb.skb_event_date}</div>
+						<div class=" ">${skb.skb_event_day}</div>
 					</div>
 					<div class=" r70">
 						<div class=" ">
@@ -88,9 +96,7 @@
 			</button>
 
 			<div class="panel">
-				<div>
-					
-				</div>
+				<div></div>
 				<div>${skb.skb_event_text_01}</div>
 				<div>${skb.skb_event_text_02}</div>
 				<div>${skb.skb_event_text_03}</div>

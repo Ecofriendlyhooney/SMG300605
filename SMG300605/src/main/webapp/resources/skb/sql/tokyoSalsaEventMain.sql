@@ -40,7 +40,7 @@ INSERT INTO salsa_tokyo_main(
   )
   VALUES(
   "中目黒GT" ,
-  "2019-08-09" ,
+  "2019-08-12" ,
   "183000" ,
   "223000" ,
   "text01" ,

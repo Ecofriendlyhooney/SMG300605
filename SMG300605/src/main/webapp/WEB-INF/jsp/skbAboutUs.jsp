@@ -48,14 +48,20 @@
 		</div>
 
 		<div class="bpHeadSecondLine">
-			<div class="r33 left menubutton bgWhite">
-				<a href="entrance">Home</a>
+			<div class="r33 left text_align_center main_icon_size bgWhite">
+				<a href="entrance"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48.png">
+				</a>
 			</div>
-			<div class="r33 left menubutton bgGrey">
-				<a href="skbaboutus">SKB</a>
+			<div class="r33 left  text_align_center main_icon_size bgAntiquewhite">
+				<a href="skbaboutus"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-people-48.png">
+				</a>
 			</div>
-			<div class="r33 left menubutton bgWhite">
-				<a href="skbmap">Map</a>
+			<div class="r33 left text_align_center main_icon_size bgWhite">
+				<a href="skbmap"> <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-google-maps-48.png">
+				</a>
 			</div>
 		</div>
 
@@ -85,12 +91,12 @@
 			src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/03_about_us/about_us_05.jpg"
 			width=100% height=auto loading="lazy" />
 	</div>
-	
+
 	<div class="space">EcofriendlyHooney</div>
 	<div class="copyright">Powered by Ecofriendly Hooney</div>
 	<div class="copyright">© 2019 300605.com All rights reserved.</div>
-	
-		<!-- Global site tag (gtag.js) - Google Analytics -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async
 		src="https://www.googletagmanager.com/gtag/js?id=UA-145004692-1"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
