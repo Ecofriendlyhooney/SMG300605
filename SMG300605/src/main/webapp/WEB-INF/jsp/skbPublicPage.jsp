@@ -47,24 +47,24 @@
 		<div class="bpHeadFirstLine">
 			<img class="left"
 				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
-				alt="" style="width: 35px; height: 35px;">
+				alt="" style="width: 2rem; height: 2rem;">
 			<div class="fontSize_200 text_align_center">SKB badminton</div>
 		</div>
 
 		<div class="bpHeadSecondLine">
-			<div class="r33 left text_align_center main_icon_size bgAntiquewhite">
-				<a href="entrance"> <img
+			<div class="r33 left text_align_center  ">
+				<a href="entrance"> <img class="main_icon_size_300"
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48.png">
 				</a>
 			</div>
-			<div class="r33 left  text_align_center main_icon_size bgWhite">
-				<a href="skbaboutus"> <img
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-people-48.png">
+			<div class="r33 left  text_align_center  bgWhite">
+				<a href="skbaboutus"> <img class="main_icon_size_200" style="padding-top: 0.5rem;"
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-people-48_black_white.png">
 				</a>
 			</div>
-			<div class="r33 left text_align_center main_icon_size bgWhite">
-				<a href="skbmap"> <img
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-google-maps-48.png">
+			<div class="r33 left text_align_center  bgWhite">
+				<a href="skbmap"> <img class="main_icon_size_200" style="padding-top: 0.5rem;"
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-google-maps-48_black_white.png">
 				</a>
 			</div>
 		</div>

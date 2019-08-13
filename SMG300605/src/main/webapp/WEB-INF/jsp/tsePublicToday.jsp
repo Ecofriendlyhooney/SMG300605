@@ -46,26 +46,24 @@
 
 		<div class="width100percent ">
 			<div
-				class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
-				id="bglightgoldenrodyellow">
+				class="width33percent floatLeft menubutton textAlignCenter fontSize200rem">
 				<a href="entrance"> <img
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-today-48.png"
 					style="width: 4rem; height: 4rem;">
 				</a>
 			</div>
 			<div
-				class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
-				id="bgWhite">
+				class="width33percent floatLeft menubutton textAlignCenter fontSize200rem">
 				<a href="thisweek"> <img
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48.png"
-					style="width: 4rem; height: 4rem;">
-				</a> 
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48_black_white.png"
+					style="width: 3rem; height: 3rem; padding-top: 0.5rem;">
+				</a>
 			</div>
 			<div
 				class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
 				id="bgWhite">
-				<a href=""> <img
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-add-48.png"
+				<a > <img
+					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-plus-48_black_white.png"
 					style="width: 4rem; height: 4rem;">
 				</a> 
 			</div>

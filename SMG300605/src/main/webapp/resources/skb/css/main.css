@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
-.main_icon_size {
+.main_icon_size_300 {
 	width: 3rem; 
 	height: 3rem;
 }
+.main_icon_size_200 {
+	width: 2rem; 
+	height: 2rem;
+}
+
 .textAlignLeft {
 	text-align: left;
 }
@@ -87,6 +92,7 @@
 .copyright {
 	font-size: 1rem;
 	color: #ccc;
+	
 }
 
 .r5 {

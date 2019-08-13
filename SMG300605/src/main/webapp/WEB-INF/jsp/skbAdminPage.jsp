@@ -27,7 +27,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:title" content="Syusei Admin" />
-<meta property="og:image" content="https://storage.googleapis.com/skb_bucket/03_contents_gallery/syuusei_picture_01.jpg" />
+<meta property="og:image"
+	content="https://storage.googleapis.com/skb_bucket/03_contents_gallery/syuusei_picture_01.jpg" />
 <meta property="og:image:width" content="200" />
 <meta property="og:image:height" content="100" />
 <meta property="og:description" content="Syusei only" />
@@ -38,9 +39,9 @@
 		<div class="bpHeadFirstLine">
 			<img class="left"
 				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/syuusei_picture_01.jpg"
-				alt="" style="width: 5rem; height: 5rem;">
+				alt="" style="width: 4rem; height: 4rem;">
 			<div class="fontSize_150"
-				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen; text-align:center">Syusei
+				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen; text-align: center">Syusei
 				Admin Main</div>
 		</div>
 	</div>
@@ -68,12 +69,12 @@
 			</button>
 
 			<div class="panel">
-				<div style="color:white; ">
-					<a href="admin/editskb/${skb.skb_event_id}">
-						<img
-						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-edit-64_2.png"
+				<div style="color: white;">
+					<a href="admin/editskb/${skb.skb_event_id}"> <img
+					
+						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-edit-48.png"
 						style="width: 5rem; height: 5rem;">
-						<div >Edit </div>
+						<div>Edit</div>
 					</a>
 				</div>
 				<div>${skb.skb_event_text_01}</div>
@@ -95,11 +96,10 @@
 
 		<button class="">
 			<div class="r33 left bgWhite">
-				<a href="admin/skbform"> 
-					<img
+				<a href="admin/skbform"> <img
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-add-48.png"
 					style="width: 5rem; height: 5rem;">
-				 </a>
+				</a>
 			</div>
 		</button>
 	</div>
@@ -124,7 +124,7 @@
 			});
 		}
 	</script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async
 		src="https://www.googletagmanager.com/gtag/js?id=UA-145004692-1"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->

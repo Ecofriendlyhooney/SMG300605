@@ -84,7 +84,7 @@
 		<div class="bpHeadFirstLine">
 			<img class="left"
 				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/syuusei_picture_01.jpg"
-				alt="" style="width: 5rem; height: 5rem;">
+				alt="" style="width: 4rem; height: 4rem;">
 			<div class="fontSize_150"
 				style="padding-top: 1rem; padding-bottom: 1rem; background-color: lightgreen; text-align:center">Syusei
 				Admin 編集</div>
@@ -168,39 +168,25 @@
 						<div>Edit Save</div>
 				</button>
 			</form:form>
-
-
 			<form:form method="POST"
 				action="/badminton/skb/admin/logicDeleteskb/${skb.skb_event_id}">
-				<div class="fontSize_100 left">
-					<input type="hidden" name="skb_event_id"
-						value="${skb.skb_event_id}" />
-				</div>
 				<button class="left">
 					<img
-						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-delete-bin-64_2.png"
+						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-delete-bin-48.png"
 						style="width: 5rem; height: 5rem;">
 						<div >Delete</div> 
 				</button>
+				<div>
+					<input type="hidden" name="skb_event_id"
+						value="${skb.skb_event_id}" />
+				</div>
 			</form:form>
-
-
 		</div>
 		<div class="r40  left fontSize_100">
-			<div>title</div>
-			<div>日付</div>
-			<div>start_time</div>
-			<div>end_time</div>
-			<div>text_01</div>
-			<div>text_02</div>
-			<div>text_03</div>
-			<div>text_04</div>
-			<div>text_05</div>
-			<div>text_06</div>
-			<div>text_07</div>
-			<div>text_08</div>
-			<div>text_09</div>
-			<div>text_10</div>
+			<div>title </div>
+			<div>日付 </div>
+			<div>start_time </div>
+			<div>end_time </div>
 		</div>
 	</div>
 
