@@ -48,9 +48,9 @@
      - SKB Admin
      - 300605 salsa Today
      - 300605 salsa Calendar  
- 
-
-[ ] LINE social Login http://blog.naver.com/PostView.nhn?blogId=chan2rrj&logNo=220960346707
+[ ] Use LINE Login with Spring Security https://medium.com/@phayao/use-line-login-with-spring-security-fbaf59453c46
+[ ] LINE social Login http://blog.naver.com/PostView.nhn?blogId=chan2rrj&logNo=220960346707 
+[ ] social Login - Spring Boot OAuth2 Social Login with Google, Facebook, and Github(part1) - https://www.callicoder.com/spring-boot-security-oauth2-social-login-part-1/
 [ ] GCP Batch : Clone tab - SKB event activate flag update batch
 [ ] GCP Bitnami : bash shell - (delete ROOT folder/ delete ROOT.war/ mv ROOT.war /./catalina.sh stop/start 
 [ ] GCP Stack Driver setting

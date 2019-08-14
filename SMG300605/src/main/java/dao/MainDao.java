@@ -203,13 +203,6 @@ public class MainDao {
 			}
 		});
 	}
-	
-	
-	
-	
-
-	
-	
     /* ===== TSE =====*/ 
 //	public int save(Tse p) {
 //		String sql = "insert into tse_main(name) values('" + p.getTitle() + "')";
