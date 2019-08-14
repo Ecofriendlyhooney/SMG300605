@@ -6,6 +6,7 @@ CREATE TABLE salsa_tokyo_main (
   tse_event_date Date NOT NULL,
   tse_event_start_time TIME (6),
   tse_event_end_time TIME(6),
+  tse_event_dj varchar(6),
   tse_event_text_01 varchar(20),
   tse_event_text_02 varchar(20),
   tse_event_text_03 varchar(20),
@@ -19,13 +20,13 @@ CREATE TABLE salsa_tokyo_main (
   tse_event_flag varchar(5) NOT NULL,
   PRIMARY KEY (`tse_event_id`)
   );
-  
 
 INSERT INTO salsa_tokyo_main(
   tse_event_title ,
   tse_event_date ,
   tse_event_start_time ,
   tse_event_end_time ,
+  tse_event_dj,
   tse_event_text_01 ,
   tse_event_text_02 ,
   tse_event_text_03 ,
@@ -39,20 +40,21 @@ INSERT INTO salsa_tokyo_main(
   tse_event_flag
   )
   VALUES(
-  "中目黒GT" ,
-  "2019-08-12" ,
+  "TEST01 " ,
+  "2019-08-14" ,
   "183000" ,
-  "223000" ,
-  "text01" ,
-  "text02" ,
-  "text03" ,
-  "text04" ,
-  "text05" ,
-  "text06" ,
-  "text07" ,
-  "text08" ,
-  "text09" ,
-  "text10" ,
+  "210000" ,
+  "シゲ" ,
+  "ＹＯＵ　ＡＲＥ　ＳＡＬＳＡ" ,
+  "＠中目黒 ＧＴ プラザホール" ,
+  "DJ シゲ" ,
+  "エントランス料金" ,
+  "1000円(持ち込み自由)" ,
+  "" ,
+  "" ,
+  "" ,
+  "" ,
+  "" ,
   "ready"
   );
   

@@ -56,7 +56,7 @@
 			</div>
 			<div
 				class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
-				id="bglightgoldenrodyellow">
+				id="bgWhite">
 				<a href="thisweek"> <img
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48.png"
 					style="width: 4rem; height: 4rem;">
@@ -89,27 +89,24 @@
 							<div
 								class="width100percent floatLeft fontSize120rem textAlignLeft">&#160;&#160;&#160;&#160;${tse.tse_event_title}</div>
 						</div>
-
-						<div class="width20percent floatLeft fontSize130rem textAlignLeft">&#160;&#160;&#160;${tse.tse_event_start_time}</div>
-						<div class="floatLeft textAlignLeft">&#160;&#160;&#160;&#160;&#160;&#160;~&#160;&#160;</div>
-						<div class="width20percent floatLeft fontSize130rem textAlignLeft">${tse.tse_event_end_time}</div>
-						<div class="width45percent floatLeft fontSize130rem">シゲとゆ</div>
+						<div class="width50percent floatLeft fontSize130rem textAlignLeft">&#160;&#160;&#160;${tse.tse_event_start_time}&#160;~&#160;${tse.tse_event_end_time}</div>
+						<div class="width45percent floatLeft fontSize130rem">${tse.tse_event_dj}</div>
 					</div>
 				</div>
 			</button>
 
 			<div class="panel">
 				<div></div>
-				<div class="fontSize200rem">${tse.tse_event_text_01}</div>
-				<div class="fontSize200rem">${tse.tse_event_text_02}</div>
-				<div class="fontSize200rem">${tse.tse_event_text_03}</div>
-				<div class="fontSize200rem">${tse.tse_event_text_04}</div>
-				<div class="fontSize200rem">${tse.tse_event_text_05}</div>
-				<div class="fontSize200rem">${tse.tse_event_text_06}</div>
-				<div class="fontSize200rem">${tse.tse_event_text_07}</div>
-				<div class="fontSize200rem">${tse.tse_event_text_08}</div>
-				<div class="fontSize200rem">${tse.tse_event_text_09}</div>
-				<div class="fontSize200rem">${tse.tse_event_text_10}</div>
+				<div class="fontSize150rem">${tse.tse_event_text_01}</div>
+				<div class="fontSize150rem">${tse.tse_event_text_02}</div>
+				<div class="fontSize150rem">${tse.tse_event_text_03}</div>
+				<div class="fontSize150rem">${tse.tse_event_text_04}</div>
+				<div class="fontSize150rem">${tse.tse_event_text_05}</div>
+				<div class="fontSize150rem">${tse.tse_event_text_06}</div>
+				<div class="fontSize150rem">${tse.tse_event_text_07}</div>
+				<div class="fontSize150rem">${tse.tse_event_text_08}</div>
+				<div class="fontSize150rem">${tse.tse_event_text_09}</div>
+				<div class="fontSize150rem">${tse.tse_event_text_10}</div>
 				<br />
 			</div>
 			<!-- 	One Unit END -->

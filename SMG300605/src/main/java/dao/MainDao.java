@@ -159,16 +159,17 @@ public class MainDao {
 				e.setTse_event_day(simpleDateformat.format(rs.getDate(3)));
 				e.setTse_event_start_time(rs.getString(4).substring(0,2) + ":" + rs.getString(4).substring(3,5));
 				e.setTse_event_end_time(rs.getString(5).substring(0,2) + ":" + rs.getString(5).substring(3,5));
-				e.setTse_event_text_01(rs.getString(6));
-				e.setTse_event_text_02(rs.getString(7));
-				e.setTse_event_text_03(rs.getString(8));
-				e.setTse_event_text_04(rs.getString(9));
-				e.setTse_event_text_05(rs.getString(10));
-				e.setTse_event_text_06(rs.getString(11));
-				e.setTse_event_text_07(rs.getString(12));
-				e.setTse_event_text_08(rs.getString(13));
-				e.setTse_event_text_09(rs.getString(14));
-				e.setTse_event_text_10(rs.getString(15));
+				e.setTse_event_dj(rs.getString(6));
+				e.setTse_event_text_01(rs.getString(7));
+				e.setTse_event_text_02(rs.getString(8));
+				e.setTse_event_text_03(rs.getString(9));
+				e.setTse_event_text_04(rs.getString(10));
+				e.setTse_event_text_05(rs.getString(11));
+				e.setTse_event_text_06(rs.getString(12));
+				e.setTse_event_text_07(rs.getString(13));
+				e.setTse_event_text_08(rs.getString(14));
+				e.setTse_event_text_09(rs.getString(15));
+				e.setTse_event_text_10(rs.getString(16));
 				
 				return e;
 			}
@@ -186,16 +187,17 @@ public class MainDao {
 				e.setTse_event_day(simpleDateformat.format(rs.getDate(3)));
 				e.setTse_event_start_time(rs.getString(4).substring(0,2) + ":" + rs.getString(4).substring(3,5));
 				e.setTse_event_end_time(rs.getString(5).substring(0,2) + ":" + rs.getString(5).substring(3,5));
-				e.setTse_event_text_01(rs.getString(6));
-				e.setTse_event_text_02(rs.getString(7));
-				e.setTse_event_text_03(rs.getString(8));
-				e.setTse_event_text_04(rs.getString(9));
-				e.setTse_event_text_05(rs.getString(10));
-				e.setTse_event_text_06(rs.getString(11));
-				e.setTse_event_text_07(rs.getString(12));
-				e.setTse_event_text_08(rs.getString(13));
-				e.setTse_event_text_09(rs.getString(14));
-				e.setTse_event_text_10(rs.getString(15));
+				e.setTse_event_dj(rs.getString(6));
+				e.setTse_event_text_01(rs.getString(7));
+				e.setTse_event_text_02(rs.getString(8));
+				e.setTse_event_text_03(rs.getString(9));
+				e.setTse_event_text_04(rs.getString(10));
+				e.setTse_event_text_05(rs.getString(11));
+				e.setTse_event_text_06(rs.getString(12));
+				e.setTse_event_text_07(rs.getString(13));
+				e.setTse_event_text_08(rs.getString(14));
+				e.setTse_event_text_09(rs.getString(15));
+				e.setTse_event_text_10(rs.getString(16));
 				
 				return e;
 			}

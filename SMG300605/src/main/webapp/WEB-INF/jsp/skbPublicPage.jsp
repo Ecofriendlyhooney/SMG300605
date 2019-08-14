@@ -52,12 +52,12 @@
 		</div>
 
 		<div class="bpHeadSecondLine">
-			<div class="r33 left text_align_center  ">
+			<div class="r33 left text_align_center bgWhite">
 				<a href="entrance"> <img class="main_icon_size_300"
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48.png">
 				</a>
 			</div>
-			<div class="r33 left  text_align_center  bgWhite">
+			<div class="r33 left  text_align_center bgWhite">
 				<a href="skbaboutus"> <img class="main_icon_size_200" style="padding-top: 0.5rem;"
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-people-48_black_white.png">
 				</a>
@@ -83,12 +83,10 @@
 						<div class=" ">${skb.skb_event_day}</div>
 					</div>
 					<div class=" r70">
-						<div class=" ">
-							<div class="r40 left ">${skb.skb_event_start_time}</div>
-							<div class="r10 left ">~</div>
-							<div class="r35 left ">${skb.skb_event_end_time}</div>
+						<div>
+							<div class="r80 left ">${skb.skb_event_start_time}&#160;~&#160;${skb.skb_event_end_time}</div>
 						</div>
-						<div class=" ">
+						<div>
 							<div class="r80 left " style="text-align: center;">${skb.skb_event_title}</div>
 						</div>
 					</div>

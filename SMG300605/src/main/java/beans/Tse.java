@@ -8,6 +8,7 @@ public class Tse {
 	private String tse_event_day;
 	private String tse_event_start_time;
 	private String tse_event_end_time;
+	private String tse_event_dj;
 	private String tse_event_text_01;
 	private String tse_event_text_02;
 	private String tse_event_text_03;
@@ -55,6 +56,12 @@ public class Tse {
 	}
 	public void setTse_event_end_time(String tse_event_end_time) {
 		this.tse_event_end_time = tse_event_end_time;
+	}
+	public String getTse_event_dj() {
+		return tse_event_dj;
+	}
+	public void setTse_event_dj(String tse_event_dj) {
+		this.tse_event_dj = tse_event_dj;
 	}
 	public String getTse_event_text_01() {
 		return tse_event_text_01;

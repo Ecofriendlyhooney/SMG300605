@@ -14,7 +14,6 @@
 		dataLayer.push(arguments);
 	}
 	gtag('js', new Date());
-
 	gtag('config', 'UA-145004692-1');
 </script>
 
@@ -56,12 +55,10 @@
 						<div class=" ">${skb.skb_event_day}</div>
 					</div>
 					<div class=" r70">
-						<div class=" ">
-							<div class="r40 left ">${skb.skb_event_start_time}</div>
-							<div class="r10 left ">~</div>
-							<div class="r35 left ">${skb.skb_event_end_time}</div>
+						<div>
+							<div class="r80 left ">${skb.skb_event_start_time}&#160;~&#160;${skb.skb_event_end_time}</div>
 						</div>
-						<div class=" ">
+						<div>
 							<div class="r80 left " style="text-align: center;">${skb.skb_event_title}</div>
 						</div>
 					</div>
@@ -71,7 +68,6 @@
 			<div class="panel">
 				<div style="color: white;">
 					<a href="admin/editskb/${skb.skb_event_id}"> <img
-					
 						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-edit-48.png"
 						style="width: 5rem; height: 5rem;">
 						<div>Edit</div>
@@ -94,9 +90,9 @@
 			<!-- 	One Unit END -->
 		</c:forEach>
 
-		<button class="">
-			<div class="r33 left bgWhite">
-				<a href="admin/skbform"> <img
+		<button class="r33 left bgWhite">
+			<div >
+				<a href="admin/skbform"> <img 
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-add-48.png"
 					style="width: 5rem; height: 5rem;">
 				</a>

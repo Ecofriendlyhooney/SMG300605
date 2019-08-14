@@ -48,17 +48,17 @@
 		</div>
 
 		<div class="bpHeadSecondLine">
-			<div class="r33 left text_align_center  bgWhite">
+			<div class="r33 left text_align_center bgWhite">
 				<a href="entrance"> <img class="main_icon_size_200" style="padding-top: 0.5rem;"
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48_black_white.png">
 				</a>
 			</div>
-			<div class="r33 left  text_align_center  ">
+			<div class="r33 left  text_align_center bgWhite">
 				<a href="skbaboutus"> <img class="main_icon_size_300" 
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-people-48.png">
 				</a>
 			</div>
-			<div class="r33 left text_align_center  bgWhite">
+			<div class="r33 left text_align_center bgWhite">
 				<a href="skbmap"> <img class="main_icon_size_200" style="padding-top: 0.5rem;"
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-google-maps-48_black_white.png">
 				</a>

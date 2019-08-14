@@ -188,7 +188,7 @@
 		style="padding-left: 2rem; padding-right: 3rem; padding-bottom: 10rem">
 		<div>
 			<form action="/badminton/skb/admin" method="get">
-				<button class="left ">
+				<button class="left bgWhite">
 					<img
 						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-cancel-48.png"
 						style="width: 5rem; height: 5rem;">

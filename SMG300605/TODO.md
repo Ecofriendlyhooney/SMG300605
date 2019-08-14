@@ -35,6 +35,20 @@
 [X] SQL timestamp CRUD function - event time
 [X] TIME Picker https://timepicker.co/ https://timepicker.co/options/
 [X] Date Picker https://api.jqueryui.com/datepicker/
+[X] GCP Cloud SQL for MySQL timezone setting https://stackoverflow.com/questions/26492610/change-google-cloud-sql-current-timestamp-time-zone
+  - SET @@session.time_zone='+09:00';
+  - select now();
+  
+[X] SKB public Menu button background-color bgWhite amend  
+[X] 300605 salsa calendar Menu button background-color bgWhite amend    
+[ ] SKB TEXT rem unit amend
+[ ] SKB 3rd school Map update (request by syusei)
+[X] Start time - finish time cell combine with space
+     - SKB public
+     - SKB Admin
+     - 300605 salsa Today
+     - 300605 salsa Calendar  
+ 
 
 [ ] LINE social Login http://blog.naver.com/PostView.nhn?blogId=chan2rrj&logNo=220960346707
 [ ] GCP Batch : Clone tab - SKB event activate flag update batch

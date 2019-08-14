@@ -44,7 +44,7 @@ INSERT INTO skb_main(
   
   
   VALUES(
-  "池袋小学校" ,
+  "TEST TEST" ,
   "2019-08-04" ,
   "190000" ,
   "220000" ,
