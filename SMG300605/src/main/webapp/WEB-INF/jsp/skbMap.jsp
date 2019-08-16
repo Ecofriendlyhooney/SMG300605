@@ -37,7 +37,7 @@
  -->
 </head>
 <body>
-	<div class="menu bpHead">
+	<div class="menu bpHead bgWhite">
 		<div class="bpHeadFirstLine">
 			<img class="left"
 				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
@@ -48,18 +48,18 @@
 		<div class="bpHeadSecondLine">
 			<div class="r33 left text_align_center bgWhite">
 				<a href="entrance"> <img class="main_icon_size_200" style="padding-top: 0.5rem;"
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48_black_white.png">
+					src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/icons8-calendar-48_black_white.png">
 				</a>
 			</div>
 			<div
 				class="r33 left  text_align_center bgWhite">
 				<a href="skbaboutus"> <img class="main_icon_size_200" style="padding-top: 0.5rem;"
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-people-48_black_white.png">
+					src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/icons8-people-48_black_white.png">
 				</a>
 			</div>
 			<div class="r33 left text_align_center bgWhite">
 				<a href="skbmap"> <img class="main_icon_size_300"
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-google-maps-48.png">
+					src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/icons8-google-maps-48.png">
 				</a>
 			</div>
 		</div>
@@ -71,14 +71,14 @@
 
 		<!-- 01_ikebukuro_3th_elementary_school -->
 		<button class="accordion ">
-			<div class="r90 left">池袋 (第3小学校)案内</div>
+			<div class="r90 left " style="font-size:1.3rem">池袋 (第3小学校) 案内</div>
 		</button>
 
 		<div class="panel">
 			<div>東京都豊島区西池袋３丁目３−１４−３</div>
 			<div>〒171-0021</div>
 			<div>
-				<a href="https://goo.gl/maps/B14LcdjAAvL2" class="button button4">
+				<a href="https://goo.gl/maps/B14LcdjAAvL2" class="button button4" >
 					<div>豊島区立池袋第三小学校</div>
 					<div>Google Map</div>
 				</a>
@@ -121,9 +121,9 @@
 		</div>
 
 
-		<!-- ikebukuro_toshima_elementary_school -->
-		<button class="accordion ">
-			<div class="r90 left">池袋 (豊島区立池袋小学校) 案内</div>
+		<!-- 02_ikebukuro_toshima_elementary_school -->
+		<button class="accordion " >
+			<div class="r90 left" style="font-size:1.3rem">池袋 (豊島区立池袋小学校) 案内</div>
 		</button>
 
 		<div class="panel">
@@ -165,9 +165,9 @@
 
 
 
-		<!--  ootsuka_west_sugamo_middle_schoole -->
+		<!--  03_ootsuka_west_sugamo_middle_schoole -->
 		<button class="accordion ">
-			<div class="r90 left">大塚 (西巣鴨中学校) 案内</div>
+			<div class="r90 left" style="font-size:1.3rem">大塚 (西巣鴨中学校) 案内</div>
 		</button>
 
 		<div class="panel">
@@ -201,6 +201,30 @@
 				width=100% height=auto loading="lazy" />
 		</div>
 
+		<!--    04_sugamo_elementary_school/ -->
+		<button class="accordion ">
+			<div class="r90 left" style="font-size:1.3rem">巣鴨小学校 案内</div>
+		</button>
+
+		<div class="panel">
+			<img
+				src="https://storage.googleapis.com/skb_bucket/02_map/04_sugamo_elementary_school/map_04_01.jpg"
+				width=100% height=auto loading="lazy" /> <img
+				src="https://storage.googleapis.com/skb_bucket/02_map/04_sugamo_elementary_school/map_04_02.jpg"
+				width=100% height=auto loading="lazy" /> <img
+				src="https://storage.googleapis.com/skb_bucket/02_map/04_sugamo_elementary_school/map_04_03.jpg"
+				width=100% height=auto loading="lazy" /> <img
+				src="https://storage.googleapis.com/skb_bucket/02_map/04_sugamo_elementary_school/map_04_04.jpg"
+				width=100% height=auto loading="lazy" /> <img
+				src="https://storage.googleapis.com/skb_bucket/02_map/04_sugamo_elementary_school/map_04_05.jpg"
+				width=100% height=auto loading="lazy" /> <img
+				src="https://storage.googleapis.com/skb_bucket/02_map/04_sugamo_elementary_school/map_04_06.jpg"
+				width=100% height=auto loading="lazy" /> <img
+				src="https://storage.googleapis.com/skb_bucket/02_map/04_sugamo_elementary_school/map_04_07.jpg"
+				width=100% height=auto loading="lazy" /> <img
+				src="https://storage.googleapis.com/skb_bucket/02_map/04_sugamo_elementary_school/map_04_08.jpg"
+				width=100% height=auto loading="lazy" /> 
+		</div>
 	</div>
 
 	<div class="space">EcofriendlyHooney</div>

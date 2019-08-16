@@ -169,7 +169,7 @@
 				</div>
 				<button class=" bgLightGreen left">
 					<img
-						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-ok-48.png"
+						src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/icons8-ok-48.png"
 						style="width: 5rem; height: 5rem;"> 
 						<div>Save</div>
 				</button>
@@ -190,7 +190,7 @@
 			<form action="/badminton/skb/admin" method="get">
 				<button class="left bgWhite">
 					<img
-						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-cancel-48.png"
+						src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/icons8-cancel-48.png"
 						style="width: 5rem; height: 5rem;">
 						<div>Cancel</div> 		
 				</button>

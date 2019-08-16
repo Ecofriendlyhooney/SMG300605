@@ -38,7 +38,7 @@
 [X] GCP Cloud SQL for MySQL timezone setting https://stackoverflow.com/questions/26492610/change-google-cloud-sql-current-timestamp-time-zone
   - SET @@session.time_zone='+09:00';
   - select now();
-  
+ 
 [X] SKB public Menu button background-color bgWhite amend  
 [X] 300605 salsa calendar Menu button background-color bgWhite amend    
 [ ] SKB TEXT rem unit amend
@@ -56,8 +56,12 @@
 [ ] GCP Stack Driver setting
 [ ] https://cloud.google.com/scheduler/docs/tut-pub-sub
 [ ] Ultimate Guide to LINE For Business https://rocketbots.io/blog/the-ultimate-guide-to-line-for-business/
-[ ] Using OAuth 2.0 and Google Cloud Functions to access Google services https://cloud.google.com/community/tutorials/cloud-functions-oauth-gmail
-[ ] Integrating LINE Login with your web app https://developers.line.biz/en/docs/line-login/web/integrate-line-login/
+[ ] Google Cloud Functions to access Google services (Using OAuth 2.0) https://cloud.google.com/community/tutorials/cloud-functions-oauth-gmail
 [ ] icon https://icons8.com/icons/set/today
 [ ] mobile site test https://search.google.com/test/mobile-friendly
 [ ] mobile friendly test https://ready.mobi/
+[ ] New Project SGSLG - Spring Gradle Social Login GCP
+
+[ ] LINE LOGIN - minimum https://engineering.linecorp.com/ja/blog/spring-security-id-federation-line-starting-configuration-file/
+[ ] ]Spring Bootで LINE ログイン] https://koirand.github.io/blog/2018/line-login-with-springboot/
+[A] Integrating LINE Login with your web app https://developers.line.biz/en/docs/line-login/web/integrate-line-login/

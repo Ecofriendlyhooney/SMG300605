@@ -39,7 +39,7 @@
 
 
 <body>
-	<div class="menu bpHead">
+	<div class="menu bpHead bgWhite">
 		<div class="bpHeadFirstLine">
 			<img class="left"
 				src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/badminton.png"
@@ -50,21 +50,20 @@
 		<div class="bpHeadSecondLine">
 			<div class="r33 left text_align_center bgWhite">
 				<a href="entrance"> <img class="main_icon_size_200" style="padding-top: 0.5rem;"
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-calendar-48_black_white.png">
+					src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/icons8-calendar-48_black_white.png">
 				</a>
 			</div>
 			<div class="r33 left  text_align_center bgWhite">
 				<a href="skbaboutus"> <img class="main_icon_size_300" 
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-people-48.png">
+					src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/icons8-people-48.png">
 				</a>
 			</div>
 			<div class="r33 left text_align_center bgWhite">
 				<a href="skbmap"> <img class="main_icon_size_200" style="padding-top: 0.5rem;"
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-google-maps-48_black_white.png">
+					src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/icons8-google-maps-48_black_white.png">
 				</a>
 			</div>
 		</div>
-
 	</div>
 
 	<div class="space ">EcofriendlyHooney</div>

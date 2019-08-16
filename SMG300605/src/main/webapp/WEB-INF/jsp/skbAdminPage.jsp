@@ -68,7 +68,7 @@
 			<div class="panel">
 				<div style="color: white;">
 					<a href="admin/editskb/${skb.skb_event_id}"> <img
-						src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-edit-48.png"
+						src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/icons8-edit-48.png"
 						style="width: 5rem; height: 5rem;">
 						<div>Edit</div>
 					</a>
@@ -93,7 +93,7 @@
 		<button class="r33 left bgWhite">
 			<div >
 				<a href="admin/skbform"> <img 
-					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-add-48.png"
+					src="https://storage.googleapis.com/skb_bucket/03_contents_gallery/01_icon/icons8-add-48.png"
 					style="width: 5rem; height: 5rem;">
 				</a>
 			</div>
