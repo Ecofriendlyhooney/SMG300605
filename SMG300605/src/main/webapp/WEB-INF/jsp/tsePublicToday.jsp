@@ -59,14 +59,14 @@
 					style="width: 3rem; height: 3rem; padding-top: 0.5rem;">
 				</a>
 			</div>
-			<div
+		<!-- 	<div
 				class="width33percent floatLeft menubutton textAlignCenter fontSize200rem"
 				id="bgWhite">
 				<a > <img
 					src="https://storage.googleapis.com/salsa_tokyo_bucket/icons8-plus-48_black_white.png"
 					style="width: 4rem; height: 4rem;">
 				</a> 
-			</div>
+			</div> -->
 		</div>
 	</div>
 

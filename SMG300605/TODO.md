@@ -52,7 +52,7 @@
 [ ] LINE social Login http://blog.naver.com/PostView.nhn?blogId=chan2rrj&logNo=220960346707 
 [ ] social Login - Spring Boot OAuth2 Social Login with Google, Facebook, and Github(part1) - https://www.callicoder.com/spring-boot-security-oauth2-social-login-part-1/
 [ ] GCP Batch : Clone tab - SKB event activate flag update batch
-[ ] GCP Bitnami : bash shell - (delete ROOT folder/ delete ROOT.war/ mv ROOT.war /./catalina.sh stop/start 
+[ ] GCP Bitnami : bash shell - (delete ROOT folder/ delete ROOT.war/ mv ROOT.war /./catalina.sh stop/start https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/
 [ ] GCP Stack Driver setting
 [ ] https://cloud.google.com/scheduler/docs/tut-pub-sub
 [ ] Ultimate Guide to LINE For Business https://rocketbots.io/blog/the-ultimate-guide-to-line-for-business/
@@ -65,3 +65,16 @@
 [ ] LINE LOGIN - minimum https://engineering.linecorp.com/ja/blog/spring-security-id-federation-line-starting-configuration-file/
 [ ] ]Spring Bootで LINE ログイン] https://koirand.github.io/blog/2018/line-login-with-springboot/
 [A] Integrating LINE Login with your web app https://developers.line.biz/en/docs/line-login/web/integrate-line-login/
+[ ] MySQL inno Engine - https://www.openkm.com/wiki/index.php/MySQL_-_OpenKM_6.2
+
+Creating and Using InnoDB Tables - http://download.nust.na/pub6/mysql/doc/refman/5.1/en/using-innodb-tables.html
+- CREATE TABLE Author (authorId INT, name CHAR (20), address CHAR (20) INDEX (a)) ENGINE=InnoDB;
+Maven Reference
+- https://howtodoinjava.com/spring-boot2/crud-application-thymeleaf/
+Gradle Reference
+- https://medium.com/@namila007/build-a-complete-restful-service-using-springboot-2-0-and-gradle-e9e381a114d8
+- https://www.ekiras.com/2015/08/spring-boot-mvc-gradle-sample-crud-project-setup
+- https://www.jeejava.com/spring-boot-data-jpa-crud-example/
+- https://github.com/oktadeveloper/okta-spring-boot-vue-crud-example
+- https://reviewdb.io/posts/1505105199524/crud-operations-using-spring-boot-jpa-hibernate-postgresql
+- https://reviewdb.io/posts/1503083112817/how-to-create-a-website-with-spring-boot-and-serve-static-content

@@ -41,7 +41,7 @@ INSERT INTO salsa_tokyo_main(
   )
   VALUES(
   "TEST01 " ,
-  "2019-08-14" ,
+  "2019-09-02" ,
   "183000" ,
   "210000" ,
   "シゲ" ,

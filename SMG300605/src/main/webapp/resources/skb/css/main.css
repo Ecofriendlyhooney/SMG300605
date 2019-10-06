@@ -239,10 +239,10 @@
 }
 
 .textImportant {
-	important;
+	/* important; */
 }
 
-.text_align_center{
+.text_align_center {
 	text-align: center;
 }
 

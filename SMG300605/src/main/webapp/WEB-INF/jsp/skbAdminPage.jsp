@@ -84,7 +84,7 @@
 				<div>${skb.skb_event_text_09}</div>
 				<div>${skb.skb_event_text_10}</div>
 				<div>
-					<a href="https://line.me/ti/p/m8cLZndgKg">https://line.me/ti/p/m8cLZndgKg</a>
+					<a href="https://line.me/ti/p/m8cLZndgKg">SKB 代表 LINE 連絡</a>
 				</div>
 			</div>
 			<!-- 	One Unit END -->

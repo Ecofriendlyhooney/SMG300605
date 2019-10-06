@@ -205,8 +205,16 @@
 		<button class="accordion ">
 			<div class="r90 left" style="font-size:1.3rem">巣鴨小学校 案内</div>
 		</button>
-
-		<div class="panel">
+		<div class="panel"> 
+			<div>東京都豊島区南大塚１丁目２４−10</div>
+			<div>〒170-0005</div>
+			<div>
+				<a href="https://goo.gl/maps/YjveMSfPkyxv3MUy8"
+					class="button button4">
+					<div>巣鴨小学校</div>
+					<div>Google Map</div>
+				</a>
+			</div>
 			<img
 				src="https://storage.googleapis.com/skb_bucket/02_map/04_sugamo_elementary_school/map_04_01.jpg"
 				width=100% height=auto loading="lazy" /> <img

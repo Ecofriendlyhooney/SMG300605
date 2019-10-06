@@ -127,12 +127,12 @@
 						placeholder="Text Input 01" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_text_02" value="詳細はLINEお願いします。"
+					<input type="text" name="skb_event_text_02" value="詳細はLINEにてお問い合わせ下さい。"
 						maxlength="20" placeholder="Text Input 02" />
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_03"
-						value="参加費は600円です(*^^*)" maxlength="20"
+						value="(^-^)/" maxlength="20"
 						placeholder="Text Input 03" />
 				</div>
 				<div class="inputBorder">
@@ -151,7 +151,7 @@
 						placeholder="Text Input 06" />
 				</div>
 				<div class="inputBorder">
-					<input type="text" name="skb_event_text_07" value="SKB代表 秀星(しゅうせい)"
+					<input type="text" name="skb_event_text_07" value="SKB代表 小松原 秀星"
 						maxlength="20" placeholder="Text Input 07" />
 				</div>
 				<div class="inputBorder">
@@ -164,7 +164,7 @@
 				</div>
 				<div class="inputBorder">
 					<input type="text" name="skb_event_text_10"
-						value="LINEID: ma_ko_to_o" maxlength="20"
+						value="LINE ID: ma_ko_to_o" maxlength="20"
 						placeholder="Text Input 10" />
 				</div>
 				<button class=" bgLightGreen left">

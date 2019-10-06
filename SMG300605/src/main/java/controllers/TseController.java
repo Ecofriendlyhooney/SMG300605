@@ -54,12 +54,12 @@ public class TseController {
 //		return "redirect:/dance/tse/admin";
 //	}
 //
-//	/* TSE add */
-//	@RequestMapping("/dance/tse/admin/tseform")
-//	public String showform(Model m) {
-//		m.addAttribute("command", new Tse());
-//		return "tseform";
-//	}
+	/* TSE add */
+	@RequestMapping("/dance/tse/admin/tseform")
+	public String showform(Model m) {
+		m.addAttribute("command", new Tse());
+		return "tseform";
+	}
 //
 //	/* TSE update */
 //	@RequestMapping(value = "/dance/tse/admin/editsave", method = RequestMethod.POST)
